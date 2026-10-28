@@ -30,7 +30,7 @@ jobs:
           cache-dependency-path: pipeline/requirements.txt
       - run: pip install -r requirements.txt
       # Listing details and routes persist between runs; search checkpoints never do (each run searches fresh)
-      - uses: actions/cache@v4
+      - uses: actions/cache/restore@v4
         with:
           path: |
             pipeline/cache/posts
@@ -52,6 +52,14 @@ jobs:
           git commit -m "Refresh listings $(date -u +%FT%TZ)" || echo "nothing changed"
           git pull --rebase -X theirs origin main
           git push
+      # saved even if a later step failed, so the next run doesn't refetch everything
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: |
+            pipeline/cache/posts
+            pipeline/cache/routing_batch
+          key: divar-${{ github.run_id }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
