@@ -110,6 +110,7 @@ td.ti{white-space:normal;min-width:200px}a{color:var(--accent)}.tag{font-size:11
 <div class="chk"><input type="checkbox" id="sP" checked><span><span class="dot" style="background:var(--prov)"></span>موقت (پین تقریبی ±۵۰۰ متر)</span></div>
 <div class="chk"><input type="checkbox" id="sN"><span><span class="dot" style="background:var(--nlv)"></span>نیاز به تأیید موقعیت</span></div>
 <div class="chk"><input type="checkbox" id="sS"><span>شامل مجیدیه (منطقه تکمیلی)</span></div>
+<div class="chk"><input type="checkbox" id="sHas" checked><span>فقط ایستگاه‌های دارای آگهی (مرتب بر اساس تعداد)</span></div>
 <div class="stcounts" id="stc"></div>
 <p class="note">فاصله‌های دارای «~ (تخمینی)» برابر فاصله مستقیم × ۱٫۳۲ است (میانه نسبت مسیر واقعی به خط مستقیم در تهران). پس از اجرای routing_check.py فاصله پیاده واقعی (OSRM، پروفایل پیاده) تا نزدیک‌ترین ورودی جایگزین می‌شود. موقعیت آگهی پینی است که آگهی‌دهنده در دیوار انتخاب کرده و به‌طور مستقل تأیید نشده است.</p>
 </div>
@@ -130,27 +131,32 @@ const lab={MATCH_VERIFIED:'تأیید شده',MATCH_PROVISIONAL_DISTANCE:'موق
 $('#h1').textContent=`آپارتمان‌های اجاره‌ای نزدیک ${fa(D.stations.filter(s=>s.kind==='metro_station').length)} ایستگاه مترو تهران`;
 $('#sub').textContent=`ودیعه از ${fa(D.budget[2])} · سقف ودیعه ${fa(D.budget[0])} تومان · سقف اجاره ${fa(D.budget[1])} تومان · زمان جمع‌آوری داده: ${D.collected} · ${fa(D.inspected)} آگهی بررسی شد`;
 const metro=D.stations.filter(s=>s.kind==='metro_station');
-metro.forEach(s=>$('#stn').insertAdjacentHTML('beforeend',`<option value="${s.k}">${s.fa} (خط ${s.lines})</option>`));
+// matches (verified + provisional, excluding Majidiyeh) per station; fixed for the dataset
+const cnt={};D.listings.filter(l=>l.s!=='NEEDS_LOCATION_VERIFICATION'&&!l.supp).forEach(l=>cnt[l.st]=(cnt[l.st]||0)+1);
+const shownStations=()=>$('#sHas').checked?metro.filter(s=>cnt[s.k]).sort((a,b)=>cnt[b.k]-cnt[a.k]):metro;
 const map=L.map('map').setView([35.700,51.410],13);
 // Hosted (https): OSM tiles, Persian labels. file:// sends no Referer and OSM/CARTO answer 403, so use keyless Esri there ({y}/{x} order).
 if(location.protocol==='file:')L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors'}).addTo(map);
 else L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
-D.stations.forEach(s=>{if(s.kind!=='metro_station')return;
- L.circleMarker([s.lat,s.lon],{radius:8,color:css('--stn'),weight:3,fillColor:'#fff',fillOpacity:1}).bindTooltip(`${s.fa} · ${s.en} · خط ${s.lines}`).addTo(map);
- s.ents.forEach(e=>L.circleMarker([e.lat,e.lon],{radius:3,color:css('--stn'),weight:1,fillOpacity:.8}).bindTooltip('ورودی '+s.fa+(e.name?' – '+e.name:'')).addTo(map));});
+const stLayer=L.layerGroup().addTo(map);let stKey=null;
+function drawStations(){const list=shownStations(),key=list.map(s=>s.k).join();if(key===stKey)return;stKey=key;
+ const v=$('#stn').value;$('#stn').innerHTML='<option value="">همه</option>'+list.map(s=>`<option value="${s.k}">${s.fa} (خط ${s.lines})${cnt[s.k]?' – '+fa(cnt[s.k]):''}</option>`).join('');
+ if(list.some(s=>s.k===v))$('#stn').value=v;
+ stLayer.clearLayers();list.forEach(s=>{
+  L.circleMarker([s.lat,s.lon],{radius:8,color:css('--stn'),weight:3,fillColor:'#fff',fillOpacity:1}).bindTooltip(`${s.fa} · ${s.en} · خط ${s.lines} · ${fa(cnt[s.k]||0)} آگهی`).addTo(stLayer);
+  s.ents.forEach(e=>L.circleMarker([e.lat,e.lon],{radius:3,color:css('--stn'),weight:1,fillOpacity:.8}).bindTooltip('ورودی '+s.fa+(e.name?' – '+e.name:'')).addTo(stLayer));});}
 const layer=L.layerGroup().addTo(map);let sortK='d',sortDir=1,stSel='';
 const dist=l=>l.w??l.e;
 function filt(){const q=$('#q').value.trim(),st=$('#stn').value||stSel,mc=+$('#mc').value*1e6||Infinity,mr=+$('#mr').value*1e6||Infinity,md=+$('#md').value,amin=+$('#amin').value||0,amax=+$('#amax').value||Infinity;
  const ok={MATCH_VERIFIED:$('#sV').checked,MATCH_PROVISIONAL_DISTANCE:$('#sP').checked,NEEDS_LOCATION_VERIFICATION:$('#sN').checked};
  return D.listings.filter(l=>ok[l.s]&&(!l.supp||$('#sS').checked)&&(!q||(l.ti+' '+l.nb).includes(q))&&(!st||l.st===st)&&(l.c??0)<=mc&&(l.r??0)<=mr&&(l.s==='NEEDS_LOCATION_VERIFICATION'||(dist(l)??1e9)<=md)&&(l.a==null||(l.a>=amin&&l.a<=amax)));}
-function render(){const L2=filt();layer.clearLayers();
+function render(){drawStations();const L2=filt();layer.clearLayers();
  L2.forEach(l=>{if(l.lat==null)return;const c=css(col[l.s]);const pop=`<b>${l.ti}</b><br>ودیعه ${mil(l.c)} · اجاره ${mil(l.r)}<br>${l.a?fa(l.a)+' متر · ':''}${l.stfa||''} ${l.w!=null?fa(l.w)+' متر پیاده':l.e!=null?'~'+fa(l.e)+' متر پیاده (تخمینی)':''}<br><a href="${l.u}" target="_blank" rel="noopener">مشاهده در دیوار</a>`;
   if(l.lt==='FUZZY'&&l.rad)L.circle([l.lat,l.lon],{radius:l.rad,color:c,weight:1,dashArray:'4 4',fillOpacity:.05}).addTo(layer);
   L.circleMarker([l.lat,l.lon],{radius:l.lt==='FUZZY'?5:7,color:c,fillColor:c,fillOpacity:l.lt==='FUZZY'?.45:.9,weight:l.lt==='FUZZY'?1:2}).bindPopup(pop).addTo(layer);});
  const rows=[...L2].sort((a,b)=>{const va=sortK==='d'?dist(a):a[sortK],vb=sortK==='d'?dist(b):b[sortK];return((va??1e12)>(vb??1e12)?1:(va??1e12)<(vb??1e12)?-1:0)*sortDir});
  $('#tb').innerHTML=rows.map(l=>`<tr><td><span class="tag ${l.s}">${lab[l.s]}</span></td><td class="ti">${l.ti}</td><td>${l.nb}</td><td class="num">${mil(l.c)}</td><td class="num">${mil(l.r)}</td><td class="num">${fa(l.a)}</td><td class="num">${fa(l.rm)}</td><td class="num">${l.y?fa(l.y):'—'}</td><td>${l.stfa}</td><td class="num">${l.w!=null?fa(l.w):l.e!=null?'~'+fa(l.e)+' (تخمینی)':'—'}</td><td class="num">${l.wm!=null?fa(l.wm):l.em!=null?'~'+fa(l.em):'—'}</td><td><a href="${l.u}" target="_blank" rel="noopener">دیوار ↗</a></td></tr>`).join('')||'<tr><td colspan="12">موردی با این فیلترها یافت نشد.</td></tr>';
- const cnt={};D.listings.filter(l=>l.s!=='NEEDS_LOCATION_VERIFICATION'&&!l.supp).forEach(l=>cnt[l.st]=(cnt[l.st]||0)+1);
- $('#stc').innerHTML=metro.map(s=>`<button data-k="${s.k}" class="${stSel===s.k?'on':''}">${s.fa} ${fa(cnt[s.k]||0)}</button>`).join('');
+ $('#stc').innerHTML=shownStations().map(s=>`<button data-k="${s.k}" class="${stSel===s.k?'on':''}">${s.fa} ${fa(cnt[s.k]||0)}</button>`).join('');
  $('#foot').textContent=`${fa(rows.length)} آگهی نمایش داده شد.`;}
 const c=D.counts,sv=k=>c[k]||0;
 $('#stats').innerHTML=[['آگهی بررسی‌شده',D.inspected],['تأیید شده',sv('MATCH_VERIFIED')],['موقت (پین تقریبی)',sv('MATCH_PROVISIONAL_DISTANCE')],['نیاز به تأیید موقعیت',sv('NEEDS_LOCATION_VERIFICATION')],['دور از مترو',sv('TOO_FAR_FROM_METRO')],['همخونه / غیر آپارتمان',sv('WRONG_CATEGORY')]].map(([a,b])=>`<div class="stat"><b>${fa(b)}</b><span>${a}</span></div>`).join('');
