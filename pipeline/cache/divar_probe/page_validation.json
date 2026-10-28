@@ -1,0 +1,3 @@
+{"checked_at":"2026-10-28T20:47Z","token":"gaZHto_B","url":"https://divar.ir/v/gaZHto_B","method":"Built-in browser get_page_text vs pipeline record",
+"page":{"deposit":"۵۰۰,۰۰۰,۰۰۰ تومان","rent":"۱۷,۰۰۰,۰۰۰ تومان","area":"۶۰","built":"۱۴۰۳","rooms":"۱","floor":"۱ از ۴","convertible":"غیر قابل تبدیل","features":["آسانسور","پارکینگ","انباری"],"subtitle":"۶ روز پیش در تهران، منیریه، خ فردوس"},
+"pipeline":{"credit":500000000,"rent":17000000,"area_m2":60,"year_built":1403,"rooms":1},"result":"MATCH - prices and attributes agree; inclusive boundary (exactly 500M / 17M) accepted"}

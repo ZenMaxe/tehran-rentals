@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+pipeline/cache/posts/
+pipeline/cache/routing*/
+pipeline/cache/search_snapshots/
+pipeline/cache/checkpoint/
+pipeline/cache/http/
+pipeline/cache/archive/
+pipeline/cache/*.out
+pipeline/cache/*.log
+pipeline/cache/results.json

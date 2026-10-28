@@ -1,0 +1,1031 @@
+{
+ "sections": [
+  {
+   "section_name": "BREADCRUMB",
+   "widgets": [
+    {
+     "widget_type": "BREADCRUMB",
+     "data": {
+      "@type": "type.googleapis.com/widgets.BreadcrumbData",
+      "parent_items": [
+       {
+        "title": "املاک",
+        "action": {
+         "type": "OPEN_POSTLIST_PAGE_GRPC",
+         "payload": {
+          "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+          "search_data": {
+           "form_data": {
+            "data": {
+             "category": {
+              "str": {
+               "value": "real-estate"
+              }
+             }
+            }
+           }
+          },
+          "source_view": "CATEGORY_BREAD_CRUMB",
+          "source_view_str": "CATEGORY_BREAD_CRUMB"
+         }
+        }
+       },
+       {
+        "title": "اجارهٔ مسکونی",
+        "action": {
+         "type": "OPEN_POSTLIST_PAGE_GRPC",
+         "payload": {
+          "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+          "search_data": {
+           "form_data": {
+            "data": {
+             "category": {
+              "str": {
+               "value": "residential-rent"
+              }
+             }
+            }
+           }
+          },
+          "source_view": "CATEGORY_BREAD_CRUMB",
+          "source_view_str": "CATEGORY_BREAD_CRUMB"
+         }
+        }
+       },
+       {
+        "title": "اجارهٔ آپارتمان",
+        "action": {
+         "type": "OPEN_POSTLIST_PAGE_GRPC",
+         "payload": {
+          "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+          "search_data": {
+           "form_data": {
+            "data": {
+             "category": {
+              "str": {
+               "value": "apartment-rent"
+              }
+             }
+            }
+           }
+          },
+          "source_view": "CATEGORY_BREAD_CRUMB",
+          "source_view_str": "CATEGORY_BREAD_CRUMB"
+         }
+        }
+       }
+      ],
+      "current_page_title": "آپارتمان 54متر خوش نقشه",
+      "padded": true
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "TITLE",
+   "widgets": [
+    {
+     "widget_type": "LEGEND_TITLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.LegendTitleRowData",
+      "title": "آپارتمان 54متر خوش نقشه",
+      "high_level_heading": true,
+      "padding": "NO_PADDING"
+     }
+    },
+    {
+     "widget_type": "EXPANDABLE_SECTION",
+     "data": {
+      "@type": "type.googleapis.com/widgets.ExpandableSectionData",
+      "widget_list": [
+       {
+        "widget_type": "DESCRIPTION_ROW",
+        "data": {
+         "@type": "type.googleapis.com/widgets.DescriptionRowData",
+         "text": "انتشار آگهی: ۲۷ مهر ۱۴۰۵، ۱۲:۳۴\nآخرین نردبان: ۵ آبان ۱۴۰۵، ۱۶:۳۲",
+         "is_primary": true,
+         "small": true,
+         "text_alignment": "RIGHT"
+        }
+       }
+      ],
+      "title": "هفته پیش در تهران، ارامنه، خ سادگی",
+      "icon": {}
+     }
+    },
+    {
+     "widget_type": "SELECTOR_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.SelectorRowData",
+      "title": "زنگ خطرهای قبل از معامله",
+      "action": {
+       "type": "OPEN_PAGE",
+       "payload": {
+        "@type": "type.googleapis.com/widgets.OpenPagePayload",
+        "request_http_method": "POST",
+        "request_data": {
+         "@type": "type.googleapis.com/post_api_v2.GetFraudAlertPageRequest.Data",
+         "category": "apartment-rent"
+        },
+        "specification": {
+         "@type": "type.googleapis.com/widgets.OpenPagePayload.SimplePageSpecification",
+         "navigation_button": "BACK"
+        },
+        "is_modal": true,
+        "rest_request_path": "/v8/postview/fraud-alert",
+        "grpc_request_path": "/post_api_v2.PostApi/GetFraudAlertPage"
+       }
+      },
+      "has_divider": true,
+      "icon": {
+       "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/warning.png",
+       "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/warning.png",
+       "icon_name": "WARNING",
+       "icon_color": "ICON_SECONDARY"
+      },
+      "has_arrow": true,
+      "last_notification_date": "0001-01-01T00:00:00Z"
+     },
+     "action_log": {
+      "server_side_info": {
+       "info": {
+        "@type": "type.googleapis.com/action_log.PostWarningInfo",
+        "post_token": "gaSfxzZ8"
+       },
+       "item_type": {
+        "type": "POST_WARNING"
+       }
+      },
+      "enabled": true
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "DESCRIPTION",
+   "widgets": [
+    {
+     "widget_type": "TITLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.TitleRowData",
+      "text": "توضیحات",
+      "text_color": "TEXT_PRIMARY",
+      "text_type": "SECONDARY"
+     }
+    },
+    {
+     "widget_type": "DESCRIPTION_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.DescriptionRowData",
+      "text": "آپارتمان 54 متر خوش نقشه \nطبقه دوم \nواحد تو سلمان فارسی هست \nتک خواب \nپارکینگ غیر مزاحم \nسالن مربع پرده خور \nواحد تمیز قشنگ \nکمسیون توافقی \nکابینت هایگلاس \nکف سرامیک \n4تا تک واحدی \nسرمایش کولر آبی \nگرمایش بخاری\nواحد تخلیه هست \nسرویس حموم دستشویی جدا \nنورگیر عالی مستقیم \nدسترسی 4دقیقه به مترو مدنی \nدسترسی 3 دقیقه ای به اتوبان امام علی \nمشاور املاک سیاوش \nمشاور شما بهار",
+      "is_primary": true,
+      "text_alignment": "RIGHT"
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "IMAGE",
+   "widgets": [
+    {
+     "widget_type": "IMAGE_CAROUSEL",
+     "data": {
+      "@type": "type.googleapis.com/widgets.ImageCarouselData",
+      "items": [
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/n5MmZditfQsLlJn9PuMSWw/79ef41b0-b827-4d3e-98f3-7b430acd22e7.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/zOp717MKe_9ZBMDV45uyQg/79ef41b0-b827-4d3e-98f3-7b430acd22e7.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/RLC5NEh7sGbk9CYrH6ZFjA/422fbca5-4306-4d92-b5b5-0fc018784c2e.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/nVCCaeQRtZLo4ozsWCfCEQ/422fbca5-4306-4d92-b5b5-0fc018784c2e.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/WVnxnDg2tGr9jgq1iWxIOw/e302b6ae-0004-4f66-ba59-b07b3cef6932.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/v11VlpeZT93EC0URNrb2tA/e302b6ae-0004-4f66-ba59-b07b3cef6932.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/oWsLsbr2vo98ghtbDZzy_Q/7bf3fc1d-efb3-4cc0-81d1-3a9606305dbb.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/nCQV1IELAXAYKSZdy_X00A/7bf3fc1d-efb3-4cc0-81d1-3a9606305dbb.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/ZoOBqQ-k5oXVucnI86kwdA/f25d4509-c252-40c2-8dcf-15e06eb35462.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/9yPxfGW7OlwS5o3tP4RTig/f25d4509-c252-40c2-8dcf-15e06eb35462.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/YEeLAVWq0PwNuggEXD5FOA/54e99d45-511f-4814-a4b1-d280542b67e2.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/VFnpKNjDGWFo4mqvTU5Myg/54e99d45-511f-4814-a4b1-d280542b67e2.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/BycK-FE1DoW5IZkvGqCheA/90374183-8ab9-4c3e-a0ed-7ef161f0fb7d.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/r9Z88VUwowBoNQkRx33HRg/90374183-8ab9-4c3e-a0ed-7ef161f0fb7d.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/iPsNlkvSPnAzobzztOl6pQ/057ed169-7894-4ccc-bf45-4d459afddf7e.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/0zkzNX4MH4LMzpO2Yd0JXA/057ed169-7894-4ccc-bf45-4d459afddf7e.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/2kKSlx1wkiFLDfwAqhKDXQ/b9c7fc2d-a507-40ec-832f-c4a11cb85021.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/cvYX_nOU3PQRyCM_9QH3XA/b9c7fc2d-a507-40ec-832f-c4a11cb85021.webp"
+        }
+       },
+       {
+        "image": {
+         "url": "https://s100.divarcdn.com/static/photo/neda/webp_post/-T2Ja1H56efGrQxyP7Nh4g/9167adc5-92b5-41d1-90d0-388ea46b6d6d.webp",
+         "alt": "آپارتمان 54متر خوش نقشه|اجارهٔ آپارتمان|تهران, ارامنه|دیوار",
+         "thumbnail_url": "https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/v9TsK9bOAqz49cIxE1PgrA/9167adc5-92b5-41d1-90d0-388ea46b6d6d.webp"
+        }
+       }
+      ],
+      "image_aspect_ratio": {
+       "dynamic_aspect_ratio": {
+        "height": 3,
+        "width": 4
+       }
+      },
+      "has_preview": true,
+      "has_thumbnails": true,
+      "show_tooltip": true,
+      "tooltip_data": {
+       "icon": {
+        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/white_primary/v1/fullscreen.png",
+        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/white_primary/v1/fullscreen.png",
+        "icon_name": "FULLSCREEN",
+        "icon_color": "WHITE_PRIMARY"
+       },
+       "text": "۱۰"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "LIST_DATA",
+   "widgets": [
+    {
+     "widget_type": "GROUP_INFO_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.GroupInfoRow",
+      "items": [
+       {
+        "title": "متراژ",
+        "value": "۵۴"
+       },
+       {
+        "title": "ساخت",
+        "value": "۱۳۸۸"
+       },
+       {
+        "title": "اتاق",
+        "value": "۱"
+       }
+      ],
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "تصویر\u200cها برای همین ملک است؟",
+      "value": "بله",
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "ودیعه",
+      "value": "\u200f۷۰۰,۰۰۰,۰۰۰ تومان",
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "اجارهٔ ماهانه",
+      "value": "\u200f۹,۰۰۰,۰۰۰ تومان",
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "ودیعه و اجاره",
+      "value": "غیر قابل تبدیل",
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "UNEXPANDABLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.UnexpandableRowData",
+      "title": "طبقه",
+      "value": "۲",
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "SECTION_TITLE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.SectionTitleRowData",
+      "title": "ویژگی\u200cها و امکانات",
+      "title_color": "TEXT_PRIMARY",
+      "padding": "ALT"
+     }
+    },
+    {
+     "widget_type": "GROUP_FEATURE_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.GroupFeatureRow",
+      "items": [
+       {
+        "title": "آسانسور ندارد",
+        "icon": {
+         "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_hint/v1/elevator.png",
+         "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_hint/v1/elevator.png",
+         "icon_name": "ELEVATOR",
+         "icon_color": "ICON_HINT"
+        }
+       },
+       {
+        "title": "پارکینگ",
+        "icon": {
+         "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/parking.png",
+         "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/parking.png",
+         "icon_name": "PARKING",
+         "icon_color": "ICON_SECONDARY"
+        },
+        "available": true
+       },
+       {
+        "title": "انباری ندارد",
+        "icon": {
+         "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_hint/v1/cabinet.png",
+         "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_hint/v1/cabinet.png",
+         "icon_name": "CABINET",
+         "icon_color": "ICON_HINT"
+        }
+       }
+      ],
+      "has_divider": true
+     }
+    },
+    {
+     "widget_type": "SELECTOR_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.SelectorRowData",
+      "title": "سایر ویژگی\u200cها و امکانات",
+      "action": {
+       "type": "LOAD_MODAL_PAGE",
+       "payload": {
+        "@type": "type.googleapis.com/widgets.LoadModalPagePayload",
+        "modal_page": {
+         "title": "ویژگی\u200cها و امکانات",
+         "widget_list": [
+          {
+           "widget_type": "TITLE_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.TitleRowData",
+            "text": "ویژگی\u200cها",
+            "has_divider": true,
+            "text_color": "TEXT_PRIMARY"
+           }
+          },
+          {
+           "widget_type": "DESCRIPTION_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.DescriptionRowData",
+            "text": "جنس کابینت",
+            "is_primary": true,
+            "expandable": true,
+            "padded": true,
+            "preview_max_line": 4,
+            "text_alignment": "RIGHT"
+           }
+          },
+          {
+           "widget_type": "WRAPPER_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.WrapperRowData",
+            "chip_list": {
+             "chips": [
+              {
+               "text": "های گلاس",
+               "type": "ACTION",
+               "small": true
+              }
+             ]
+            },
+            "padded": true
+           }
+          },
+          {
+           "widget_type": "TITLE_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.TitleRowData",
+            "text": "امکانات",
+            "has_divider": true,
+            "text_color": "TEXT_PRIMARY"
+           }
+          },
+          {
+           "widget_type": "FEATURE_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.FeatureRowData",
+            "title": "آسانسور ندارد",
+            "has_divider": true,
+            "icon": {
+             "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/elevator.png",
+             "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/elevator.png",
+             "icon_name": "ELEVATOR",
+             "icon_color": "ICON_SECONDARY"
+            }
+           }
+          },
+          {
+           "widget_type": "FEATURE_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.FeatureRowData",
+            "title": "پارکینگ",
+            "has_divider": true,
+            "icon": {
+             "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/parking.png",
+             "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/parking.png",
+             "icon_name": "PARKING",
+             "icon_color": "ICON_SECONDARY"
+            }
+           }
+          },
+          {
+           "widget_type": "FEATURE_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.FeatureRowData",
+            "title": "انباری ندارد",
+            "has_divider": true,
+            "icon": {
+             "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/cabinet.png",
+             "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/cabinet.png",
+             "icon_name": "CABINET",
+             "icon_color": "ICON_SECONDARY"
+            }
+           }
+          },
+          {
+           "widget_type": "FEATURE_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.FeatureRowData",
+            "title": "جنس کف سرامیک",
+            "has_divider": true,
+            "icon": {
+             "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/texture.png",
+             "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/texture.png",
+             "icon_name": "TEXTURE",
+             "icon_color": "ICON_SECONDARY"
+            }
+           }
+          },
+          {
+           "widget_type": "FEATURE_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.FeatureRowData",
+            "title": "سرمایش کولر آبی",
+            "has_divider": true,
+            "icon": {
+             "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/snowflake.png",
+             "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/snowflake.png",
+             "icon_name": "SNOWFLAKE",
+             "icon_color": "ICON_SECONDARY"
+            }
+           }
+          },
+          {
+           "widget_type": "FEATURE_ROW",
+           "data": {
+            "@type": "type.googleapis.com/widgets.FeatureRowData",
+            "title": "تأمین\u200cکننده آب گرم پکیج",
+            "icon": {
+             "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/thermometer.png",
+             "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/thermometer.png",
+             "icon_name": "THERMOMETER",
+             "icon_color": "ICON_SECONDARY"
+            }
+           }
+          }
+         ]
+        }
+       }
+      },
+      "has_divider": true,
+      "icon": {},
+      "has_arrow": true,
+      "last_notification_date": "0001-01-01T00:00:00Z",
+      "fullwidth": true
+     },
+     "action_log": {
+      "server_side_info": {
+       "info": {
+        "@type": "type.googleapis.com/action_log.ViewPostFeaturesInfo",
+        "post_token": "gaSfxzZ8"
+       },
+       "item_type": {
+        "type": "VIEW_POST_FEATURES"
+       }
+      },
+      "enabled": true
+     }
+    },
+    {
+     "widget_type": "SELECTOR_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.SelectorRowData",
+      "title": "بررسی و کارشناسی",
+      "action": {
+       "type": "OPEN_PAGE",
+       "payload": {
+        "@type": "type.googleapis.com/widgets.OpenPagePayload",
+        "request_http_method": "POST",
+        "request_data": {
+         "@type": "type.googleapis.com/service_providers.GetServiceProvidersPageRequest.RequestData",
+         "source_v2": "DEMAND_POST",
+         "filter": {
+          "service_types": [
+           "REPORT_INSPECTION"
+          ],
+          "city_id": 1,
+          "category": "apartment-rent",
+          "post_token": "gaSfxzZ8",
+          "touchpoint": "DEMAND_POST"
+         },
+         "action_data_builder": {
+          "conversation_id": "gaSfxzZ8",
+          "post_token": "gaSfxzZ8",
+          "touchpoint": "DEMAND_POST",
+          "source": "DEMAND_POST",
+          "lead_source": "DEMAND"
+         },
+         "display_data": {
+          "page_title": "بررسی و کارشناسی"
+         },
+         "trace_id": "6a170475-29dd-4b0d-b9b8-9c6b0f46b946",
+         "source": "DEMAND_POST",
+         "lead_source": "DEMAND"
+        },
+        "specification": {
+         "@type": "type.googleapis.com/widgets.OpenPagePayload.SimplePageSpecification"
+        },
+        "is_modal": true,
+        "rest_request_path": "/v8/open-platform/service-providers",
+        "grpc_request_path": "/service_providers.ServiceProviders/GetServiceProvidersPage"
+       }
+      },
+      "has_divider": true,
+      "icon": {
+       "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/article-magnifier.png",
+       "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/article-magnifier.png",
+       "icon_name": "ARTICLE_MAGNIFIER",
+       "icon_color": "ICON_SECONDARY"
+      },
+      "has_arrow": true,
+      "last_notification_date": "0001-01-01T00:00:00Z"
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "TAGS",
+   "widgets": [
+    {
+     "widget_type": "WRAPPER_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.WrapperRowData",
+      "chip_list": {
+       "chips": [
+        {
+         "text": "اجارهٔ آپارتمان",
+         "type": "ACTION",
+         "action": {
+          "type": "OPEN_POSTLIST_PAGE_GRPC",
+          "payload": {
+           "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+           "search_data": {
+            "form_data": {
+             "data": {
+              "category": {
+               "str": {
+                "value": "apartment-rent"
+               }
+              }
+             }
+            }
+           },
+           "source_view": "CATEGORY_BREAD_CRUMB",
+           "source_view_str": "CATEGORY_BREAD_CRUMB"
+          }
+         }
+        },
+        {
+         "text": "اجارهٔ آپارتمان در ارامنه",
+         "type": "ACTION",
+         "action": {
+          "type": "OPEN_POSTLIST_PAGE_GRPC",
+          "payload": {
+           "@type": "type.googleapis.com/widgets.OpenPostListPageGRPCPayload",
+           "search_data": {
+            "form_data": {
+             "data": {
+              "category": {
+               "str": {
+                "value": "apartment-rent"
+               }
+              },
+              "districts": {
+               "repeated_string": {
+                "value": [
+                 "131"
+                ]
+               }
+              }
+             }
+            }
+           },
+           "source_view": "CATEGORY_BREAD_CRUMB",
+           "source_view_str": "CATEGORY_BREAD_CRUMB"
+          }
+         }
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "MAP",
+   "widgets": [
+    {
+     "widget_type": "MAP_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.MapRowData",
+      "location": {
+       "exact_data": {
+        "point": {
+         "latitude": 35.722982464614,
+         "longitude": 51.460563657123
+        }
+       }
+      },
+      "image_url": "https://mapimage.divarcdn.com/v8/mapimage?encrypted_data=MTIzNDU2Nzg5MTIzXN7jbiHUy6zuQts_0p7dYfpL4B6I_2NJSZ8cTTf9vNDetg=="
+     },
+     "action_log": {
+      "server_side_info": {
+       "info": {
+        "@type": "type.googleapis.com/action_log.MapInfo",
+        "post_token": "gaSfxzZ8"
+       },
+       "item_type": {
+        "type": "MAP"
+       }
+      },
+      "enabled": true
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "NOTE",
+   "widgets": [
+    {
+     "widget_type": "NOTE",
+     "data": {
+      "@type": "type.googleapis.com/widgets.NoteData",
+      "title": "یادداشت من",
+      "button_title": "ویرایش یادداشت",
+      "post_token": "gaSfxzZ8",
+      "icon_button": {
+       "icon": {
+        "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/more_vert.png",
+        "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/more_vert.png",
+        "icon_name": "MORE_VERT",
+        "icon_color": "ICON_SECONDARY"
+       },
+       "action": {
+        "type": "LOAD_MENU",
+        "payload": {
+         "@type": "type.googleapis.com/widgets.LoadMenuPayload",
+         "menu": {
+          "items": [
+           {
+            "text": "ویرایش یادداشت",
+            "icon": {
+             "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/edit.png",
+             "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/edit.png",
+             "icon_name": "EDIT",
+             "icon_color": "ICON_SECONDARY"
+            },
+            "action": {
+             "type": "NOTE",
+             "payload": {
+              "@type": "type.googleapis.com/widgets.NotePayload",
+              "post_token": "gaSfxzZ8",
+              "max_character_count": 256
+             }
+            },
+            "alignment": "RIGHT"
+           },
+           {
+            "text": "حذف یادداشت",
+            "icon": {
+             "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_primary/v1/trash_o.png",
+             "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_primary/v1/trash_o.png",
+             "icon_name": "TRASH_O",
+             "icon_color": "ICON_PRIMARY"
+            },
+            "action": {
+             "type": "MAKE_NETWORK_CALL",
+             "payload": {
+              "@type": "type.googleapis.com/widgets.MakeNetworkCallPayload",
+              "grpc_request_path": "/yaad_v2.YaadV2/DeleteNoteV2",
+              "rest_request_path": "/yaad/delete-note-v2",
+              "request_data": {
+               "@type": "type.googleapis.com/yaad_v2.DeleteNoteV2Request.RequestData",
+               "token": "gaSfxzZ8"
+              },
+              "needs_auth": true
+             }
+            },
+            "alignment": "RIGHT",
+            "state": "STATE_NEGATIVE"
+           }
+          ],
+          "banner": {}
+         },
+         "display_type": "LOAD_MENU_DISPLAY_TYPE_BOTTOM_SHEET"
+        }
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "section_name": "STATIC",
+   "widgets": [
+    {
+     "widget_type": "SELECTOR_ROW",
+     "data": {
+      "@type": "type.googleapis.com/widgets.SelectorRowData",
+      "title": "گزارش آگهی",
+      "action": {
+       "type": "OPEN_FORM_PAGE",
+       "payload": {
+        "@type": "type.googleapis.com/widgets.OpenFormPagePayload",
+        "grpc_servicer": "/post_quality.PostQualityFeedback/GetFeedbackForm",
+        "request_data": {
+         "@type": "type.googleapis.com/post_quality.GetFeedbackFormRequest.RequestData",
+         "post_token": "gaSfxzZ8"
+        },
+        "rest_request_path": "/v8/post-quality/feedback-form"
+       }
+      },
+      "has_divider": true,
+      "icon": {
+       "image_url_dark": "https://s100.divarcdn.com/static/imgs/widget-icons/dark/icon_secondary/v1/report.png",
+       "image_url_light": "https://s100.divarcdn.com/static/imgs/widget-icons/light/icon_secondary/v1/report.png",
+       "icon_name": "REPORT",
+       "icon_color": "ICON_SECONDARY"
+      },
+      "last_notification_date": "0001-01-01T00:00:00Z"
+     }
+    }
+   ]
+  }
+ ],
+ "share": {
+  "title": "آپارتمان 54متر خوش نقشه",
+  "web_url": "https://divar.ir/v/gaSfxzZ8"
+ },
+ "seo": {
+  "title": "اجاره آپارتمان 54متر خوش نقشه در تهران - ۵ آبان ۱۴۰۵",
+  "description": "آگهی آپارتمان 54متر خوش نقشه در دیوار تهران",
+  "android_package_name": "ir.divar",
+  "android_app_url": "android-app://ir.divar/http/v/آپارتمان 54متر خوش نقشه/gaSfxzZ8/",
+  "web_info": {
+   "title": "آپارتمان 54متر خوش نقشه",
+   "district_persian": "ارامنه",
+   "city_persian": "تهران",
+   "category_slug_persian": "اجارهٔ آپارتمان"
+  },
+  "unavailable_after": "2026-11-19T12:34:03.729057",
+  "bread_crumb": [
+   {
+    "name": "اجارهٔ آپارتمان",
+    "search_data": {
+     "form_data": {
+      "data": {
+       "category": {
+        "str": {
+         "value": "apartment-rent"
+        }
+       },
+       "districts": {
+        "repeated_string": {
+         "value": [
+          "131"
+         ]
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "name": "اجارهٔ مسکونی",
+    "search_data": {
+     "form_data": {
+      "data": {
+       "category": {
+        "str": {
+         "value": "residential-rent"
+        }
+       },
+       "districts": {
+        "repeated_string": {
+         "value": [
+          "131"
+         ]
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "name": "املاک",
+    "search_data": {
+     "form_data": {
+      "data": {
+       "category": {
+        "str": {
+         "value": "real-estate"
+        }
+       },
+       "districts": {
+        "repeated_string": {
+         "value": [
+          "131"
+         ]
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "name": "ارامنه",
+    "search_data": {
+     "form_data": {
+      "data": {
+       "districts": {
+        "repeated_string": {
+         "value": [
+          "131"
+         ]
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "name": "1",
+    "search_data": {
+     "form_data": {}
+    }
+   },
+   {
+    "name": "دیوار"
+   }
+  ],
+  "post_seo_schema": {
+   "@type": "Apartment",
+   "url": "https://divar.ir/v/آپارتمان-54متر-خوش-نقشه/gaSfxzZ8",
+   "web_info": {
+    "category_slug_persian": "اجارهٔ آپارتمان",
+    "title": "آپارتمان 54متر خوش نقشه",
+    "city_persian": "تهران",
+    "district_persian": "ارامنه"
+   },
+   "accommodationCategory": "اجارهٔ آپارتمان",
+   "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": "54",
+    "unitCode": "MTK"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "address": "تهران, ارامنه",
+    "latitude": "35.722982464614",
+    "longitude": "51.460563657123"
+   },
+   "numberOfRooms": "یک",
+   "@context": "https://schema.org",
+   "name": "آپارتمان 54متر خوش نقشه",
+   "description": "آپارتمان 54 متر خوش نقشه \nطبقه دوم \nواحد تو سلمان فارسی هست \nتک خواب \nپارکینگ غیر مزاحم \nسالن مربع پرده خور \nواحد تمیز قشنگ \nکمسیون توافقی \nکابینت هایگلاس \nکف سرامیک \n4تا تک واحدی \nسرمایش کولر آبی \nگرمایش بخاری\nواحد تخلیه هست \nسرویس حموم دستشویی جدا \nنورگیر عالی مستقیم \nدسترسی 4دقیقه به مترو مدنی \nدسترسی 3 دقیقه ای به اتوبان امام علی \nمشاور املاک سیاوش \nمشاور شما بهار",
+   "image": "https://s100.divarcdn.com/static/photo/neda/webp_post/n5MmZditfQsLlJn9PuMSWw/79ef41b0-b827-4d3e-98f3-7b430acd22e7.webp"
+  },
+  "image_url": "https://s100.divarcdn.com/static/photo/neda/post/SHxw7TFVq9oV0sPbT_tuWg/79ef41b0-b827-4d3e-98f3-7b430acd22e7.jpg"
+ },
+ "contact": {
+  "chat_enabled": true,
+  "action_log": {
+   "server_side_info": {
+    "info": {
+     "@type": "type.googleapis.com/action_log.ContactInfoInfo",
+     "post_token": "gaSfxzZ8",
+     "method_name": "GetContactWeb",
+     "contact_uuid": "f2a33eb1-43c1-4ab4-9b2b-ba00d82a8731"
+    },
+    "item_type": {
+     "type": "CONTACT_INFO"
+    }
+   },
+   "enabled": true
+  },
+  "contact_uuid": "f2a33eb1-43c1-4ab4-9b2b-ba00d82a8731",
+  "chat_action_log": {
+   "server_side_info": {
+    "info": {
+     "@type": "type.googleapis.com/action_log.ContactMethodInfo",
+     "post_token": "gaSfxzZ8",
+     "contact_method": "CHAT"
+    },
+    "item_type": {
+     "type": "CONTACT_METHOD"
+    }
+   },
+   "enabled": true
+  }
+ },
+ "webengage": {
+  "cat_1": "real-estate",
+  "gender": "",
+  "category": "apartment-rent",
+  "cat_2": "residential-rent",
+  "token": "gaSfxzZ8",
+  "brand_model": "",
+  "status": "",
+  "business_type": "personal",
+  "price": 0,
+  "city": "tehran",
+  "originality": "",
+  "source_view": "",
+  "district": "aramaneh",
+  "rent": 9000000,
+  "image_count": 10,
+  "cat_3": "apartment-rent",
+  "credit": 700000000,
+  "business_ref": ""
+ },
+ "analytics": {
+  "cat1": "real-estate",
+  "cat2": "residential-rent",
+  "cat3": "apartment-rent",
+  "city": "tehran"
+ },
+ "city": {
+  "city_id": "1",
+  "name": "تهران",
+  "parent_id": "904",
+  "second_slug": "tehran"
+ }
+}

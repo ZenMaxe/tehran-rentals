@@ -1,0 +1,875 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-28T20:01:02Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 3178384475,
+  "lat": 35.7407122,
+  "lon": 51.4647315,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "check_date:shelter": "2021-08-24",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "مجیدیه",
+    "public_transport": "platform",
+    "ref": "2345",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3994783441,
+  "lat": 35.7450755,
+  "lon": 51.4833862,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "شمس‌آباد مجیدیه شرقی",
+    "name:en": "East Shamsabad Majidiyeh",
+    "name:fa": "شمس‌آباد مجیدیه شرقی",
+    "public_transport": "platform",
+    "ref": "2566"
+  }
+},
+{
+  "type": "node",
+  "id": 4174121597,
+  "lat": 35.7372171,
+  "lon": 51.4642483,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "مجیدیه",
+    "public_transport": "platform",
+    "shelter": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4728437091,
+  "lat": 35.7473835,
+  "lon": 51.5368459,
+  "tags": {
+    "addr:street": "آرش تیرانداز",
+    "amenity": "restaurant",
+    "name": "بابک بریانک",
+    "name:en": "Babak Beryanak",
+    "operator": "marziyeh"
+  }
+},
+{
+  "type": "node",
+  "id": 4795520574,
+  "lat": 35.6951438,
+  "lon": 51.3784923,
+  "tags": {
+    "amenity": "taxi",
+    "name": "مترو نواب - بریانک"
+  }
+},
+{
+  "type": "node",
+  "id": 4832252322,
+  "lat": 35.7345487,
+  "lon": 51.4624641,
+  "tags": {
+    "amenity": "clinic",
+    "healthcare": "clinic",
+    "name": "درمانگاه مجیدیه"
+  }
+},
+{
+  "type": "node",
+  "id": 4981028494,
+  "lat": 35.6730670,
+  "lon": 51.3808527,
+  "tags": {
+    "name": "ایستگاه مترو بریانک",
+    "name:en": "Beryanak metro station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5190423572,
+  "lat": 35.6727749,
+  "lon": 51.3808715,
+  "tags": {
+    "leisure": "pitch",
+    "mobile": "+98 912 519 3154",
+    "name": "اسکیت سنتر شعبه بریانک",
+    "sport": "skateboard",
+    "website": "https://www.skatecenter.ir/"
+  }
+},
+{
+  "type": "node",
+  "id": 5637867678,
+  "lat": 35.6752015,
+  "lon": 51.3769458,
+  "tags": {
+    "name": "بریانک",
+    "name:en": "Beryanak",
+    "place": "neighbourhood",
+    "wikidata": "Q2899800"
+  }
+},
+{
+  "type": "node",
+  "id": 6172365019,
+  "lat": 35.7357141,
+  "lon": 51.4656043,
+  "tags": {
+    "name": "مجیدیه",
+    "name:en": "Majidieh",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 7055118065,
+  "lat": 35.7455164,
+  "lon": 51.4725976,
+  "tags": {
+    "amenity": "library",
+    "name": "کتابخانه علامه طباطبایی مجیدیه"
+  }
+},
+{
+  "type": "node",
+  "id": 7691023436,
+  "lat": 35.7488201,
+  "lon": 51.4784782,
+  "tags": {
+    "amenity": "police",
+    "name": "کلانتری ۱۹۰ مجیدیه"
+  }
+},
+{
+  "type": "node",
+  "id": 8073377330,
+  "lat": 35.7413765,
+  "lon": 51.4607398,
+  "tags": {
+    "name": "پل شهدا مجیدیه",
+    "place": "locality"
+  }
+},
+{
+  "type": "node",
+  "id": 8377844992,
+  "lat": 35.7450081,
+  "lon": 51.4833469,
+  "tags": {
+    "bench": "yes",
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "شمس‌آباد مجیدیه غربی",
+    "name:en": "West Shamsabad Majidiyeh",
+    "name:fa": "شمس‌آباد مجیدیه غربی",
+    "public_transport": "platform",
+    "ref": "2468"
+  }
+},
+{
+  "type": "node",
+  "id": 8687808117,
+  "lat": 35.7784949,
+  "lon": 51.3629329,
+  "tags": {
+    "amenity": "fast_food",
+    "name": "بریانکده مرغ سبز"
+  }
+},
+{
+  "type": "node",
+  "id": 9082879817,
+  "lat": 35.7365826,
+  "lon": 51.4640412,
+  "tags": {
+    "name": "پارچه سرای دیبا (مجیدیه جنوبی)",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "node",
+  "id": 10717329205,
+  "lat": 35.7318820,
+  "lon": 51.5252611,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "chicken",
+    "name": "بریانکده مرغ سبز"
+  }
+},
+{
+  "type": "node",
+  "id": 11264400154,
+  "lat": 35.6414338,
+  "lon": 51.4116901,
+  "tags": {
+    "addr:city": "شهر تهران",
+    "addr:street": "شهید رجایی",
+    "amenity": "restaurant",
+    "cuisine": "kebab;chicken",
+    "name": "بریانکده تاج محل",
+    "opening_hours": "Mo-Su 09:00-21:00",
+    "phone": "+98930398504"
+  }
+},
+{
+  "type": "node",
+  "id": 11368007120,
+  "lat": 35.7345331,
+  "lon": 51.4691044,
+  "tags": {
+    "name": "قهوه مجیدیه",
+    "shop": "coffee"
+  }
+},
+{
+  "type": "node",
+  "id": 11544139309,
+  "lat": 35.7995167,
+  "lon": 51.4409327,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "بریانکده دو آتیشه آیدا",
+    "opening_hours": "Mo-Su 12:00-24:00",
+    "phone": "09395140163"
+  }
+},
+{
+  "type": "node",
+  "id": 12045371812,
+  "lat": 35.7614973,
+  "lon": 51.3291528,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "بریانکده نظری"
+  }
+},
+{
+  "type": "node",
+  "id": 12298819583,
+  "lat": 35.7368606,
+  "lon": 51.4736431,
+  "tags": {
+    "addr:city": "تهران",
+    "addr:housenumber": "77",
+    "addr:street": "خیابان کرمان خیابان محمدرحیم صافی",
+    "mobile": "+98 939 816 9991",
+    "name": "کافی نت مجیدیه",
+    "payment:cash": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+98 21 2253 4854",
+    "shop": "computer"
+  }
+},
+{
+  "type": "node",
+  "id": 12617895686,
+  "lat": 35.7335871,
+  "lon": 51.4670579,
+  "tags": {
+    "name": "نان سحر مجیدیه",
+    "opening_hours": "09:00-21:00",
+    "phone": "02188417761",
+    "shop": "pastry"
+  }
+},
+{
+  "type": "node",
+  "id": 12618388593,
+  "lat": 35.7436230,
+  "lon": 51.4733350,
+  "tags": {
+    "name": "نان شیرینی روز مجیدیه",
+    "opening_hours": "07:30-23:45",
+    "phone": "09196206510",
+    "shop": "pastry"
+  }
+},
+{
+  "type": "node",
+  "id": 12964475161,
+  "lat": 35.7237121,
+  "lon": 51.3161087,
+  "tags": {
+    "addr:city": "تهران",
+    "addr:street": "بلوار فردوس",
+    "craft": "caterer",
+    "cuisine": "chicken",
+    "name": "بریانکده مجید"
+  }
+},
+{
+  "type": "node",
+  "id": 13190593751,
+  "lat": 35.7377103,
+  "lon": 51.4615176,
+  "tags": {
+    "name": "مجیدیه جنوبی",
+    "name:en": "South Majidieh",
+    "place": "neighbourhood"
+  }
+},
+{
+  "type": "node",
+  "id": 13232475669,
+  "lat": 35.7582160,
+  "lon": 51.4786679,
+  "tags": {
+    "name": "نیرو موتور مجیدیه",
+    "shop": "motorcycle"
+  }
+},
+{
+  "type": "node",
+  "id": 13429980477,
+  "lat": 35.6737087,
+  "lon": 51.3805375,
+  "tags": {
+    "name": "دفتر خدمات الکترونیک قضایی بریانک",
+    "office": "notary",
+    "opening_hours": "08:00-15:00",
+    "phone": "02155439565"
+  }
+},
+{
+  "type": "node",
+  "id": 14019437368,
+  "lat": 35.6722085,
+  "lon": 51.3809964,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "بریانک",
+    "name:en": "Beryanak",
+    "name:fa": "بریانک",
+    "public_transport": "platform",
+    "ref": "4426"
+  }
+},
+{
+  "type": "node",
+  "id": 14049446156,
+  "lat": 35.7400466,
+  "lon": 51.4680636,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "مجیدیه",
+    "public_transport": "platform",
+    "ref": "2343"
+  }
+},
+{
+  "type": "node",
+  "id": 14052245494,
+  "lat": 35.7330891,
+  "lon": 51.4685728,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "شانزده متری مجیدیه",
+    "public_transport": "platform",
+    "ref": "4187"
+  }
+},
+{
+  "type": "node",
+  "id": 14053316897,
+  "lat": 35.7419931,
+  "lon": 51.4676502,
+  "tags": {
+    "bus": "yes",
+    "highway": "bus_stop",
+    "name": "چهارراه مجیدیه",
+    "public_transport": "platform",
+    "ref": "2495"
+  }
+},
+{
+  "type": "way",
+  "id": 36327235,
+  "center": {
+    "lat": 35.6738111,
+    "lon": 51.3768964
+  },
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "بلوار بریانک غربی",
+    "name:en": "West Beryanak Boulevard",
+    "name:fa": "بلوار بریانک غربی",
+    "oneway": "yes",
+    "ref": "596",
+    "source": "yahoo",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 151931150,
+  "center": {
+    "lat": 35.7368410,
+    "lon": 51.4640151
+  },
+  "tags": {
+    "highway": "secondary",
+    "loc_name": "مجیدیه جنوبی",
+    "maxspeed": "50",
+    "name": "مجیدیه(استاد حسن بنا)",
+    "name:en": "Majidyeh(Ostad Hasan-e Banna)",
+    "old_name": "مجیدیه جنوبی",
+    "oneway": "yes",
+    "ref": "123",
+    "shahrdari:districts": "4;7",
+    "shahrdari:name:main": "استاد حسن بنا",
+    "shahrdari:name:raw": "استاد حسن بنا"
+  }
+},
+{
+  "type": "way",
+  "id": 197781335,
+  "center": {
+    "lat": 35.6734415,
+    "lon": 51.3822362
+  },
+  "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "بلوار بریانک شرقی",
+    "name:en": "East Beryanak Boulevard",
+    "name:fa": "بلوار بریانک شرقی",
+    "oneway": "yes",
+    "ref": "606",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 197781336,
+  "center": {
+    "lat": 35.6735521,
+    "lon": 51.3823474
+  },
+  "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "بلوار بریانک شرقی",
+    "name:en": "East Beryanak Boulevard",
+    "name:fa": "بلوار بریانک شرقی",
+    "oneway": "yes",
+    "ref": "606",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 312747597,
+  "center": {
+    "lat": 35.7471709,
+    "lon": 51.4709584
+  },
+  "tags": {
+    "alt_name": "مجیدیه شمالی",
+    "highway": "secondary",
+    "lanes": "2",
+    "loc_name": "مجیدیه شمالی",
+    "maxspeed": "50",
+    "name": "استاد حسن بنا(مجیدیه)",
+    "name:en": "Ostad Hasan-e Banna(Majidieh)",
+    "old_name": "مجیدیه شمالی",
+    "ref": "123",
+    "shahrdari:districts": "4;7",
+    "shahrdari:name:main": "استاد حسن بنا",
+    "shahrdari:name:raw": "استاد حسن بنا",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 426490728,
+  "center": {
+    "lat": 35.6742795,
+    "lon": 51.3731894
+  },
+  "tags": {
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "maxspeed": "20",
+    "name": "میدان بریانک",
+    "name:en": "Beryanak Sq.",
+    "name:fa": "میدان بریانک",
+    "oneway": "yes",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 426490731,
+  "center": {
+    "lat": 35.6738792,
+    "lon": 51.3768994
+  },
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "بلوار بریانک غربی",
+    "name:en": "West Beryanak Boulevard",
+    "name:fa": "بلوار بریانک غربی",
+    "oneway": "yes",
+    "ref": "596",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 429890394,
+  "center": {
+    "lat": 35.7446783,
+    "lon": 51.4720966
+  },
+  "tags": {
+    "leisure": "park",
+    "name": "بوستان مجیدیه"
+  }
+},
+{
+  "type": "way",
+  "id": 429890399,
+  "center": {
+    "lat": 35.7440902,
+    "lon": 51.4737379
+  },
+  "tags": {
+    "building": "yes",
+    "name": "بازار میوه و تره بارمجیدیه",
+    "shop": "greengrocer"
+  }
+},
+{
+  "type": "way",
+  "id": 484065676,
+  "center": {
+    "lat": 35.6736778,
+    "lon": 51.3806813
+  },
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "1",
+    "maxheight": "4.5",
+    "maxspeed": "50",
+    "name": "بلوار بریانک غربی",
+    "name:en": "West Beryanak Boulevard",
+    "name:fa": "بلوار بریانک غربی",
+    "oneway": "yes",
+    "ref": "596",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 492126778,
+  "center": {
+    "lat": 35.6739605,
+    "lon": 51.3826966
+  },
+  "tags": {
+    "building": "yes",
+    "leisure": "fitness_centre",
+    "name": "سالن ورزشی شهدای بریانک",
+    "name:en": "Fitness Center"
+  }
+},
+{
+  "type": "way",
+  "id": 552805437,
+  "center": {
+    "lat": 35.7323458,
+    "lon": 51.4604343
+  },
+  "tags": {
+    "highway": "secondary",
+    "loc_name": "مجیدیه جنوبی",
+    "maxspeed": "50",
+    "name": "مجیدیه(استاد حسن بنا)",
+    "old_name": "مجیدیه جنوبی",
+    "oneway": "yes",
+    "ref": "123",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 678594658,
+  "center": {
+    "lat": 35.6730830,
+    "lon": 51.3808200
+  },
+  "tags": {
+    "addr:city": "تهران",
+    "addr:street": "بزرگراه نواب صفوی",
+    "building": "transportation",
+    "internet_access": "no",
+    "name": "ایستگاه مترو بریانک",
+    "name:ar": "بريانك",
+    "name:en": "Beryanak metro station",
+    "name:fa": "بریانک",
+    "name:hi": "बिर्यानक",
+    "name:ml": "ബെർയാനക്ക്",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wikidata": "Q31069765",
+    "wikipedia": "fa:ایستگاه متروی بریانک"
+  }
+},
+{
+  "type": "way",
+  "id": 680178844,
+  "center": {
+    "lat": 35.7433810,
+    "lon": 51.4685984
+  },
+  "tags": {
+    "alt_name": "مجیدیه شمالی",
+    "highway": "secondary",
+    "lanes": "2",
+    "loc_name": "مجیدیه شمالی",
+    "maxspeed": "50",
+    "name": "استاد حسن بنا(مجیدیه)",
+    "name:en": "Ostad Hasan-e Banna(Majidieh)",
+    "old_name": "مجیدیه شمالی",
+    "oneway": "yes",
+    "ref": "123",
+    "shahrdari:districts": "4;7",
+    "shahrdari:name:main": "استاد حسن بنا",
+    "shahrdari:name:raw": "استاد حسن بنا",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 712131796,
+  "center": {
+    "lat": 35.7522312,
+    "lon": 51.4847179
+  },
+  "tags": {
+    "amenity": "community_centre",
+    "name": "سرای محله مجیدیه و شمس آباد"
+  }
+},
+{
+  "type": "way",
+  "id": 764338693,
+  "center": {
+    "lat": 35.6736699,
+    "lon": 51.3815459
+  },
+  "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "بلوار بریانک شرقی",
+    "name:en": "East Beryanak Boulevard",
+    "name:fa": "بلوار بریانک شرقی",
+    "oneway": "yes",
+    "ref": "606",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 832683503,
+  "center": {
+    "lat": 35.6707903,
+    "lon": 51.3746099
+  },
+  "tags": {
+    "leisure": "sports_centre",
+    "name": "مجموعه ورزشی بریانک"
+  }
+},
+{
+  "type": "way",
+  "id": 998137630,
+  "center": {
+    "lat": 35.7413715,
+    "lon": 51.4668860
+  },
+  "tags": {
+    "alt_name": "مجیدیه شمالی",
+    "highway": "secondary",
+    "lanes": "2",
+    "loc_name": "مجیدیه شمالی",
+    "maxspeed": "50",
+    "name": "استاد حسن بنا(مجیدیه)",
+    "name:en": "Ostad Hasan-e Banna(Majidieh)",
+    "old_name": "مجیدیه شمالی",
+    "oneway": "yes",
+    "ref": "123",
+    "shahrdari:districts": "4;7",
+    "shahrdari:name:main": "استاد حسن بنا",
+    "shahrdari:name:raw": "استاد حسن بنا",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1183461747,
+  "center": {
+    "lat": 35.6734827,
+    "lon": 51.3807480
+  },
+  "tags": {
+    "highway": "tertiary",
+    "lanes": "1",
+    "maxspeed": "50",
+    "name": "بلوار بریانک غربی",
+    "name:en": "West Beryanak Boulevard",
+    "name:fa": "بلوار بریانک غربی",
+    "oneway": "yes",
+    "ref": "596",
+    "source": "yahoo",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1230180203,
+  "center": {
+    "lat": 35.7510149,
+    "lon": 51.4735569
+  },
+  "tags": {
+    "alt_name": "مجیدیه شمالی",
+    "highway": "secondary",
+    "lanes": "2",
+    "loc_name": "مجیدیه شمالی",
+    "maxspeed": "50",
+    "name": "استاد حسن بنا(مجیدیه)",
+    "name:en": "Ostad Hasan-e Banna(Majidieh)",
+    "old_name": "مجیدیه شمالی",
+    "ref": "123",
+    "shahrdari:districts": "4;7",
+    "shahrdari:name:main": "استاد حسن بنا",
+    "shahrdari:name:raw": "استاد حسن بنا",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "way",
+  "id": 1545018756,
+  "center": {
+    "lat": 35.7533298,
+    "lon": 51.4754690
+  },
+  "tags": {
+    "alt_name": "مجیدیه شمالی",
+    "highway": "secondary",
+    "lanes": "2",
+    "loc_name": "مجیدیه شمالی",
+    "maxspeed": "50",
+    "name": "استاد حسن بنا(مجیدیه)",
+    "name:en": "Ostad Hasan-e Banna(Majidieh)",
+    "old_name": "مجیدیه شمالی",
+    "ref": "123",
+    "shahrdari:districts": "4;7",
+    "shahrdari:name:main": "استاد حسن بنا",
+    "shahrdari:name:raw": "استاد حسن بنا",
+    "surface": "asphalt"
+  }
+},
+{
+  "type": "relation",
+  "id": 7682680,
+  "center": {
+    "lat": 35.6730830,
+    "lon": 51.3808200
+  },
+  "tags": {
+    "name": "ایستگاه مترو بریانک",
+    "name:en": "Beryanak metro station",
+    "public_transport": "stop_area",
+    "type": "public_transport"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321741,
+  "center": {
+    "lat": 35.6749790,
+    "lon": 51.3772905
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بریانک",
+    "name:en": "Beryanak",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q2899800"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167434,
+  "center": {
+    "lat": 35.7355130,
+    "lon": 51.4663928
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مجیدیه",
+    "name:en": "Majidieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19673419,
+  "center": {
+    "lat": 35.7355380,
+    "lon": 51.4624188
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مجیدیه جنوبی",
+    "name:en": "South Majidieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+}
+
+  ]
+}

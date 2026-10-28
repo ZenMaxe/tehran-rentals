@@ -1,0 +1,7058 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-28T22:02:42Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "relation",
+  "id": 443307,
+  "members": [
+    {
+      "type": "node",
+      "ref": 10860300370,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5161529740,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732956,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3930789262,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732950,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732984,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4558309639,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 654081655,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4452444057,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732952,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5162910434,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660624968,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5188247276,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5188341404,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 6438071583,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14075125226,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4544628125,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732969,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732980,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4553519985,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1167734827,
+      "role": "inactive"
+    },
+    {
+      "type": "way",
+      "ref": 1167734826,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562335,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562330,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562332,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562331,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562333,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 461961970,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 531786471,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 51766788,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 911325099,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "yellow",
+    "from": "علامه جعفری",
+    "name": "خط ۴",
+    "name:de": "Linie 4",
+    "name:en": "Line 4",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "4",
+    "route": "subway",
+    "to": "شهید کلاهدوز",
+    "type": "route",
+    "wikidata": "Q20110121",
+    "wikipedia": "en:Tehran Metro Line 4"
+  }
+},
+{
+  "type": "relation",
+  "id": 2431321,
+  "members": [
+    {
+      "type": "node",
+      "ref": 4453643066,
+      "role": "stop_entry_only"
+    },
+    {
+      "type": "node",
+      "ref": 2120217849,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 864404756,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5183625749,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4452329924,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 654082162,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778792864,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3691224155,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5186262280,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 659784460,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 659782107,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660627035,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660628277,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660628303,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660628364,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3080821096,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4674995987,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660628705,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660628852,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031505,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660628921,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169691367,
+      "role": "stop_exit_only"
+    },
+    {
+      "type": "way",
+      "ref": 182547031,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 28745590,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 448212350,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 439856575,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1278615273,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1474345789,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 531784904,
+      "role": "inactive"
+    }
+  ],
+  "tags": {
+    "colour": "#003380",
+    "from": "تهران(صادقیه)",
+    "name": "خط ۲: صادقیه به فرهنگسرا",
+    "name:de": "Linie 2",
+    "name:en": "Line 2: Sadeghiyeh → Farhangsara",
+    "name:fa": "خط ۲: صادقیه به فرهنگسرا",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "fa:متروی تهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "2",
+    "route": "subway",
+    "to": "فرهنگسرا",
+    "type": "route",
+    "wikidata": "Q20110119"
+  }
+},
+{
+  "type": "relation",
+  "id": 5366249,
+  "members": [
+    {
+      "type": "node",
+      "ref": 3778861797,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861792,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861791,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861790,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861789,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 12457390951,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4453205974,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14072135589,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861786,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 12457390952,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14071134416,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5188238058,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2831259303,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2831259315,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10760685494,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732979,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3649760926,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4453224428,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 12457390950,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3641204693,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5190555599,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3649760928,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4453604919,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4453614390,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3649760925,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 561284303,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 278822219,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360429886,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 783749669,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 358622226,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360429884,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1543181085,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 445967481,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#00aad4",
+    "from": "آزادگان",
+    "name": "خط ٣",
+    "name:de": "U-Bahn-Linie 3",
+    "name:en": "Line 3",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "3",
+    "route": "subway",
+    "to": "قائم",
+    "type": "route",
+    "wikidata": "Q20110120",
+    "wikipedia": "en:Tehran Metro Line 3"
+  }
+},
+{
+  "type": "relation",
+  "id": 5617782,
+  "members": [
+    {
+      "type": "node",
+      "ref": 3805138139,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874684,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874675,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874671,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874668,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138138,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874659,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138137,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874657,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138136,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138135,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138134,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874599,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874586,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874579,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138133,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138132,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138130,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138131,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874212,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "way",
+      "ref": 736935700,
+      "role": "inactive"
+    },
+    {
+      "type": "way",
+      "ref": 503177076,
+      "role": "inactive"
+    },
+    {
+      "type": "way",
+      "ref": 1150403420,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1427681980,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 377124182,
+      "role": "inactive"
+    }
+  ],
+  "tags": {
+    "colour": "#58e558",
+    "from": "۴۵ متری گلشهر",
+    "name": "خط ۲",
+    "name:en": "Line 2",
+    "name:fr": "ligne 2",
+    "network": "مترو کرج",
+    "operator": "سازمان قطار شهری کرج و حومه",
+    "public_transport:version": "2",
+    "ref": "2",
+    "route": "subway",
+    "to": "شهید سلطانی",
+    "type": "route",
+    "wikidata": "Q116978502"
+  }
+},
+{
+  "type": "relation",
+  "id": 5697303,
+  "members": [
+    {
+      "type": "node",
+      "ref": 3853324357,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10761286147,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324358,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11263536540,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456860,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10235224668,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456838,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456823,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456820,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456806,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648882,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324374,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324397,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324399,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324412,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456757,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10759924012,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13426509301,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13426743991,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660627594,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815454729,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815454724,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9149513247,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5930756414,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324444,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815454692,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 916915022,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1119122330,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1119122331,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 461839263,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 951990654,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 931422129,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 931422128,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 378127816,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#FF5599",
+    "from": "شهید آرمان علی‌وردی (کوهسار)",
+    "name": "خط ۶",
+    "name:de": "Linie 6",
+    "name:en": "Line 6: Arman Aliverdi → Shohadaye Dowlat",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "fa:متروی تهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "6",
+    "route": "subway",
+    "to": "شهدای دولت‌آباد",
+    "type": "route",
+    "wikidata": "Q20110123"
+  }
+},
+{
+  "type": "relation",
+  "id": 6151834,
+  "members": [
+    {
+      "type": "node",
+      "ref": 5162855460,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5003695296,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2367114843,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1436350945,
+      "role": "platform"
+    },
+    {
+      "type": "node",
+      "ref": 11271470415,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1216457828,
+      "role": "platform"
+    },
+    {
+      "type": "way",
+      "ref": 411285305,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 548581300,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 548581298,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554054,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554052,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554055,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554059,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554057,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 868566180,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 868566179,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554063,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554061,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554073,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554070,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554079,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 689406409,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 689406410,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554076,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554091,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554087,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554085,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554082,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554097,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554094,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554114,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554112,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554117,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554115,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 466141447,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 466141448,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 466141435,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554118,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554120,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 466141436,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 228064677,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554121,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554122,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 228064679,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 228064683,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 100431485,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 489149261,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511554125,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358478,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358489,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358492,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358493,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358494,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358495,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358496,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358497,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358498,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358499,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358503,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358504,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358506,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358507,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358508,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358477,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1216457824,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1216457825,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1228618186,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1216457826,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1216457821,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#FF0F04",
+    "from": "شاهد",
+    "name": "خط ۱",
+    "name:de": "Linie 1: Flughafenlinie",
+    "name:en": "Line 1: Airport branch",
+    "name:fr": "branche de l'aéroport IKA",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "1",
+    "route": "subway",
+    "to": "شهر پرند",
+    "type": "route",
+    "wikidata": "Q65195214"
+  }
+},
+{
+  "type": "relation",
+  "id": 7429356,
+  "members": [
+    {
+      "type": "node",
+      "ref": 3784648857,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10746895094,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648885,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648884,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648883,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5190423569,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10126282787,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9360432983,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648880,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648879,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648769,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4981028494,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14075125224,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648877,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5193453622,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648875,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784645934,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9817359618,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784645922,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648871,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648870,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648869,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 499434599,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1156175799,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 478380205,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 485071133,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 375075389,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 511494751,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#6A00FF",
+    "from": "میدان کتاب",
+    "name": "خط ۷",
+    "name:de": "Linie 7",
+    "name:en": "Line 7",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "note": "Line 7 Northbound",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "7",
+    "route": "subway",
+    "to": "ورزشگاه تختی",
+    "type": "route",
+    "wikidata": "Q20110124",
+    "wikipedia": "fa:خط ۷ متروی تهران"
+  }
+},
+{
+  "type": "relation",
+  "id": 7683584,
+  "members": [
+    {
+      "type": "node",
+      "ref": 11417054145,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3930792665,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3930792260,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 389891675,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "yellow",
+    "name": "انشعاب خط ۴",
+    "name:de": "U-Bahn-Linie 4",
+    "name:en": "Line 4",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "4",
+    "route": "subway",
+    "type": "route",
+    "wikidata": "Q20110121",
+    "wikipedia": "en:Tehran Metro Line 4"
+  }
+},
+{
+  "type": "relation",
+  "id": 7705643,
+  "members": [
+    {
+      "type": "node",
+      "ref": 3784648869,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648870,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648871,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784645922,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9817359618,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784645934,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648875,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5193453622,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648877,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14075125224,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4981028494,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648769,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648879,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648880,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9360432983,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10126282787,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5190423569,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648883,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648884,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648885,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10746895094,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648857,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 511494751,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 375075389,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 485071133,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 478380205,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1156175799,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 499434599,
+      "role": ""
+    },
+    {
+      "type": "node",
+      "ref": 13028560658,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#6A00FF",
+    "from": "ورزشگاه تختی",
+    "name": "خط ۷",
+    "name:de": "Linie 7",
+    "name:en": "Line 7",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "note": "Line 7 Southbound",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "7",
+    "route": "subway",
+    "to": "میدان کتاب",
+    "type": "route",
+    "wikidata": "Q20110124",
+    "wikipedia": "fa:خط ۷ متروی تهران"
+  }
+},
+{
+  "type": "relation",
+  "id": 7705668,
+  "members": [
+    {
+      "type": "node",
+      "ref": 4553519985,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732980,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732969,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4544628125,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14075125226,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 6438071583,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5188341404,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5188247276,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660624968,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5162910434,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732952,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4452444057,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 654081655,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4558309639,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732984,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732950,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3930789262,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732956,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5161529740,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10860300370,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 911325099,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 51766788,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 531786471,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 461961970,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562333,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562331,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562332,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562330,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360562335,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1167734826,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1167734827,
+      "role": "inactive"
+    }
+  ],
+  "tags": {
+    "colour": "yellow",
+    "from": "شهید کلاهدوز",
+    "name": "خط ۴",
+    "name:de": "Linie 4",
+    "name:en": "Line 4",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "4",
+    "route": "subway",
+    "to": "علامه جعفری",
+    "type": "route",
+    "wikidata": "Q20110121",
+    "wikipedia": "en:Tehran Metro Line 4"
+  }
+},
+{
+  "type": "relation",
+  "id": 7726963,
+  "members": [
+    {
+      "type": "node",
+      "ref": 11417054166,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11417054162,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11417054144,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1231074690,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "yellow",
+    "name": "انشعاب خط ۴",
+    "name:de": "U-Bahn-Linie 4",
+    "name:en": "Line 4",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "4",
+    "route": "subway",
+    "type": "route",
+    "wikidata": "Q20110121",
+    "wikipedia": "en:Tehran Metro Line 4"
+  }
+},
+{
+  "type": "relation",
+  "id": 7735255,
+  "members": [
+    {
+      "type": "node",
+      "ref": 2169298472,
+      "role": "stop_entry_only"
+    },
+    {
+      "type": "node",
+      "ref": 11281419801,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660631367,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169292190,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4452299882,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3691093697,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660633348,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660635266,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660636159,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660637545,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660640714,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660640664,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3548939496,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169380710,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660623347,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660623588,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660623849,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5190423567,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660624203,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5188238057,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 26751498,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 12457390956,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660658298,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169380721,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169380705,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 12457390955,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14123565436,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169380696,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2152781392,
+      "role": "stop_exit_only"
+    },
+    {
+      "type": "way",
+      "ref": 206878116,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 206878117,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1217537090,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 51767507,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 687220671,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 687220672,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 51767533,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 4344392,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 206883215,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 664336703,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 332271287,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 720467066,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 940525945,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#FF0F04",
+    "duration": "01:15:00",
+    "from": "کهریزک",
+    "name": "خط ١: کهریزک به تجریش",
+    "name:de": "Linie 1",
+    "name:en": "Line 1: Kahrizak → Tajrish",
+    "name:fa": "خط ١: کهریزک به تجریش",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "opening_hours": "Sa-We 05:34-22:59; Th 05:39-22:59; Fr 06:04-22:59",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "1",
+    "route": "subway",
+    "to": "تجریش",
+    "type": "route",
+    "wikidata": "Q20110118",
+    "wikipedia": "en:Tehran Metro Line 1"
+  }
+},
+{
+  "type": "relation",
+  "id": 7770933,
+  "members": [
+    {
+      "type": "node",
+      "ref": 3649760925,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4453614390,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4453604919,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3649760928,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5190555599,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3641204693,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 12457390950,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4453224428,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3649760926,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2169732979,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10760685494,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2831259315,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2831259303,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5188238058,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14071134416,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 12457390952,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861786,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14072135589,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 4453205974,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 12457390951,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861789,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861790,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861791,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861792,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3778861797,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 445967481,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1543181085,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360429884,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 358622226,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 783749669,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 360429886,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 278822219,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 561284303,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#00aad4",
+    "from": "قائم",
+    "name": "خط ٣",
+    "name:de": "U-Bahn-Linie 3",
+    "name:en": "Line 3",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "3",
+    "route": "subway",
+    "to": "آزادگان",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 7832313,
+  "members": [
+    {
+      "type": "node",
+      "ref": 11271470415,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1216457828,
+      "role": "platform"
+    },
+    {
+      "type": "node",
+      "ref": 6735113793,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1436350946,
+      "role": "platform"
+    },
+    {
+      "type": "node",
+      "ref": 5003695295,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5162855460,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 1216457821,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1216457823,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1216457822,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358476,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 228064681,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 480683173,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 557122739,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 557122737,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 480683169,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 480683168,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 489149265,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 489149264,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 489149263,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 489149262,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 480683172,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 480683171,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 480683170,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358491,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 905358490,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 228064673,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 489149259,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 489149260,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123455,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123453,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123452,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123451,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123450,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123446,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123444,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123443,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123442,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 717123441,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697605,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697603,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697602,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697600,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697599,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697596,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697595,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697594,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697593,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697592,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697591,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697590,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697589,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697585,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697584,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697583,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697582,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697580,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697581,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697579,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 984697578,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 411285333,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 411285305,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#FF0F04",
+    "from": "شهر پرند",
+    "name": "خط ۱",
+    "name:de": "Linie 1: Flughafenlinie",
+    "name:en": "Line 1: Airport branch",
+    "name:fr": "branche de l'aéroport IKA",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "1",
+    "route": "subway",
+    "to": "شاهد",
+    "type": "route",
+    "wikidata": "Q65195214"
+  }
+},
+{
+  "type": "relation",
+  "id": 7832324,
+  "members": [
+    {
+      "type": "node",
+      "ref": 14068031503,
+      "role": "stop_entry_only"
+    },
+    {
+      "type": "node",
+      "ref": 14068031489,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660628855,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031484,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031483,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031475,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031472,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031464,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031457,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031448,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031439,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031436,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031421,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031412,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 2490301755,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031415,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068031414,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068012395,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068012396,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068012379,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 14068012376,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13953682945,
+      "role": "stop_exit_only"
+    },
+    {
+      "type": "way",
+      "ref": 1546709744,
+      "role": "inactive"
+    },
+    {
+      "type": "way",
+      "ref": 1546709743,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 175819514,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#003380",
+    "from": "فرهنگسرا",
+    "name": "خط ۲: فرهنگسرا به صادقیه",
+    "name:de": "Linie 2",
+    "name:en": "Line 2: Farhangsara → Sadeghiyeh",
+    "name:fa": "خط ۲: فرهنگسرا به صادقیه",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "fa:متروی تهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "2",
+    "route": "subway",
+    "to": "تهران(صادقیه)",
+    "type": "route",
+    "wikidata": "Q20110119"
+  }
+},
+{
+  "type": "relation",
+  "id": 9468295,
+  "members": [
+    {
+      "type": "node",
+      "ref": 3815454692,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324444,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 5930756414,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 9149513247,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815454724,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815454729,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 660627594,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13426743991,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13426509301,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10759924012,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456757,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324412,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324399,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324397,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324374,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3784648882,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456806,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456820,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456823,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456838,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10235224668,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3815456860,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 11263536540,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324358,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 10761286147,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3853324357,
+      "role": "stop"
+    },
+    {
+      "type": "way",
+      "ref": 378127816,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 931422128,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 931422129,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 951990654,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 461839263,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1119122331,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1119122330,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 916915022,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#FF5599",
+    "from": "شهدای دولت‌آباد",
+    "name": "خط ۶",
+    "name:de": "Linie 6",
+    "name:en": "Line 6: Shohadaye Dowlat → Arman Aliverdi",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "fa:متروی تهران",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "6",
+    "route": "subway",
+    "to": "شهید آرمان علی‌وردی (کوهسار)",
+    "type": "route"
+  }
+},
+{
+  "type": "relation",
+  "id": 15545705,
+  "members": [
+    {
+      "type": "node",
+      "ref": 3804874212,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138131,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138130,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138132,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138133,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874579,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874586,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874599,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138134,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138135,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138136,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874657,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138137,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874659,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138138,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874668,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874671,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874675,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3804874684,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "node",
+      "ref": 3805138139,
+      "role": "inactive_stop"
+    },
+    {
+      "type": "way",
+      "ref": 377124182,
+      "role": "inactive"
+    },
+    {
+      "type": "way",
+      "ref": 1427681980,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1150403420,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 503177076,
+      "role": "inactive"
+    },
+    {
+      "type": "way",
+      "ref": 736935700,
+      "role": "inactive"
+    }
+  ],
+  "tags": {
+    "colour": "#58e558",
+    "from": "شهید سلطانی",
+    "name": "خط ۲",
+    "name:en": "Line 2",
+    "name:fr": "ligne 2",
+    "network": "مترو کرج",
+    "operator": "سازمان قطار شهری کرج و حومه",
+    "public_transport:version": "2",
+    "ref": "2",
+    "route": "subway",
+    "to": "۴۵ متری گلشهر",
+    "type": "route",
+    "wikidata": "Q116978502"
+  }
+},
+{
+  "type": "relation",
+  "id": 19967673,
+  "members": [
+    {
+      "type": "node",
+      "ref": 13381264372,
+      "role": "stop_entry_only"
+    },
+    {
+      "type": "node",
+      "ref": 13381264367,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123769,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123763,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123757,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123744,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123738,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123740,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123733,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123728,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123727,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13381123723,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380785627,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380785623,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380785611,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380785609,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380779588,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380779580,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380779561,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380425847,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380425829,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380425726,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380418899,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380418872,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380418863,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380418856,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13203213003,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 13380418857,
+      "role": "stop"
+    },
+    {
+      "type": "node",
+      "ref": 7056721168,
+      "role": "stop_exit_only"
+    },
+    {
+      "type": "way",
+      "ref": 1458942699,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1458942687,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1458942688,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1547023993,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1547023994,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1217537140,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1217537089,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 1217537088,
+      "role": ""
+    },
+    {
+      "type": "way",
+      "ref": 531943300,
+      "role": ""
+    }
+  ],
+  "tags": {
+    "colour": "#FF0F04",
+    "duration": "01:15:00",
+    "from": "تجریش",
+    "interval:conditional": "20 @ (Sa-Th 05:30-06:30, Fr 06:00-06:40); 10 @ (Sa-Th 06:25-06:35, Sa-We 21:30-22:00,Th 21:20-22:00, Fr 07:00-07:20, Fr 21:10-22:00); 5 @ (Sa-We 06:40-10:30, Sa-We 15:05-19:55, Th 06:40-10:10); 7 @ (Th 19:17-21:10, Fr 07:27-21:00); 6 @ (Sa-We 10:36-15:00,",
+    "name": "خط ١: تجریش به کهریزک",
+    "name:de": "Linie 1",
+    "name:en": "Line 1: Tajrish → Kahrizak",
+    "name:fa": "خط ١: تجریش به کهریزک",
+    "network": "متروی تهران",
+    "network:wikidata": "Q714823",
+    "network:wikipedia": "ar:مترو طهران",
+    "opening_hours": "Sa-We 05:30-23:15; Th 05:30-23:15; Fr 06:00-23:15",
+    "operator": "Tehran Urban and Suburban Railway Company",
+    "public_transport:version": "2",
+    "ref": "1",
+    "route": "subway",
+    "to": "کهریزک",
+    "type": "route",
+    "wikidata": "Q20110118",
+    "wikipedia": "en:Tehran Metro Line 1"
+  }
+},
+{
+  "type": "node",
+  "id": 26751498,
+  "lat": 35.7406933,
+  "lon": 51.4276116,
+  "tags": {
+    "name": "ایستگاه مترو مصلی امام خمینی(ره)",
+    "name:ar": "مصلی الإمام الخميني",
+    "name:en": "Mosalla-ye Emam Khomeini metro station",
+    "name:fa": "مصلی امام خمینی(ره)",
+    "name:hi": "मुसल्ला",
+    "name:ml": "മൊസല്ല",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 654081655,
+  "lat": 35.7004036,
+  "lon": 51.3647339,
+  "tags": {
+    "name": "شادمان",
+    "name:en": "Shademan",
+    "name:fa": "شادمان",
+    "old_name": "آزادی",
+    "old_name:en": "Azadi",
+    "old_name:fa": "آزادی",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 654082162,
+  "lat": 35.6908759,
+  "lon": 51.3883603,
+  "tags": {
+    "name": "میدان حر",
+    "name:ar": "ساحة هار",
+    "name:en": "Meydan-e Horr",
+    "name:fa": "میدان حر",
+    "name:hi": "हुर मैदान",
+    "name:ml": "മെയ്ദാനെ ഹൊർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 659782107,
+  "lat": 35.6923351,
+  "lon": 51.4331713,
+  "tags": {
+    "name": "بهارستان",
+    "name:ar": "بهارستان",
+    "name:en": "Baharestan",
+    "name:fa": "بهارستان",
+    "name:hi": "बहारिस्तान",
+    "name:ml": "ബഹാറെസ്ഥാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 659784460,
+  "lat": 35.6883561,
+  "lon": 51.4267210,
+  "tags": {
+    "name": "ملت",
+    "name:ar": "ملت",
+    "name:en": "Mellat",
+    "name:fa": "ملت",
+    "name:hi": "मिल्लत",
+    "name:ml": "മെല്ലത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660623347,
+  "lat": 35.6933268,
+  "lon": 51.4245717,
+  "tags": {
+    "name": "سعدی",
+    "name:ar": "سعدي",
+    "name:en": "Sa'di",
+    "name:fa": "سعدی",
+    "name:hi": "सादी",
+    "name:ml": "സാദി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660623588,
+  "lat": 35.7016854,
+  "lon": 51.4261099,
+  "tags": {
+    "name": "دروازه دولت",
+    "name:ar": "بوابة الحكومة",
+    "name:en": "Darvazeh Dowlat",
+    "name:fa": "دروازه دولت",
+    "name:hi": "दरवाज़ा दौलत",
+    "name:ml": "ദർവാസെ ദൗലത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660623849,
+  "lat": 35.7071122,
+  "lon": 51.4255727,
+  "tags": {
+    "name": "آیت‌الله طالقانی",
+    "name:ar": "طالقاني",
+    "name:en": "Ayatollah Taleghani",
+    "name:fa": "آیت‌الله طالقانی",
+    "name:hi": "तालिकानी",
+    "name:ml": "താലെഖാനി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660624203,
+  "lat": 35.7244122,
+  "lon": 51.4277961,
+  "tags": {
+    "name": "شهید مفتح",
+    "name:ar": "الشهيد مفتح",
+    "name:en": "Shahid Mofatteh",
+    "name:fa": "شهید مفتح",
+    "name:hi": "शहीद मुफ़त्तह",
+    "name:ml": "ഷഹീദ് മൊഫത്തേഹ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660624968,
+  "lat": 35.7015450,
+  "lon": 51.4191220,
+  "tags": {
+    "alt_name:ml": "ഫിർദൗസി",
+    "name": "فردوسی",
+    "name:en": "Ferdowsi",
+    "name:ml": "ഫെർദോസി",
+    "name:ru": "Фирдоуси",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660627035,
+  "lat": 35.6989544,
+  "lon": 51.4372755,
+  "tags": {
+    "name": "دروازه شمیران",
+    "name:ar": "بوابة شميران",
+    "name:en": "Darvazeh Shemiran",
+    "name:fa": "دروازه شمیران",
+    "name:hi": "दरवाज़ा शेमीरान",
+    "name:ml": "ദർവാസെ ഷെമീറാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660627594,
+  "lat": 35.6900818,
+  "lon": 51.4473848,
+  "tags": {
+    "name": "ایستگاه مترو میدان شهدا",
+    "name:ar": "ساحة الشهداء",
+    "name:en": "Meydan-e Shohada metro station",
+    "name:fa": "میدان شهدا",
+    "name:hi": "शहीद मैदान",
+    "name:ml": "മെയ്ദാനെ ഷൊഹദാ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660628277,
+  "lat": 35.7023939,
+  "lon": 51.4457615,
+  "tags": {
+    "name": "امام حسین(ع)",
+    "name:en": "Emam Hossein",
+    "name:fa": "امام حسین(ع)",
+    "name:hi": "इमाम हुसैन",
+    "operator": "Tehran Urban & Suburban Railway Operation Co.",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660628303,
+  "lat": 35.7090585,
+  "lon": 51.4529655,
+  "tags": {
+    "name": "شهید مدنی",
+    "name:ar": "الشهيد مدني",
+    "name:en": "Shahid Madani",
+    "name:fa": "شهید مدنی",
+    "name:hi": "शहीद मदनी",
+    "name:ml": "ഷഹീദ് മദനി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660628364,
+  "lat": 35.7183562,
+  "lon": 51.4644303,
+  "tags": {
+    "name": "سبلان",
+    "name:ar": "سبلان",
+    "name:en": "Sabalan",
+    "name:fa": "سبلان",
+    "name:hi": "सबालान",
+    "name:ml": "സബലാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660628705,
+  "lat": 35.7357324,
+  "lon": 51.4947992,
+  "tags": {
+    "name": "سرسبز",
+    "name:ar": "سرسبز",
+    "name:en": "Sarsabz",
+    "name:fa": "سرسبز",
+    "name:hi": "सरसब्ज़",
+    "name:ml": "സർസബ്സ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660628852,
+  "lat": 35.7344204,
+  "lon": 51.5049701,
+  "tags": {
+    "name": "دانشگاه علم و صنعت",
+    "name:ar": "جامعة العلوم والتكنولوجيا",
+    "name:en": "Daneshgah-e Elm-o San'at",
+    "name:fa": "دانشگاه علم و صنعت",
+    "name:hi": "विज्ञान और उद्योग विश्वविद्यालय",
+    "name:ml": "ദാനെഷ്ഗ എൽമ് ഒ-സനാത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660628855,
+  "lat": 35.7329001,
+  "lon": 51.5168445,
+  "tags": {
+    "alt_name": "شهید باقری",
+    "alt_name:ar": "الشهيد باقري",
+    "alt_name:en": "Shahid Bagheri",
+    "alt_name:fa": "شهید باقری",
+    "alt_name:hi": "शहीद बाकरी",
+    "alt_name:ml": "ഷഹീദ് ബാഖറി",
+    "name": "شهیدان باقری",
+    "name:en": "Shahidan-e Bagheri",
+    "name:fa": "شهیدان باقری",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660628921,
+  "lat": 35.7308930,
+  "lon": 51.5318406,
+  "tags": {
+    "name": "تهرانپارس",
+    "name:ar": "طهرانبارس",
+    "name:en": "Tehranpars",
+    "name:fa": "تهرانپارس",
+    "name:hi": "तेहरानपार्स",
+    "name:ml": "ടെഹ്റാൻപാർസ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660631367,
+  "lat": 35.5473539,
+  "lon": 51.3827029,
+  "tags": {
+    "name": "شاهد - باقرشهر",
+    "name:ar": "شاهد - باقرشهر",
+    "name:en": "Shahed - Bagher Shahr",
+    "name:fa": "شاهد - باقرشهر",
+    "name:hi": "शाहिद बाकरशहर",
+    "name:ml": "ഷാഹെദ് ബാഖെർഷഹർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660633348,
+  "lat": 35.6296087,
+  "lon": 51.4157326,
+  "tags": {
+    "name": "علی آباد",
+    "name:en": "Ali Abad",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660635266,
+  "lat": 35.6407100,
+  "lon": 51.4147857,
+  "tags": {
+    "alt_name": "خزانه",
+    "name": "شهید بخارایی",
+    "name:ar": "الشهيد بخاري",
+    "name:en": "Shahid Bokharaei",
+    "name:fa": "شهید بخارایی",
+    "name:hi": "शहीद बुखारी",
+    "name:ml": "ഷഹീദ് ബൊഖാറായ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660636159,
+  "lat": 35.6508488,
+  "lon": 51.4162934,
+  "tags": {
+    "name": "پایانه جنوب",
+    "name:ar": "المحطة الجنوبية",
+    "name:en": "Payaneh Jonoub",
+    "name:fa": "پایانه جنوب",
+    "name:hi": "पायाने-ए जनूब",
+    "name:ml": "പായാനെ ജനൂബ്",
+    "old_name": "ترمینال جنوب",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "station": "subway",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660637545,
+  "lat": 35.6573519,
+  "lon": 51.4142572,
+  "tags": {
+    "name": "شوش",
+    "name:ar": "شوش",
+    "name:en": "Shoush",
+    "name:fa": "شوش",
+    "name:hi": "शूश",
+    "name:ml": "ഷൂഷ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "station": "subway",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660640664,
+  "lat": 35.6731433,
+  "lon": 51.4166027,
+  "tags": {
+    "name": "خیام",
+    "name:ar": "خیام",
+    "name:en": "Khayyam",
+    "name:fa": "خیام",
+    "name:hi": "खय्याम",
+    "name:ml": "ഖയ്യാം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660640714,
+  "lat": 35.6678066,
+  "lon": 51.4158124,
+  "tags": {
+    "name": "ایستگاه مترو میدان محمدیه",
+    "name:ar": "ساحة المحمدية",
+    "name:en": "Meydan-e Mohammadiyeh metro station",
+    "name:fa": "میدان محمدیه",
+    "name:hi": "मुहम्मदिया मैदान",
+    "name:ml": "മൊഹമ്മദിയെ ചത്വരം",
+    "old_name": "مولوی",
+    "old_name:ar": "مولوي",
+    "old_name:en": "Mowlavi",
+    "old_name:fa": "مولوی",
+    "old_name:hi": "मौलवी",
+    "old_name:ml": "മൗലവി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 660658298,
+  "lat": 35.7567411,
+  "lon": 51.4261045,
+  "tags": {
+    "name": "شهید حقانی",
+    "name:ar": "الشهيد حقاني",
+    "name:en": "Shahid Haghani",
+    "name:fa": "شهید حقانی",
+    "name:hi": "शहीद हक्कानी",
+    "name:ml": "ഷഹീദ് ഹഖാനി",
+    "old_name": "میرداماد",
+    "old_name:ar": "میرداماد",
+    "old_name:en": "Mirdamad",
+    "old_name:fa": "میرداماد",
+    "old_name:hi": "मीरदामाद",
+    "old_name:ml": "മിർദാമാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 864404756,
+  "lat": 35.7057728,
+  "lon": 51.3541752,
+  "tags": {
+    "name": "دانشگاه شریف",
+    "name:ar": "جامعة شريف",
+    "name:en": "Daneshgah-e Sharif",
+    "name:fa": "دانشگاه شریف",
+    "name:hi": "शरीफ़ विश्वविद्यालय",
+    "name:ml": "ഷരീഫ് സർവകലാശാല",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2120217849,
+  "lat": 35.7160813,
+  "lon": 51.3435750,
+  "tags": {
+    "name": "طرشت",
+    "name:ar": "طرشت",
+    "name:en": "Tarasht",
+    "name:fa": "طرشت",
+    "name:hi": "तरश्त",
+    "name:ml": "തറഷ്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2152781392,
+  "lat": 35.8046421,
+  "lon": 51.4336901,
+  "tags": {
+    "name": "تجریش",
+    "name:ar": "تجریش",
+    "name:de": "Tadschrisch",
+    "name:en": "Tajrish",
+    "name:fa": "تجریش",
+    "name:hi": "तजरीश",
+    "name:ml": "തജ്രീഷ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169292190,
+  "lat": 35.5599329,
+  "lon": 51.3993896,
+  "tags": {
+    "name": "پالایشگاه",
+    "name:en": "Palayeshgah",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169298472,
+  "lat": 35.5217482,
+  "lon": 51.3692684,
+  "tags": {
+    "name": "کهریزک",
+    "name:en": "Kahrizak",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169380696,
+  "lat": 35.7934924,
+  "lon": 51.4348134,
+  "tags": {
+    "name": "قیطریه",
+    "name:ar": "قيطرية",
+    "name:en": "Gheytariyeh",
+    "name:fa": "قیطریه",
+    "name:hi": "क़ैतरिया",
+    "name:ml": "ഖൈത്തറിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169380705,
+  "lat": 35.7630523,
+  "lon": 51.4439276,
+  "tags": {
+    "name": "دکتر شریعتی",
+    "name:ar": "الدكتور شريعتي",
+    "name:en": "Doctor Shari'ati",
+    "name:fa": "دکتر شریعتی",
+    "name:hi": "डॉ. शरीयती",
+    "name:ml": "ഡോക്ടർ ഷറീയത്തി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169380710,
+  "lat": 35.6858753,
+  "lon": 51.4210380,
+  "tags": {
+    "name": "امام خمینی(ره)",
+    "name:ar": "الامام الخميني",
+    "name:en": "Emam Khomeini",
+    "name:fa": "امام خمینی(ره)",
+    "name:hi": "इमाम ख़ुमैनी",
+    "name:ml": "ഇമാം ഖൊമെയ്നി",
+    "name:ru": "Имам Хомейни",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169380721,
+  "lat": 35.7601006,
+  "lon": 51.4339605,
+  "tags": {
+    "name": "میرداماد",
+    "name:ar": "میرداماد",
+    "name:en": "Mirdamad",
+    "name:fa": "میرداماد",
+    "name:hi": "मीरदामाद",
+    "name:ml": "മിർദാമാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169691367,
+  "lat": 35.7298161,
+  "lon": 51.5470271,
+  "tags": {
+    "name": "فرهنگسرا",
+    "name:ar": "فرهنغسرا",
+    "name:en": "Farhangsara",
+    "name:fa": "فرهنگسرا",
+    "name:hi": "फरहंगसरा",
+    "name:ml": "ഫർഹംഗ്സറ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169732950,
+  "lat": 35.6997500,
+  "lon": 51.3325863,
+  "tags": {
+    "name": "میدان آزادی",
+    "name:ar": "ساحة آزادي",
+    "name:en": "Meydan-e Azadi",
+    "name:fa": "میدان آزادی",
+    "name:hi": "आज़ादी मैदान",
+    "name:ml": "മെയ്ദാനെ ആസാദി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169732952,
+  "lat": 35.7009387,
+  "lon": 51.3919400,
+  "tags": {
+    "name": "میدان انقلاب اسلامی",
+    "name:ar": "ساحة الثورة الإسلامية",
+    "name:en": "Meydan-e Enghelab-e Eslami",
+    "name:fa": "میدان انقلاب اسلامی",
+    "name:hi": "इस्लामी इंकलाब मैदान",
+    "name:ml": "മെയ്ദാനെ ഇംഗിലാബെ ഇസ്ലാമി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169732956,
+  "lat": 35.7055139,
+  "lon": 51.3076362,
+  "tags": {
+    "name": "ایستگاه مترو شهرک اکباتان",
+    "name:ar": "مدينة إيكباتانا",
+    "name:en": "Sharak-e Ekbatan Metro Station",
+    "name:fa": "شهرک اکباتان",
+    "name:hi": "शहरक-ए-इक्बातान",
+    "name:ml": "ഷഹ്റക്ക് ഇക്ബാത്താൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169732969,
+  "lat": 35.6915682,
+  "lon": 51.4773477,
+  "tags": {
+    "name": "ایستگاه مترو نبرد",
+    "name:en": "Nabard metro station",
+    "name:ml": "നബർദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169732979,
+  "lat": 35.7013096,
+  "lon": 51.4052281,
+  "tags": {
+    "alt_name": "چهارراه ولیعصر",
+    "name": "تئاتر شهر",
+    "name:en": "Teatr-e Shahr",
+    "name:it": "Teatr-e Shahr - Vali Asr",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169732980,
+  "lat": 35.6927945,
+  "lon": 51.4880742,
+  "tags": {
+    "name": "ایستگاه مترو نیرو هوایی",
+    "name:en": "Nirou Havayi metro station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2169732984,
+  "lat": 35.7001565,
+  "lon": 51.3447089,
+  "tags": {
+    "name": "استاد معین",
+    "name:ar": "استاد معین",
+    "name:en": "Ostad Moein",
+    "name:fa": "استاد معین",
+    "name:hi": "उस्ताद मोईन",
+    "name:ml": "ഉസ്താദ് മൊയീൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2367114843,
+  "lat": 35.4078608,
+  "lon": 51.1544874,
+  "tags": {
+    "name": "فرودگاه امام خمینی(ره)",
+    "name:ar": "مطار الإمام الخميني",
+    "name:en": "Imam Khomeini Airport",
+    "name:fa": "فرودگاه امام خمینی(ره)",
+    "name:hi": "इमाम खुमैनी हवाई अड्डा",
+    "name:ml": "ഇമാം ഖൊമെയ്നി വിമാനത്താവളം",
+    "network": "متروی تهران",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2490301755,
+  "lat": 35.6851668,
+  "lon": 51.4102152,
+  "tags": {
+    "name": "سازمان املاک و مستغلات شهرداری تهران;حسن‌آباد",
+    "name:ar": "حسن أباد",
+    "name:en": "Hassan Abad",
+    "name:fa": "حسن‌آباد",
+    "name:hi": "हसनाबाद",
+    "name:ml": "ഹസ്സനാബാദ്",
+    "office": "government",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2831259303,
+  "lat": 35.7281781,
+  "lon": 51.4169344,
+  "tags": {
+    "name": "میرزای شیرازی",
+    "name:ar": "ميرزا ​​الشيرازي",
+    "name:en": "Mirza-ye Shirazi",
+    "name:fa": "میرزای شیرازی",
+    "name:hi": "मिर्ज़ाये शीराज़ी",
+    "name:ml": "മിർസായെ ഷിറാസി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2831259315,
+  "lat": 35.7205082,
+  "lon": 51.4084156,
+  "tags": {
+    "alt_name": "فاطمی",
+    "alt_name:en": "Fatemi",
+    "name": "میدان جهاد",
+    "name:ar": "ساحة الجهاد",
+    "name:de": "Jahad-Platz",
+    "name:en": "Meydan-e Jahad",
+    "name:fa": "میدان جهاد",
+    "name:hi": "जहाद मैदान",
+    "name:it": "Meidan e Jahad",
+    "name:ml": "മെയ്ദാനെ ജഹാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3080821096,
+  "lat": 35.7265800,
+  "lon": 51.4756588,
+  "tags": {
+    "name": "فدک",
+    "name:ar": "فدك",
+    "name:en": "Fadak",
+    "name:fa": "فدک",
+    "name:hi": "फ़दक",
+    "name:ml": "ഫദക്ക്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3548939496,
+  "lat": 35.6782744,
+  "lon": 51.4172945,
+  "tags": {
+    "name": "پانزده خرداد",
+    "name:ar": "السادس من يونيو",
+    "name:en": "Panzdah-e Khordad",
+    "name:fa": "پانزده خرداد",
+    "name:hi": "पांज़दहे-खुर्दाद",
+    "name:ml": "പാൻസദ ഖൊർദാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3641204693,
+  "lat": 35.6593516,
+  "lon": 51.3877910,
+  "tags": {
+    "name": "جوادیه",
+    "name:ar": "جوادية",
+    "name:en": "Javadiyeh",
+    "name:fa": "جوادیه",
+    "name:hi": "जवादिया",
+    "name:ml": "ജവാദിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3649760925,
+  "lat": 35.6274192,
+  "lon": 51.3350953,
+  "tags": {
+    "name": "آزادگان",
+    "name:en": "Azadegan",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3649760926,
+  "lat": 35.6811307,
+  "lon": 51.4016410,
+  "tags": {
+    "name": "منیریه",
+    "name:ar": "منيرية",
+    "name:en": "Moniriyeh",
+    "name:fa": "منیریه",
+    "name:hi": "मुनीरिया",
+    "name:ml": "മൊനീറിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3649760928,
+  "lat": 35.6442232,
+  "lon": 51.3685225,
+  "tags": {
+    "name": "شهرک شریعتی",
+    "name:ar": "مدينة شريعتي",
+    "name:en": "Shahrak-e Shariati",
+    "name:fa": "شهرک شریعتی",
+    "name:hi": "शहरक-ए-शरीयती",
+    "name:ml": "ഷഹ്റക്കെ ഷറീയത്തി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3691093697,
+  "lat": 35.6100249,
+  "lon": 51.4194926,
+  "tags": {
+    "name": "جوانمرد قصاب",
+    "name:ar": "جوانمرد قصاب",
+    "name:en": "Javanmard-e Ghassab",
+    "name:fa": "جوانمرد قصاب",
+    "name:hi": "जवानमर्द कसाब",
+    "name:ml": "ജവാൻമർദ് ഗസാബ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3691224155,
+  "lat": 35.6861227,
+  "lon": 51.4101573,
+  "tags": {
+    "name": "حسن‌آباد",
+    "name:ar": "حسن أباد",
+    "name:en": "Hassan Abad",
+    "name:fa": "حسن‌آباد",
+    "name:hi": "हसनाबाद",
+    "name:ml": "ഹസ്സനാബാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3778792864,
+  "lat": 35.6874074,
+  "lon": 51.3990742,
+  "tags": {
+    "name": "دانشگاه امام علی(ع)",
+    "name:ar": "جامعة الامام علي",
+    "name:en": "Daneshgah-e Emam Ali",
+    "name:fa": "دانشگاه امام علی(ع)",
+    "name:hi": "इमाम अली विश्वविद्यालय",
+    "name:ml": "ദാനെഷ്ഗാഹെ ഇമാം അലി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3778861786,
+  "lat": 35.7355601,
+  "lon": 51.4583975,
+  "tags": {
+    "name": "شهید صیاد شیرازی",
+    "name:ar": "الشهيد صياد الشيرازي",
+    "name:en": "Shahid Sayyad-e Shirazi",
+    "name:fa": "شهید صیاد شیرازی",
+    "name:hi": "शहीद सैयाद-ए शीराज़ी",
+    "name:ml": "ഷഹീദ് സയ്യാദ് ഷിറാസി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3778861789,
+  "lat": 35.7789408,
+  "lon": 51.4786726,
+  "tags": {
+    "alt_name:ml": "ഹുസൈനാബാദ്",
+    "name": "حسین آباد",
+    "name:ar": "حسین آباد",
+    "name:en": "Hossein Abad",
+    "name:fa": "حسین آباد",
+    "name:hi": "हुसैनाबाद",
+    "name:ml": "ഹൊസെയ്നാബാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3778861790,
+  "lat": 35.7903188,
+  "lon": 51.4793790,
+  "tags": {
+    "name": "نوبنیاد",
+    "name:ar": "نوبنیاد",
+    "name:en": "Nobonyad",
+    "name:fa": "نوبنیاد",
+    "name:hi": "नोबुनयाद",
+    "name:ml": "നൊബന്യാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3778861791,
+  "lat": 35.8006991,
+  "lon": 51.4846199,
+  "tags": {
+    "name": "اقدسیه",
+    "name:ar": "أقدسية",
+    "name:en": "Aghdasiyeh",
+    "name:fa": "اقدسیه",
+    "name:hi": "अक्दसिया",
+    "name:ml": "അഖ്ദസിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3778861792,
+  "lat": 35.7974624,
+  "lon": 51.5084383,
+  "tags": {
+    "name": "شهید محلاتی",
+    "name:ar": "الشهيد محلاتي",
+    "name:en": "Shahid Mahallati",
+    "name:fa": "شهید محلاتی",
+    "name:hi": "शहीद महल्लाती",
+    "name:ml": "ഷഹീദ് മഹല്ലത്തി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3778861797,
+  "lat": 35.7992391,
+  "lon": 51.5209106,
+  "tags": {
+    "name": "قائم",
+    "name:en": "Ghaem",
+    "name:ml": "ഖായിം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784645922,
+  "lat": 35.6679421,
+  "lon": 51.4623861,
+  "tags": {
+    "name": "چهل تن دولاب",
+    "name:ar": "تشهل تن دولاب",
+    "name:en": "Chehel Tan-e Doulab",
+    "name:fa": "چهل تن دولاب",
+    "name:hi": "चेहेल तन दौलाब",
+    "name:ml": "ചഹൽ തൻ ദൗലബ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784645934,
+  "lat": 35.6697324,
+  "lon": 51.4364777,
+  "tags": {
+    "name": "ایستگاه مترو میدان قیام",
+    "name:ar": "ساحة الانتفاضة",
+    "name:en": "Meydan-e Ghiyam metro station",
+    "name:fa": "میدان قیام",
+    "name:fa-Latn": "Meydan-e Ghiyam",
+    "name:hi": "कियाम मैदान",
+    "name:ml": "മൈദാൻ ഖിയാം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648769,
+  "lat": 35.6813541,
+  "lon": 51.3800490,
+  "tags": {
+    "name": "ایستگاه مترو کمیل",
+    "name:en": "Komeyl metro station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648857,
+  "lat": 35.7772810,
+  "lon": 51.3558412,
+  "tags": {
+    "alt_name:en": "Ketab Square",
+    "name": "میدان کتاب",
+    "name:ar": "ساحة الكتاب",
+    "name:en": "Meydan-e Ketab",
+    "name:fa": "میدان کتاب",
+    "name:hi": "किताब मैदान",
+    "name:ml": "കിത്താബ് ചത്വരം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648869,
+  "lat": 35.6645008,
+  "lon": 51.5105881,
+  "tags": {
+    "name": "ورزشگاه تختی",
+    "name:en": "Varzeshgah-e Takhti",
+    "name:fa": "ورزشگاه تختی",
+    "name:hi": "वर्ज़ेशगाह-ए-तख़्ती",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648870,
+  "lat": 35.6665217,
+  "lon": 51.4900951,
+  "tags": {
+    "name": "بسیج",
+    "name:en": "Basij",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648871,
+  "lat": 35.6692170,
+  "lon": 51.4722000,
+  "tags": {
+    "name": "ایستگاه مترو آهنگ",
+    "name:ar": "آهنغ",
+    "name:en": "Ahang metro station",
+    "name:fa": "آهنگ",
+    "name:hi": "आहंग",
+    "name:ml": "ആഹംഗ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648875,
+  "lat": 35.6692573,
+  "lon": 51.4288083,
+  "tags": {
+    "name": "ایستگاه مترو مولوی",
+    "name:ar": "مولوي",
+    "name:en": "Mowlavi metro station",
+    "name:fa": "مولوی",
+    "name:hi": "मौलवी",
+    "name:ml": "മൗലവി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648877,
+  "lat": 35.6671873,
+  "lon": 51.3994195,
+  "tags": {
+    "name": "ایستگاه مترو مهدیه",
+    "name:ar": "مهدية",
+    "name:en": "Mahdiyeh Metro Station",
+    "name:fa": "مهدیه",
+    "name:hi": "महदीया",
+    "name:ml": "മഹ്ദിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648879,
+  "lat": 35.6877530,
+  "lon": 51.3794785,
+  "tags": {
+    "name": "ایستگاه مترو رودکی",
+    "name:en": "Roudaki metro station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648880,
+  "lat": 35.6948960,
+  "lon": 51.3786419,
+  "tags": {
+    "name": "ایستگاه مترو شهید نواب صفوی",
+    "name:ar": "الشهيد نواب صفوي",
+    "name:en": "Shahid Navvab-e Safavi metro station",
+    "name:fa": "شهید نواب صفوی",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648882,
+  "lat": 35.7249336,
+  "lon": 51.3813794,
+  "tags": {
+    "alt_name:en": "Tarbiat Modarres University",
+    "name": "دانشگاه تربیت مدرس",
+    "name:ar": "جامعة تربية مدرس",
+    "name:en": "Daneshgah-e Tarbiat Modarres",
+    "name:fa": "دانشگاه تربیت مدرس",
+    "name:hi": "तर्बियत मुदरस विश्वविद्यालय",
+    "name:ml": "തർബിയത്ത് മദറസ് യൂണിവേഴ്സിറ്റി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648883,
+  "lat": 35.7319896,
+  "lon": 51.3830545,
+  "tags": {
+    "alt_name:en": "Goftegou Park",
+    "name": "بوستان گفتگو",
+    "name:ar": "حديقة غفتغو",
+    "name:en": "Boostan-e Goftegou",
+    "name:fa": "بوستان گفتگو",
+    "name:hi": "गुफ्तगू पार्क",
+    "name:ml": "ഗൊഫ്തെഗൂ പാർക്ക്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648884,
+  "lat": 35.7473442,
+  "lon": 51.3785601,
+  "tags": {
+    "name": "برج میلاد تهران",
+    "name:ar": "برج الميلاد طهران",
+    "name:en": "Borj-e Milad-e Tehran",
+    "name:fa": "برج میلاد تهران",
+    "name:hi": "बुर्ज-ए मिलाद-ए तेहरान",
+    "name:ml": "ബൊർജെ മിലാദെ ടെഹ്റാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3784648885,
+  "lat": 35.7543831,
+  "lon": 51.3679617,
+  "tags": {
+    "alt_name:en": "San'at Square",
+    "name": "میدان صنعت",
+    "name:ar": "ساحة الصناعة",
+    "name:en": "Meydan-e San'at",
+    "name:fa": "میدان صنعت",
+    "name:hi": "सनात मैदान",
+    "name:ml": "സനാത്ത് ചത്വരം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874212,
+  "lat": 35.7187471,
+  "lon": 50.9935966,
+  "tags": {
+    "name": "کانال",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874579,
+  "lat": 35.7789149,
+  "lon": 51.0060963,
+  "tags": {
+    "name": "سرحد آباد",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874586,
+  "lat": 35.7858753,
+  "lon": 51.0059619,
+  "tags": {
+    "name": "ایستگاه مترو شهید سلطانی",
+    "name:ar": "الشهيد سلطاني",
+    "name:en": "Shahid Soltani Metro Station",
+    "name:fa": "شهید سلطانی",
+    "name:hi": "शहीद सुल्तानी",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874599,
+  "lat": 35.7975009,
+  "lon": 51.0015710,
+  "tags": {
+    "construction": "stop_position",
+    "name": "میدان امام حسین",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874657,
+  "lat": 35.8288414,
+  "lon": 50.9685285,
+  "tags": {
+    "alt_name": "گوهردشت",
+    "alt_name:en": "Gohar Dasht",
+    "name": "ایستگاه مترو رجایی‌شهر",
+    "name:en": "Rajaei Shahr Metro Station",
+    "public_transport": "stop_position",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874659,
+  "lat": 35.8344461,
+  "lon": 50.9504114,
+  "tags": {
+    "construction": "stop_position",
+    "name": "میانجاده",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874668,
+  "lat": 35.8401911,
+  "lon": 50.9322094,
+  "tags": {
+    "construction": "stop_position",
+    "name": "سرم سازی",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874671,
+  "lat": 35.8433269,
+  "lon": 50.9245511,
+  "tags": {
+    "construction": "stop_position",
+    "name": "آزادی",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874675,
+  "lat": 35.8471750,
+  "lon": 50.9152360,
+  "tags": {
+    "construction": "stop_position",
+    "name": "میدان دانشگاه",
+    "name:en": "Daneshgah Square",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3804874684,
+  "lat": 35.8573063,
+  "lon": 50.8913354,
+  "tags": {
+    "name": "پیشاهنگی",
+    "proposed": "station",
+    "public_transport": "stop_position",
+    "railway": "proposed",
+    "station": "subway"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138130,
+  "lat": 35.7390780,
+  "lon": 50.9955533,
+  "tags": {
+    "name": "نیروگاه",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138131,
+  "lat": 35.7345162,
+  "lon": 50.9951602,
+  "tags": {
+    "name": "بازار خودرو",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138132,
+  "lat": 35.7527648,
+  "lon": 50.9987501,
+  "tags": {
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138133,
+  "lat": 35.7624144,
+  "lon": 51.0026767,
+  "tags": {
+    "name": "انبار نفت",
+    "public_transport": "stop_position"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138134,
+  "lat": 35.8022364,
+  "lon": 50.9911683,
+  "tags": {
+    "construction": "stop_position",
+    "name": "مصباح",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138135,
+  "lat": 35.8221476,
+  "lon": 50.9883193,
+  "tags": {
+    "alt_name": "بوستان جهان",
+    "name": "ایستگاه مترو آیت الله طالقانی",
+    "name:en": "Ayatollah Taleghani Metro Station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138136,
+  "lat": 35.8257881,
+  "lon": 50.9780326,
+  "tags": {
+    "construction": "stop_position",
+    "name": "میدان سپاه",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138137,
+  "lat": 35.8316551,
+  "lon": 50.9594426,
+  "tags": {
+    "construction": "stop_position",
+    "name": "دهقان ویلا",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138138,
+  "lat": 35.8367803,
+  "lon": 50.9429863,
+  "tags": {
+    "name": "ایستگاه مترو ۴۵ متری گلشهر",
+    "name:ar": "خمسة وأربعون مترا من غلشهر",
+    "name:en": "Chehel-o-panj Metri Golshahr Metro Station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3805138139,
+  "lat": 35.8630738,
+  "lon": 50.8777201,
+  "tags": {
+    "construction": "stop_position",
+    "name": "کمالشهر",
+    "public_transport": "stop_position",
+    "railway": "construction",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815454692,
+  "lat": 35.6186600,
+  "lon": 51.4642056,
+  "tags": {
+    "name": "شهدای دولت آباد",
+    "name:ar": "شهداء دولت آباد",
+    "name:en": "Shohada-ye Dowlat Abad",
+    "name:fa": "شهدای دولت آباد",
+    "name:hi": "शुहदा-ये दौलताबाद",
+    "name:ml": "ദൗലത്താബാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815454724,
+  "lat": 35.6653691,
+  "lon": 51.4456005,
+  "tags": {
+    "name": "میدان خراسان",
+    "name:ar": "ساحة خراسان",
+    "name:en": "Meydan-e Khorasan",
+    "name:fa": "میدان خراسان",
+    "name:hi": "ख़ुरासान मैदान",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815454729,
+  "lat": 35.6824470,
+  "lon": 51.4468296,
+  "tags": {
+    "name": "ایستگاه مترو امیرکبیر",
+    "name:ar": "امیر کبیر",
+    "name:en": "Amir Kabir Metro Station",
+    "name:fa": "امیرکبیر",
+    "name:hi": "अमीर कबीर",
+    "name:ml": "അമീർ കബീർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815456757,
+  "lat": 35.7162264,
+  "lon": 51.4264916,
+  "tags": {
+    "alt_name": "هفت تیر",
+    "name": "شهدای هفتم تیر",
+    "name:ar": "شهداء الثمانية وعشرون من يونيو",
+    "name:en": "Shohada-ye Haftom-e Tir",
+    "name:fa": "شهدای هفتم تیر",
+    "name:hi": "शुहदा-ये हफ़्तुम तीर",
+    "name:ml": "ഹഫ്തെ തീർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815456806,
+  "lat": 35.7316901,
+  "lon": 51.3705088,
+  "tags": {
+    "name": "شهرک آزمایش",
+    "name:ar": "مدينة آزمایش",
+    "name:en": "Shahrak-e Azmayesh",
+    "name:fa": "شهرک آزمایش",
+    "name:hi": "शहरक आज़मायेश",
+    "name:ml": "ഷഹ്റക്കെ ആസ്മയേഷ്",
+    "not:name": "بلوارفردوس",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815456820,
+  "lat": 35.7343535,
+  "lon": 51.3589200,
+  "tags": {
+    "name": "مرزداران",
+    "name:en": "Marzdaran",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815456823,
+  "lat": 35.7347651,
+  "lon": 51.3460208,
+  "tags": {
+    "name": "یادگار امام(ره)",
+    "name:ar": "ذكرى الإمام",
+    "name:en": "Yadegar-e Emam",
+    "name:fa": "یادگار امام(ره)",
+    "name:hi": "यादगार-ए-इमाम",
+    "name:ml": "യാദഗാർ ഇമാം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815456838,
+  "lat": 35.7362534,
+  "lon": 51.3310759,
+  "tags": {
+    "name": "شهید اشرفی اصفهانی",
+    "name:ar": "الشهيد أشرفي أصفهاني",
+    "name:en": "Shahid Ashrafi Esfahani",
+    "name:fa": "شهید اشرفی اصفهانی",
+    "name:hi": "अशरफ़ी इस्फ़हानी",
+    "name:ml": "അഷ്റഫി ഇസ്ഫഹാനി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3815456860,
+  "lat": 35.7414736,
+  "lon": 51.3008783,
+  "tags": {
+    "name": "آیت الله کاشانی",
+    "name:ar": "آية الله الكاشاني",
+    "name:en": "Ayatollah Kashani",
+    "name:fa": "آیت الله کاشانی",
+    "name:hi": "अयतुल्ला काशानी",
+    "name:ml": "ആയത്തുള്ള കാഷാനി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3853324357,
+  "lat": 35.7705739,
+  "lon": 51.2790369,
+  "tags": {
+    "alt_name": "کوهسار",
+    "alt_name:en": "Kouhsar",
+    "name": "شهید آرمان علی وردی",
+    "name:ar": "الشهيد الأرمان علي وردي",
+    "name:en": "Shahid Arman Aliverdi",
+    "name:fa": "شهید آرمان علی وردی",
+    "name:ml": "അലിവെർദി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3853324358,
+  "lat": 35.7539780,
+  "lon": 51.2874715,
+  "tags": {
+    "name": "شهران",
+    "name:ar": "شهران",
+    "name:en": "Shahran",
+    "name:fa": "شهران",
+    "name:hi": "शहरान",
+    "name:ml": "ഷഹ്റാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3853324374,
+  "lat": 35.7144491,
+  "lon": 51.3893823,
+  "tags": {
+    "name": "کارگر",
+    "name:en": "Kargar",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3853324397,
+  "lat": 35.7082840,
+  "lon": 51.3952006,
+  "tags": {
+    "alt_name:en": "Laleh Park",
+    "name": "بوستان لاله",
+    "name:ar": "حديقة لاله",
+    "name:en": "Boostan-e Laleh",
+    "name:fa": "بوستان لاله",
+    "name:hi": "लाले पार्क",
+    "name:ml": "ബുസ്താൻ ലാലെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3853324399,
+  "lat": 35.7115736,
+  "lon": 51.4069522,
+  "tags": {
+    "alt_name": "میدان ولی عصر",
+    "alt_name:en": "Vali-e Asr Square",
+    "alt_name:ml": "മെയ്ദാനെ വലിയെ അസർ",
+    "internet_access": "no",
+    "name": "میدان حضرت ولی عصر(عج)",
+    "name:ar": "ساحة حضرة ولي عصر",
+    "name:en": "Meydan-e Hazrat-e Vali-e Asr",
+    "name:fa": "میدان حضرت ولی عصر(عج)",
+    "name:hi": "हज़रत वली-ए-असर मैदान",
+    "name:ml": "വലിയെ അസർ ചത്വരം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3853324412,
+  "lat": 35.7151526,
+  "lon": 51.4144293,
+  "tags": {
+    "alt_name": "شهید نجات اللهی",
+    "alt_name:en": "Shahid Nejatollahi",
+    "name": "مریم مقدس(س)",
+    "name:ar": "مريم المقدسة",
+    "name:en": "Maryam-e Moghaddas",
+    "name:fa": "مریم مقدس(س)",
+    "name:hi": "मरियम-ए-मुक़द्दस",
+    "name:ml": "പരിശുദ്ധ മറിയം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 3853324444,
+  "lat": 35.6330612,
+  "lon": 51.4486775,
+  "tags": {
+    "name": "کیان‌شهر",
+    "name:en": "Kiyan Shahr",
+    "name:fa": "کیان‌شهر",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3930789262,
+  "lat": 35.6995402,
+  "lon": 51.3221163,
+  "tags": {
+    "name": "بیمه",
+    "name:ar": "بيمه",
+    "name:en": "Bimeh",
+    "name:fa": "بیمه",
+    "name:hi": "बीमा",
+    "name:ml": "ബീമെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3930792260,
+  "lat": 35.6890555,
+  "lon": 51.3304429,
+  "tags": {
+    "name": "ایستگاه مترو فرودگاه مهرآباد ترمینال‌های ۴ و ۶",
+    "name:en": "Mehrabad Airport Terminals 4 & 6 Metro Station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 3930792665,
+  "lat": 35.6931469,
+  "lon": 51.3250917,
+  "tags": {
+    "name": "ایستگاه مترو فرودگاه مهرآباد ترمینال‌های ۱ و ۲",
+    "name:en": "Mehrabad Airport Terminals 1 & 2 Metro Station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4452299882,
+  "lat": 35.5945720,
+  "lon": 51.4223939,
+  "tags": {
+    "name": "شهرری",
+    "name:en": "Shahr-e Rey",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4452329924,
+  "lat": 35.6948792,
+  "lon": 51.3787887,
+  "tags": {
+    "name": "ایستگاه مترو شهید نواب صفوی",
+    "name:ar": "الشهيد نواب صفوي",
+    "name:en": "Shahid Navvab-e Safavi metro station",
+    "name:fa": "شهید نواب صفوی",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4452444057,
+  "lat": 35.7006696,
+  "lon": 51.3782580,
+  "tags": {
+    "name": "توحید",
+    "name:en": "Towhid",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4453205974,
+  "lat": 35.7605766,
+  "lon": 51.4658777,
+  "tags": {
+    "name": "شهید زین الدین",
+    "name:ar": "الشهيد زين الدين",
+    "name:en": "Shahid Zeyn-e-ddin",
+    "name:fa": "شهید زین الدین",
+    "name:hi": "शहीद ज़ेनुद्दीन",
+    "name:ml": "ഷഹീദ് സെയ്നുദ്ദീൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4453224428,
+  "lat": 35.6671096,
+  "lon": 51.3993309,
+  "tags": {
+    "name": "ایستگاه مترو مهدیه",
+    "name:ar": "مهدية",
+    "name:en": "Mahdiyeh Metro Station",
+    "name:fa": "مهدیه",
+    "name:hi": "महदीया",
+    "name:ml": "മഹ്ദിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4453604919,
+  "lat": 35.6383716,
+  "lon": 51.3599477,
+  "tags": {
+    "name": "عبدل آباد",
+    "name:ar": "عبدل آباد",
+    "name:en": "Abdol Abad",
+    "name:fa": "عبدل آباد",
+    "name:hi": "अब्दुलाबाद",
+    "name:ml": "അബ്ദൊലാബാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4453614390,
+  "lat": 35.6337606,
+  "lon": 51.3472831,
+  "tags": {
+    "name": "نعمت آباد",
+    "name:en": "Ne'mat Abad",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4453643066,
+  "lat": 35.7177807,
+  "lon": 51.3311732,
+  "tags": {
+    "name": "صادقیه",
+    "name:ar": "صادقية",
+    "name:en": "Sadeghiyeh",
+    "name:fa": "صادقیه",
+    "name:hi": "सादिकिया",
+    "name:ml": "സാദെഗിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4544628125,
+  "lat": 35.6909860,
+  "lon": 51.4678610,
+  "tags": {
+    "name": "ایستگاه مترو پیروزی",
+    "name:ar": "بيروزي",
+    "name:en": "Pirouzi metro station",
+    "name:fa": "پیروزی",
+    "name:hi": "पीरूज़ी",
+    "name:ml": "പിറൂസി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4553519985,
+  "lat": 35.6985354,
+  "lon": 51.4997731,
+  "tags": {
+    "name": "ایستگاه مترو شهید کلاهدوز",
+    "name:ar": "الشهيد كلاهدوز",
+    "name:en": "Shahid Kolahdouz metro station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4558309639,
+  "lat": 35.7002963,
+  "lon": 51.3560391,
+  "tags": {
+    "name": "دکتر حبیب اله",
+    "name:ar": "الدكتور حبيب الله",
+    "name:en": "Doctor Habib-o-llah",
+    "name:fa": "دکتر حبیب اله",
+    "name:hi": "डॉक्टर हबीबुल्ला",
+    "name:ml": "ഡോക്ടർ ഹബീബൊള്ള",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4674995987,
+  "lat": 35.7332370,
+  "lon": 51.4841242,
+  "tags": {
+    "name": "جانبازان",
+    "name:ar": "جانبازان",
+    "name:en": "Janbazan",
+    "name:fa": "جانبازان",
+    "name:hi": "जानबाज़ान",
+    "name:ml": "ജാൻബസാൻ",
+    "old_name": "گلبرگ",
+    "old_name:en": "Golbarg",
+    "old_name:fa": "گلبرگ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 4981028494,
+  "lat": 35.6730670,
+  "lon": 51.3808527,
+  "tags": {
+    "name": "ایستگاه مترو بریانک",
+    "name:en": "Beryanak metro station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5003695295,
+  "lat": 35.5396694,
+  "lon": 51.3494158,
+  "tags": {
+    "name": "ایستگاه مترو شهر آفتاب",
+    "name:en": "Shahre Aftab Metro Station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5003695296,
+  "lat": 35.5397601,
+  "lon": 51.3492315,
+  "tags": {
+    "name": "ایستگاه مترو شهر آفتاب",
+    "name:en": "Shahre Aftab Metro Station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5161529740,
+  "lat": 35.7188979,
+  "lon": 51.3055167,
+  "tags": {
+    "alt_name": "اکباتان",
+    "name": "ارم سبز",
+    "name:ar": "إرم سبز",
+    "name:en": "Eram-e Sabz",
+    "name:fa": "ارم سبز",
+    "name:hi": "इरम-ए सब्ज़",
+    "name:ml": "ഇറം സബ്സ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5162855460,
+  "lat": 35.5474474,
+  "lon": 51.3827366,
+  "tags": {
+    "name": "شاهد - باقرشهر",
+    "name:ar": "شاهد - باقرشهر",
+    "name:en": "Shahed - Bagher Shahr",
+    "name:fa": "شاهد - باقرشهر",
+    "name:hi": "शाहिद बाकरशहर",
+    "name:ml": "ഷാഹെദ് ബാഖെർഷഹർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5162910434,
+  "lat": 35.7012294,
+  "lon": 51.4053709,
+  "tags": {
+    "alt_name": "چهارراه ولیعصر",
+    "name": "تئاتر شهر",
+    "name:en": "Teatr-e Shahr",
+    "name:it": "Teatr-e Shahr - Vali Asr",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5183625749,
+  "lat": 35.7004369,
+  "lon": 51.3646624,
+  "tags": {
+    "name": "شادمان",
+    "name:en": "Shademan",
+    "name:fa": "شادمان",
+    "old_name": "آزادی",
+    "old_name:en": "Azadi",
+    "old_name:fa": "آزادی",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5186262280,
+  "lat": 35.6858808,
+  "lon": 51.4203056,
+  "tags": {
+    "name": "امام خمینی(ره)",
+    "name:ar": "الامام الخميني",
+    "name:en": "Emam Khomeini",
+    "name:fa": "امام خمینی(ره)",
+    "name:hi": "इमाम ख़ुमैनी",
+    "name:ml": "ഇമാം ഖൊമെയ്നി",
+    "name:ru": "Имам Хомейни",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5188238057,
+  "lat": 35.7299644,
+  "lon": 51.4269978,
+  "tags": {
+    "name": "شهید بهشتی",
+    "name:ar": "الشهيد بهشتي",
+    "name:en": "Shahid Beheshti",
+    "name:fa": "شهید بهشتی",
+    "name:hi": "शहीद बेहिश्ती",
+    "name:ml": "ഷഹീദ് ബെഹെഷ്തി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5188238058,
+  "lat": 35.7306503,
+  "lon": 51.4271416,
+  "tags": {
+    "name": "شهید بهشتی",
+    "name:ar": "الشهيد بهشتي",
+    "name:en": "Shahid Beheshti",
+    "name:fa": "شهید بهشتی",
+    "name:hi": "शहीद बेहिश्ती",
+    "name:ml": "ഷഹീദ് ബെഹെഷ്തി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5188247276,
+  "lat": 35.7015620,
+  "lon": 51.4260048,
+  "tags": {
+    "name": "دروازه دولت",
+    "name:ar": "بوابة الحكومة",
+    "name:en": "Darvazeh Dowlat",
+    "name:fa": "دروازه دولت",
+    "name:hi": "दरवाज़ा दौलत",
+    "name:ml": "ദർവാസെ ദൗലത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5188341404,
+  "lat": 35.6990524,
+  "lon": 51.4373130,
+  "tags": {
+    "name": "دروازه شمیران",
+    "name:ar": "بوابة شميران",
+    "name:en": "Darvazeh Shemiran",
+    "name:fa": "دروازه شمیران",
+    "name:hi": "दरवाज़ा शेमीरान",
+    "name:ml": "ദർവാസെ ഷെമീറാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5190423567,
+  "lat": 35.7153930,
+  "lon": 51.4260716,
+  "tags": {
+    "alt_name": "هفت تیر",
+    "name": "شهدای هفتم تیر",
+    "name:ar": "شهداء الثمانية وعشرون من يونيو",
+    "name:en": "Shohada-ye Haftom-e Tir",
+    "name:fa": "شهدای هفتم تیر",
+    "name:hi": "शुहदा-ये हफ़्तुम तीर",
+    "name:ml": "ഹഫ്തെ തീർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5190423569,
+  "lat": 35.7248518,
+  "lon": 51.3813825,
+  "tags": {
+    "alt_name:en": "Tarbiat Modarres University",
+    "name": "دانشگاه تربیت مدرس",
+    "name:ar": "جامعة تربية مدرس",
+    "name:en": "Daneshgah-e Tarbiat Modarres",
+    "name:fa": "دانشگاه تربیت مدرس",
+    "name:hi": "तर्बियत मुदरस विश्वविद्यालय",
+    "name:ml": "തർബിയത്ത് മദറസ് യൂണിവേഴ്സിറ്റി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5190555599,
+  "lat": 35.6525617,
+  "lon": 51.3735926,
+  "tags": {
+    "name": "زمزم",
+    "name:ar": "زمزم",
+    "name:en": "Zamzam",
+    "name:fa": "زمزم",
+    "name:hi": "ज़मज़म",
+    "name:ml": "സംസം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5193453622,
+  "lat": 35.6676820,
+  "lon": 51.4160771,
+  "tags": {
+    "name": "ایستگاه مترو میدان محمدیه",
+    "name:ar": "ساحة المحمدية",
+    "name:en": "Meydan-e Mohammadiyeh metro station",
+    "name:fa": "میدان محمدیه",
+    "name:hi": "मुहम्मदिया मैदान",
+    "name:ml": "മൊഹമ്മദിയെ ചത്വരം",
+    "old_name": "مولوی",
+    "old_name:ar": "مولوي",
+    "old_name:en": "Mowlavi",
+    "old_name:fa": "مولوی",
+    "old_name:hi": "मौलवी",
+    "old_name:ml": "മൗലവി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 5930756414,
+  "lat": 35.6448426,
+  "lon": 51.4446370,
+  "tags": {
+    "name": "ایستگاه مترو بعثت",
+    "name:ar": "بعثت",
+    "name:en": "Be'sat metro station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6438071583,
+  "lat": 35.6900693,
+  "lon": 51.4473913,
+  "tags": {
+    "name": "ایستگاه مترو میدان شهدا",
+    "name:ar": "ساحة الشهداء",
+    "name:en": "Meydan-e Shohada metro station",
+    "name:fa": "میدان شهدا",
+    "name:hi": "शहीद मैदान",
+    "name:ml": "മെയ്ദാനെ ഷൊഹദാ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6735113793,
+  "lat": 35.4078102,
+  "lon": 51.1544627,
+  "tags": {
+    "name": "فرودگاه امام خمینی(ره)",
+    "name:ar": "مطار الإمام الخميني",
+    "name:en": "Imam Khomeini Airport",
+    "name:fa": "فرودگاه امام خمینی(ره)",
+    "name:hi": "इमाम खुमैनी हवाई अड्डा",
+    "name:ml": "ഇമാം ഖൊമെയ്നി വിമാനത്താവളം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7056721168,
+  "lat": 35.5217139,
+  "lon": 51.3691430,
+  "tags": {
+    "name": "کهریزک",
+    "name:en": "Kahrizak",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9149513247,
+  "lat": 35.6518521,
+  "lon": 51.4446523,
+  "tags": {
+    "name": "ایستگاه مترو شهید رضایی",
+    "name:ar": "الشهيد رضائي",
+    "name:en": "Shahid Rezaei Metro Station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9360432983,
+  "lat": 35.7009343,
+  "lon": 51.3780939,
+  "tags": {
+    "name": "ایستگاه مترو توحید",
+    "name:en": "Towhid metro station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 9817359618,
+  "lat": 35.6684881,
+  "lon": 51.4454775,
+  "tags": {
+    "name": "شهدای هفده شهریور",
+    "name:ar": "شهداء الثامن من سبتمبر",
+    "name:en": "Shohada-ye Hefdah-e Shahrivar",
+    "name:fa": "شهدای هفده شهریور",
+    "name:hi": "शुहदा-ये हेफ़दहे शहरिवर",
+    "name:ml": "ഷൊഹദായെ ഹെഫ്ദഹെ ഷഹറീവർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10126282787,
+  "lat": 35.7061214,
+  "lon": 51.3776859,
+  "tags": {
+    "name": "ایستگاه مترو مدافعان سلامت",
+    "name:ar": "مدافعان سلامت",
+    "name:en": "Modafean-e Salamat metro station",
+    "name:fa": "مدافعان سلامت",
+    "name:hi": "मुदाफ़ियान सलामत",
+    "name:ml": "മൊദാഫെയാൻ സലാമത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10235224668,
+  "lat": 35.7373208,
+  "lon": 51.3199630,
+  "tags": {
+    "name": "شهید ستاری",
+    "name:ar": "الشهيد ستاري",
+    "name:en": "Shahid Sattari",
+    "name:fa": "شهید ستاری",
+    "name:hi": "शहीद सत्तारी",
+    "name:ml": "ഷഹീദ് സത്താറി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10746895094,
+  "lat": 35.7670778,
+  "lon": 51.3665384,
+  "tags": {
+    "name": "شهید دادمان",
+    "name:ar": "الشهيد دادمان",
+    "name:en": "Shahid Dadman",
+    "name:fa": "شهید دادمان",
+    "name:hi": "शहीद दादमान",
+    "name:ml": "ഷഹീദ് ദാദ്മാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10759924012,
+  "lat": 35.7156400,
+  "lon": 51.4397861,
+  "tags": {
+    "alt_name": "بیمارستان خانواده",
+    "alt_name:en": "Khanevadeh Hospital",
+    "alt_name:fa": "بیمارستان خانواده",
+    "name": "بهار شیراز",
+    "name:ar": "بهار شیراز",
+    "name:en": "Bahar Shiraz",
+    "name:fa": "بهار شیراز",
+    "name:hi": "बहार-ए-शीराज़",
+    "name:ml": "ബഹാർ ഷിറാസ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10760685494,
+  "lat": 35.7115271,
+  "lon": 51.4070196,
+  "tags": {
+    "alt_name": "میدان ولی عصر",
+    "alt_name:en": "Vali-e Asr Square",
+    "alt_name:ml": "മെയ്ദാനെ വലിയെ അസർ",
+    "internet_access": "no",
+    "name": "میدان حضرت ولی عصر(عج)",
+    "name:ar": "ساحة حضرة ولي عصر",
+    "name:en": "Meydan-e Hazrat-e Vali-e Asr",
+    "name:fa": "میدان حضرت ولی عصر(عج)",
+    "name:hi": "हज़रत वली-ए-असर मैदान",
+    "name:ml": "വലിയെ അസർ ചത്വരം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes",
+    "wheelchair": "limited"
+  }
+},
+{
+  "type": "node",
+  "id": 10761286147,
+  "lat": 35.7632103,
+  "lon": 51.2839432,
+  "tags": {
+    "name": "شهدای کن",
+    "name:ar": "شهداء كان",
+    "name:en": "Shohada-ye Kan",
+    "name:fa": "شهدای کن",
+    "name:hi": "शुहदा-ये-कन",
+    "name:hy": "Կաննի նահատակներ",
+    "name:ml": "ഷുഹദായെ കൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10860300370,
+  "lat": 35.7316241,
+  "lon": 51.3074720,
+  "tags": {
+    "name": "علامه جعفری",
+    "name:ar": "العلامة جعفري",
+    "name:en": "Allameh Ja'fari",
+    "name:etymology:wikidata": "Q545407",
+    "name:fa": "علامه جعفری",
+    "name:hi": "अल्लामा जाफ़री",
+    "name:ml": "അല്ലാമെ ജാഫറി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11263536540,
+  "lat": 35.7456674,
+  "lon": 51.2947466,
+  "tags": {
+    "name": "شهر زیبا",
+    "name:ar": "مدينة زیبا",
+    "name:en": "Shahr-e Ziba",
+    "name:fa": "شهر زیبا",
+    "name:hi": "शहर-ए-ज़ीबा",
+    "name:ml": "ഷഹ്റെ സീബ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11271470415,
+  "lat": 35.4638433,
+  "lon": 50.9771474,
+  "tags": {
+    "name": "شهر پرند",
+    "name:en": "Shahr-e Parand",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11281419801,
+  "lat": 35.5450702,
+  "lon": 51.3730512,
+  "tags": {
+    "name": "حرم مطهر امام خمینی(ره)",
+    "name:ar": "الضريح المقدس الإمام الخميني",
+    "name:en": "Haram-e Motahar-e Imam Khomeini",
+    "name:fa": "حرم مطهر امام خمینی(ره)",
+    "name:hi": "हरम-ए-मुतहर",
+    "name:ml": "ഹറമെ മൊത്തഹർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11417054144,
+  "lat": 35.6995040,
+  "lon": 51.3221135,
+  "tags": {
+    "name": "بیمه",
+    "name:ar": "بيمه",
+    "name:en": "Bimeh",
+    "name:fa": "بیمه",
+    "name:hi": "बीमा",
+    "name:ml": "ബീമെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11417054145,
+  "lat": 35.6995125,
+  "lon": 51.3220910,
+  "tags": {
+    "name": "بیمه",
+    "name:ar": "بيمه",
+    "name:en": "Bimeh",
+    "name:fa": "بیمه",
+    "name:hi": "बीमा",
+    "name:ml": "ബീമെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11417054162,
+  "lat": 35.6931716,
+  "lon": 51.3251214,
+  "tags": {
+    "name": "ایستگاه مترو فرودگاه مهرآباد ترمینال‌های ۱ و ۲",
+    "name:en": "Mehrabad Airport Terminals 1 & 2 Metro Station",
+    "name:tk": "Mehrabat Gonalgasy 1-nji we 2-nji Terminalı",
+    "name:tr": "Mehrabat Havalimanı 1. ve 2. Terminalı",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11417054166,
+  "lat": 35.6890751,
+  "lon": 51.3304584,
+  "tags": {
+    "name": "ایستگاه مترو فرودگاه مهرآباد ترمینال‌های ۴ و ۶",
+    "name:en": "Mehrabad Airport Terminals 4 & 6 Metro Station",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12457390950,
+  "lat": 35.6595076,
+  "lon": 51.3977226,
+  "tags": {
+    "name": "راه آهن",
+    "name:ar": "السكك الحديدية",
+    "name:en": "Rahahan",
+    "name:fa": "راه آهن",
+    "name:hi": "राह अहन",
+    "name:ml": "റാ ആഹൻ",
+    "name:ru": "Рах Ахан",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12457390951,
+  "lat": 35.7720416,
+  "lon": 51.4731866,
+  "tags": {
+    "name": "میدان هروی",
+    "name:ar": "ميدان هروي",
+    "name:en": "Meydan-e Heravi",
+    "name:fa": "میدان هروی",
+    "name:hi": "हिरवी मैदान",
+    "name:ml": "ഹെറവി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12457390952,
+  "lat": 35.7313051,
+  "lon": 51.4447367,
+  "tags": {
+    "name": "شهید قدوسی",
+    "name:ar": "الشهيد قدوسي",
+    "name:en": "Shahid Ghodousi",
+    "name:fa": "شهید قدوسی",
+    "name:hi": "शहीद कुद्दूसी",
+    "name:ml": "ഷഹീദ് ഖുദ്ദൂസി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12457390955,
+  "lat": 35.7728802,
+  "lon": 51.4381052,
+  "tags": {
+    "name": "قلهک",
+    "name:ar": "قلهك",
+    "name:en": "Gholhak",
+    "name:fa": "قلهک",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 12457390956,
+  "lat": 35.7489388,
+  "lon": 51.4263148,
+  "tags": {
+    "name": "شهید همت",
+    "name:ar": "الشهيد همت",
+    "name:en": "Shahid Hemmat",
+    "name:fa": "شهید همت",
+    "name:hi": "शहीद हिम्मत",
+    "name:ml": "ഷഹീദ് ഹെമ്മത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13028560658,
+  "lat": 35.7698016,
+  "lon": 51.3592487,
+  "tags": {
+    "access": "yes",
+    "alt_name": "کلاس مادر و کودک تهران",
+    "blind": "yes",
+    "check_date": "2026-10-25",
+    "contact:whatsapp": "+989395559598",
+    "description": "آکادمی کودک تهران | کارگاه مادر و کودک\nآکادمی کودک تهران برگزارکننده تخصصی کارگاه‌های مادر و کودک و دوره‌های رشد و مهارت کودکان از ۶ ماهگی تا ۵ سالگی در شهرک غرب تهران است.",
+    "height": "3",
+    "image": "https://www.tehran-kids.com/wp-content/uploads/2026/08/آکادمی-کودک-تهران-18.webp",
+    "instagram": "https://www.instagram.com/tehkidacademy/",
+    "max_age": "6 سال",
+    "min_age": "6 ماه",
+    "name": "کارگاه مادر و کودک تهران",
+    "phone:mobile": "+982188099163",
+    "playground": "playhouse",
+    "playground:theme": "play",
+    "short_name": "آکادمی کودک تهران",
+    "start_date": "2024-02-14",
+    "telegram": "t.me/tehkidacademy",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13203213003,
+  "lat": 35.5473928,
+  "lon": 51.3827174,
+  "tags": {
+    "name": "شاهد - باقرشهر",
+    "name:ar": "شاهد - باقرشهر",
+    "name:en": "Shahed - Bagher Shahr",
+    "name:fa": "شاهد - باقرشهر",
+    "name:hi": "शाहिद बाकरशहर",
+    "name:ml": "ഷാഹെദ് ബാഖെർഷഹർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380418856,
+  "lat": 35.5599465,
+  "lon": 51.3993412,
+  "tags": {
+    "name": "پالایشگاه",
+    "name:en": "Palayeshgah",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380418857,
+  "lat": 35.5450963,
+  "lon": 51.3730092,
+  "tags": {
+    "name": "حرم مطهر امام خمینی(ره)",
+    "name:ar": "الضريح المقدس الإمام الخميني",
+    "name:en": "Haram-e Motahar-e Imam Khomeini",
+    "name:fa": "حرم مطهر امام خمینی(ره)",
+    "name:hi": "हरम-ए-मुतहर",
+    "name:ml": "ഹറമെ മൊത്തഹർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380418863,
+  "lat": 35.5945669,
+  "lon": 51.4223459,
+  "tags": {
+    "name": "شهرری",
+    "name:en": "Shahr-e Rey",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380418872,
+  "lat": 35.6100211,
+  "lon": 51.4194518,
+  "tags": {
+    "name": "جوانمرد قصاب",
+    "name:ar": "جوانمرد قصاب",
+    "name:en": "Javanmard-e Ghassab",
+    "name:fa": "جوانمرد قصاب",
+    "name:hi": "जवानमर्द कसाब",
+    "name:ml": "ജവാൻമർദ് ഗസാബ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380418899,
+  "lat": 35.6296030,
+  "lon": 51.4156928,
+  "tags": {
+    "name": "علی آباد",
+    "name:en": "Ali Abad",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380425726,
+  "lat": 35.6407131,
+  "lon": 51.4147551,
+  "tags": {
+    "alt_name": "خزانه",
+    "name": "شهید بخارایی",
+    "name:ar": "الشهيد بخاري",
+    "name:en": "Shahid Bokharaei",
+    "name:fa": "شهید بخارایی",
+    "name:hi": "शहीद बुखारी",
+    "name:ml": "ഷഹീദ് ബൊഖാറായ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380425829,
+  "lat": 35.6508513,
+  "lon": 51.4162591,
+  "tags": {
+    "name": "پایانه جنوب",
+    "name:ar": "المحطة الجنوبية",
+    "name:en": "Payaneh Jonoub",
+    "name:fa": "پایانه جنوب",
+    "name:hi": "पायाने-ए जनूब",
+    "name:ml": "പായാനെ ജനൂബ്",
+    "old_name": "ترمینال جنوب",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "station": "subway",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380425847,
+  "lat": 35.6573536,
+  "lon": 51.4142138,
+  "tags": {
+    "name": "شوش",
+    "name:ar": "شوش",
+    "name:en": "Shoush",
+    "name:fa": "شوش",
+    "name:hi": "शूश",
+    "name:ml": "ഷൂഷ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "station": "subway",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380779561,
+  "lat": 35.6678087,
+  "lon": 51.4157820,
+  "tags": {
+    "name": "ایستگاه مترو میدان محمدیه",
+    "name:ar": "ساحة المحمدية",
+    "name:en": "Meydan-e Mohammadiyeh metro station",
+    "name:fa": "میدان محمدیه",
+    "name:hi": "मुहम्मदिया मैदान",
+    "name:ml": "മൊഹമ്മദിയെ ചത്വരം",
+    "old_name": "مولوی",
+    "old_name:ar": "مولوي",
+    "old_name:en": "Mowlavi",
+    "old_name:fa": "مولوی",
+    "old_name:hi": "मौलवी",
+    "old_name:ml": "മൗലവി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380779580,
+  "lat": 35.6731431,
+  "lon": 51.4165574,
+  "tags": {
+    "name": "خیام",
+    "name:ar": "خیام",
+    "name:en": "Khayyam",
+    "name:fa": "خیام",
+    "name:hi": "खय्याम",
+    "name:ml": "ഖയ്യാം",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380779588,
+  "lat": 35.6782754,
+  "lon": 51.4172694,
+  "tags": {
+    "name": "پانزده خرداد",
+    "name:ar": "السادس من يونيو",
+    "name:en": "Panzdah-e Khordad",
+    "name:fa": "پانزده خرداد",
+    "name:hi": "पांज़दहे-खुर्दाद",
+    "name:ml": "പാൻസദ ഖൊർദാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380785609,
+  "lat": 35.6858947,
+  "lon": 51.4210334,
+  "tags": {
+    "name": "امام خمینی(ره)",
+    "name:ar": "الامام الخميني",
+    "name:en": "Emam Khomeini",
+    "name:fa": "امام خمینی(ره)",
+    "name:hi": "इमाम ख़ुमैनी",
+    "name:ml": "ഇമാം ഖൊമെയ്നി",
+    "name:ru": "Имам Хомейни",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380785611,
+  "lat": 35.6933307,
+  "lon": 51.4245383,
+  "tags": {
+    "name": "سعدی",
+    "name:ar": "سعدي",
+    "name:en": "Sa'di",
+    "name:fa": "سعدی",
+    "name:hi": "सादी",
+    "name:ml": "സാദി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380785623,
+  "lat": 35.7016831,
+  "lon": 51.4260811,
+  "tags": {
+    "name": "دروازه دولت",
+    "name:ar": "بوابة الحكومة",
+    "name:en": "Darvazeh Dowlat",
+    "name:fa": "دروازه دولت",
+    "name:hi": "दरवाज़ा दौलत",
+    "name:ml": "ദർവാസെ ദൗലത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13380785627,
+  "lat": 35.7071117,
+  "lon": 51.4255402,
+  "tags": {
+    "name": "آیت‌الله طالقانی",
+    "name:ar": "طالقاني",
+    "name:en": "Ayatollah Taleghani",
+    "name:fa": "آیت‌الله طالقانی",
+    "name:hi": "तालिकानी",
+    "name:ml": "താലെഖാനി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123723,
+  "lat": 35.7153961,
+  "lon": 51.4260470,
+  "tags": {
+    "alt_name": "هفت تیر",
+    "name": "شهدای هفتم تیر",
+    "name:ar": "شهداء الثمانية وعشرون من يونيو",
+    "name:en": "Shohada-ye Haftom-e Tir",
+    "name:fa": "شهدای هفتم تیر",
+    "name:hi": "शुहदा-ये हफ़्तुम तीर",
+    "name:ml": "ഹഫ്തെ തീർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123727,
+  "lat": 35.7244104,
+  "lon": 51.4277687,
+  "tags": {
+    "name": "شهید مفتح",
+    "name:ar": "الشهيد مفتح",
+    "name:en": "Shahid Mofatteh",
+    "name:fa": "شهید مفتح",
+    "name:hi": "शहीद मुफ़त्तह",
+    "name:ml": "ഷഹീദ് മൊഫത്തേഹ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123728,
+  "lat": 35.7299624,
+  "lon": 51.4269690,
+  "tags": {
+    "name": "شهید بهشتی",
+    "name:ar": "الشهيد بهشتي",
+    "name:en": "Shahid Beheshti",
+    "name:fa": "شهید بهشتی",
+    "name:hi": "शहीद बेहिश्ती",
+    "name:ml": "ഷഹീദ് ബെഹെഷ്തി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123733,
+  "lat": 35.7406906,
+  "lon": 51.4275807,
+  "tags": {
+    "name": "ایستگاه مترو مصلی امام خمینی(ره)",
+    "name:ar": "مصلی الإمام الخميني",
+    "name:en": "Mosalla-ye Emam Khomeini metro station",
+    "name:fa": "مصلی امام خمینی(ره)",
+    "name:hi": "मुसल्ला",
+    "name:ml": "മൊസല്ല",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123738,
+  "lat": 35.7567416,
+  "lon": 51.4260776,
+  "tags": {
+    "name": "شهید حقانی",
+    "name:ar": "الشهيد حقاني",
+    "name:en": "Shahid Haghani",
+    "name:fa": "شهید حقانی",
+    "name:hi": "शहीद हक्कानी",
+    "name:ml": "ഷഹീദ് ഹഖാനി",
+    "old_name": "میرداماد",
+    "old_name:ar": "میرداماد",
+    "old_name:en": "Mirdamad",
+    "old_name:fa": "میرداماد",
+    "old_name:hi": "मीरदामाद",
+    "old_name:ml": "മിർദാമാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123740,
+  "lat": 35.7489369,
+  "lon": 51.4262773,
+  "tags": {
+    "name": "شهید همت",
+    "name:ar": "الشهيد همت",
+    "name:en": "Shahid Hemmat",
+    "name:fa": "شهید همت",
+    "name:hi": "शहीद हिम्मत",
+    "name:ml": "ഷഹീദ് ഹെമ്മത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123744,
+  "lat": 35.7601274,
+  "lon": 51.4339607,
+  "tags": {
+    "name": "میرداماد",
+    "name:ar": "میرداماد",
+    "name:en": "Mirdamad",
+    "name:fa": "میرداماد",
+    "name:hi": "मीरदामाद",
+    "name:ml": "മിർദാമാദ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123757,
+  "lat": 35.7630499,
+  "lon": 51.4438944,
+  "tags": {
+    "name": "دکتر شریعتی",
+    "name:ar": "الدكتور شريعتي",
+    "name:en": "Doctor Shari'ati",
+    "name:fa": "دکتر شریعتی",
+    "name:hi": "डॉ. शरीयती",
+    "name:ml": "ഡോക്ടർ ഷറീയത്തി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123763,
+  "lat": 35.7728682,
+  "lon": 51.4380719,
+  "tags": {
+    "name": "قلهک",
+    "name:ar": "قلهك",
+    "name:en": "Gholhak",
+    "name:fa": "قلهک",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381123769,
+  "lat": 35.7850945,
+  "lon": 51.4359918,
+  "tags": {
+    "name": "شهید صدر",
+    "name:ar": "الشهيد صدر",
+    "name:en": "Shahid Sadr",
+    "name:fa": "شهید صدر",
+    "name:hi": "शहीद सद्र",
+    "name:ml": "ഷഹീദ് സദ്ർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381264367,
+  "lat": 35.7934903,
+  "lon": 51.4347772,
+  "tags": {
+    "name": "قیطریه",
+    "name:ar": "قيطرية",
+    "name:en": "Gheytariyeh",
+    "name:fa": "قیطریه",
+    "name:hi": "क़ैतरिया",
+    "name:ml": "ഖൈത്തറിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13381264372,
+  "lat": 35.8046380,
+  "lon": 51.4336485,
+  "tags": {
+    "name": "تجریش",
+    "name:ar": "تجریش",
+    "name:de": "Tadschrisch",
+    "name:en": "Tajrish",
+    "name:fa": "تجریش",
+    "name:hi": "तजरीश",
+    "name:ml": "തജ്രീഷ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13426509301,
+  "lat": 35.7090570,
+  "lon": 51.4429368,
+  "tags": {
+    "name": "سرباز وطن",
+    "name:en": "Sarbaz-e Vatan",
+    "name:fa": "سرباز وطن",
+    "name:hi": "सरबाज़-ए-वतन",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13426743991,
+  "lat": 35.7023874,
+  "lon": 51.4458420,
+  "tags": {
+    "name": "امام حسین(ع)",
+    "name:en": "Emam Hossein",
+    "name:fa": "امام حسین(ع)",
+    "name:hi": "इमाम हुसैन",
+    "operator": "Tehran Urban & Suburban Railway Operation Co.",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13953682945,
+  "lat": 35.7178102,
+  "lon": 51.3311672,
+  "tags": {
+    "name": "صادقیه",
+    "name:ar": "صادقية",
+    "name:en": "Sadeghiyeh",
+    "name:fa": "صادقیه",
+    "name:hi": "सादिकिया",
+    "name:ml": "സാദെഗിയെ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068012376,
+  "lat": 35.7161034,
+  "lon": 51.3436110,
+  "tags": {
+    "name": "طرشت",
+    "name:ar": "طرشت",
+    "name:en": "Tarasht",
+    "name:fa": "طرشت",
+    "name:hi": "तरश्त",
+    "name:ml": "തറഷ്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068012379,
+  "lat": 35.7058186,
+  "lon": 51.3542615,
+  "tags": {
+    "name": "دانشگاه شریف",
+    "name:ar": "جامعة شريف",
+    "name:en": "Daneshgah-e Sharif",
+    "name:fa": "دانشگاه شریف",
+    "name:hi": "शरीफ़ विश्वविद्यालय",
+    "name:ml": "ഷരീഫ് സർവകലാശാല",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068012395,
+  "lat": 35.6949374,
+  "lon": 51.3787850,
+  "tags": {
+    "name": "ایستگاه مترو شهید نواب صفوی",
+    "name:ar": "الشهيد نواب صفوي",
+    "name:en": "Shahid Navvab-e Safavi metro station",
+    "name:fa": "شهید نواب صفوی",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068012396,
+  "lat": 35.7004412,
+  "lon": 51.3647735,
+  "tags": {
+    "name": "شادمان",
+    "name:en": "Shademan",
+    "name:fa": "شادمان",
+    "old_name": "آزادی",
+    "old_name:en": "Azadi",
+    "old_name:fa": "آزادی",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031412,
+  "lat": 35.6859049,
+  "lon": 51.4203040,
+  "tags": {
+    "name": "امام خمینی(ره)",
+    "name:ar": "الامام الخميني",
+    "name:en": "Emam Khomeini",
+    "name:fa": "امام خمینی(ره)",
+    "name:hi": "इमाम ख़ुमैनी",
+    "name:ml": "ഇമാം ഖൊമെയ്നി",
+    "name:ru": "Имам Хомейни",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031414,
+  "lat": 35.6909067,
+  "lon": 51.3883886,
+  "tags": {
+    "name": "میدان حر",
+    "name:ar": "ساحة هار",
+    "name:en": "Meydan-e Horr",
+    "name:fa": "میدان حر",
+    "name:hi": "हुर मैदान",
+    "name:ml": "മെയ്ദാനെ ഹൊർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031415,
+  "lat": 35.6874792,
+  "lon": 51.3990843,
+  "tags": {
+    "name": "دانشگاه امام علی(ع)",
+    "name:ar": "جامعة الامام علي",
+    "name:en": "Daneshgah-e Emam Ali",
+    "name:fa": "دانشگاه امام علی(ع)",
+    "name:hi": "इमाम अली विश्वविद्यालय",
+    "name:ml": "ദാനെഷ്ഗാഹെ ഇമാം അലി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031421,
+  "lat": 35.6883832,
+  "lon": 51.4267056,
+  "tags": {
+    "name": "ملت",
+    "name:ar": "ملت",
+    "name:en": "Mellat",
+    "name:fa": "ملت",
+    "name:hi": "मिल्लत",
+    "name:ml": "മെല്ലത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031436,
+  "lat": 35.6923445,
+  "lon": 51.4331302,
+  "tags": {
+    "name": "بهارستان",
+    "name:ar": "بهارستان",
+    "name:en": "Baharestan",
+    "name:fa": "بهارستان",
+    "name:hi": "बहारिस्तान",
+    "name:ml": "ബഹാറെസ്ഥാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031439,
+  "lat": 35.6989939,
+  "lon": 51.4372257,
+  "tags": {
+    "name": "دروازه شمیران",
+    "name:ar": "بوابة شميران",
+    "name:en": "Darvazeh Shemiran",
+    "name:fa": "دروازه شمیران",
+    "name:hi": "दरवाज़ा शेमीरान",
+    "name:ml": "ദർവാസെ ഷെമീറാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031448,
+  "lat": 35.7024134,
+  "lon": 51.4457236,
+  "tags": {
+    "name": "امام حسین(ع)",
+    "name:en": "Emam Hossein",
+    "name:fa": "امام حسین(ع)",
+    "name:hi": "इमाम हुसैन",
+    "operator": "Tehran Urban & Suburban Railway Operation Co.",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031457,
+  "lat": 35.7090892,
+  "lon": 51.4529239,
+  "tags": {
+    "name": "شهید مدنی",
+    "name:ar": "الشهيد مدني",
+    "name:en": "Shahid Madani",
+    "name:fa": "شهید مدنی",
+    "name:hi": "शहीद मदनी",
+    "name:ml": "ഷഹീദ് മദനി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031464,
+  "lat": 35.7183836,
+  "lon": 51.4643927,
+  "tags": {
+    "name": "سبلان",
+    "name:ar": "سبلان",
+    "name:en": "Sabalan",
+    "name:fa": "سبلان",
+    "name:hi": "सबालान",
+    "name:ml": "സബലാൻ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031472,
+  "lat": 35.7266199,
+  "lon": 51.4756130,
+  "tags": {
+    "name": "فدک",
+    "name:ar": "فدك",
+    "name:en": "Fadak",
+    "name:fa": "فدک",
+    "name:hi": "फ़दक",
+    "name:ml": "ഫദക്ക്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031475,
+  "lat": 35.7332626,
+  "lon": 51.4840857,
+  "tags": {
+    "name": "جانبازان",
+    "name:ar": "جانبازان",
+    "name:en": "Janbazan",
+    "name:fa": "جانبازان",
+    "name:hi": "जानबाज़ान",
+    "name:ml": "ജാൻബസാൻ",
+    "old_name": "گلبرگ",
+    "old_name:en": "Golbarg",
+    "old_name:fa": "گلبرگ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031483,
+  "lat": 35.7357720,
+  "lon": 51.4948056,
+  "tags": {
+    "name": "سرسبز",
+    "name:ar": "سرسبز",
+    "name:en": "Sarsabz",
+    "name:fa": "سرسبز",
+    "name:hi": "सरसब्ज़",
+    "name:ml": "സർസബ്സ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031484,
+  "lat": 35.7344604,
+  "lon": 51.5049793,
+  "tags": {
+    "name": "دانشگاه علم و صنعت",
+    "name:ar": "جامعة العلوم والتكنولوجيا",
+    "name:en": "Daneshgah-e Elm-o San'at",
+    "name:fa": "دانشگاه علم و صنعت",
+    "name:hi": "विज्ञान और उद्योग विश्वविद्यालय",
+    "name:ml": "ദാനെഷ്ഗ എൽമ് ഒ-സനാത്ത്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031489,
+  "lat": 35.7309369,
+  "lon": 51.5318495,
+  "tags": {
+    "name": "تهرانپارس",
+    "name:ar": "طهرانبارس",
+    "name:en": "Tehranpars",
+    "name:fa": "تهرانپارس",
+    "name:hi": "तेहरानपार्स",
+    "name:ml": "ടെഹ്റാൻപാർസ്",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031503,
+  "lat": 35.7298447,
+  "lon": 51.5470882,
+  "tags": {
+    "name": "فرهنگسرا",
+    "name:ar": "فرهنغسرا",
+    "name:en": "Farhangsara",
+    "name:fa": "فرهنگسرا",
+    "name:hi": "फरहंगसरा",
+    "name:ml": "ഫർഹംഗ്സറ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14068031505,
+  "lat": 35.7328604,
+  "lon": 51.5168362,
+  "tags": {
+    "alt_name": "شهید باقری",
+    "alt_name:ar": "الشهيد باقري",
+    "alt_name:en": "Shahid Bagheri",
+    "alt_name:fa": "شهید باقری",
+    "alt_name:hi": "शहीद बाकरी",
+    "alt_name:ml": "ഷഹീദ് ബാഖറി",
+    "name": "شهیدان باقری",
+    "name:en": "Shahidan-e Bagheri",
+    "name:fa": "شهیدان باقری",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14071134416,
+  "lat": 35.7311282,
+  "lon": 51.4367691,
+  "tags": {
+    "name": "سهروردی",
+    "name:ar": "سهروردي",
+    "name:en": "Sohrevardi",
+    "name:fa": "سهروردی",
+    "name:hi": "सुहरेवर्दी",
+    "name:ml": "സൊഹ്രെവർദി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14072135589,
+  "lat": 35.7434577,
+  "lon": 51.4621422,
+  "tags": {
+    "name": "خواجه عبدالله انصاری",
+    "name:ar": "خواجة عبد الله أنصاري",
+    "name:en": "Khajeh Abdollah-e Ansari",
+    "name:fa": "خواجه عبدالله انصاری",
+    "name:hi": "ख्वाजा अब्दुल्ला-ए अंसारी",
+    "name:ml": "ഖാജെ അബ്ദൊല്ലാഹെ അൻസാറി",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14075125224,
+  "lat": 35.6677915,
+  "lon": 51.3870914,
+  "tags": {
+    "name": "ایستگاه مترو هلال احمر",
+    "name:ar": "هلال احمر",
+    "name:en": "Helal Ahmar metro station",
+    "name:fa": "هلال احمر",
+    "name:hi": "हिलाल अहमर",
+    "name:ml": "ഹെലാൽ അഹ്മർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14075125226,
+  "lat": 35.6904567,
+  "lon": 51.4568004,
+  "tags": {
+    "alt_name": "شیخ الرئیس",
+    "name": "ایستگاه مترو ابن سینا",
+    "name:ar": "ابن سينا",
+    "name:en": "Ebn-e Sina metro station",
+    "name:fa": "ابن سینا",
+    "name:hi": "इब्न सीना",
+    "name:ml": "ഇബ്നു സീന",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 14123565436,
+  "lat": 35.7850954,
+  "lon": 51.4360152,
+  "tags": {
+    "name": "شهید صدر",
+    "name:ar": "الشهيد صدر",
+    "name:en": "Shahid Sadr",
+    "name:fa": "شهید صدر",
+    "name:hi": "शहीद सद्र",
+    "name:ml": "ഷഹീദ് സദ്ർ",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+}
+
+  ]
+}

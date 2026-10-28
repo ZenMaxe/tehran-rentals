@@ -1,0 +1,4216 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-28T20:07:06Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "relation",
+  "id": 8321567,
+  "center": {
+    "lat": 35.6773841,
+    "lon": 51.4776528
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شهرابی",
+    "name:en": "Shahrabi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321568,
+  "center": {
+    "lat": 35.6711393,
+    "lon": 51.4590913
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شاهین",
+    "name:en": "Shahin",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321569,
+  "center": {
+    "lat": 35.6824250,
+    "lon": 51.4758161
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نبی اکرم",
+    "name:en": "Nabi Akram",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321570,
+  "center": {
+    "lat": 35.6860374,
+    "lon": 51.4744970
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "فرزانه",
+    "name:en": "Farzaneh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321571,
+  "center": {
+    "lat": 35.6739865,
+    "lon": 51.4686849
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شکیبا",
+    "name:en": "Shakiba",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321572,
+  "center": {
+    "lat": 35.6802963,
+    "lon": 51.4687140
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شیوا",
+    "name:en": "Shiva",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321573,
+  "center": {
+    "lat": 35.6833310,
+    "lon": 51.4572737
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نیکنام",
+    "name:en": "Niknam",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321574,
+  "center": {
+    "lat": 35.6840426,
+    "lon": 51.4544322
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "جابری",
+    "name:en": "Jaberi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321575,
+  "center": {
+    "lat": 35.6782205,
+    "lon": 51.4527385
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دژکام",
+    "name:en": "Dezhkam",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321576,
+  "center": {
+    "lat": 35.6766942,
+    "lon": 51.4598161
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "آهنگران",
+    "name:en": "Ahangaran",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321577,
+  "center": {
+    "lat": 35.6757139,
+    "lon": 51.4521812
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مینای شمالی",
+    "name:en": "North Mina",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321578,
+  "center": {
+    "lat": 35.6844155,
+    "lon": 51.4492676
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شکوفه",
+    "name:en": "Shokufeh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321579,
+  "center": {
+    "lat": 35.6881798,
+    "lon": 51.4570501
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "چهارصد دستگاه",
+    "name:en": "ChaharSad Dastgah",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321580,
+  "center": {
+    "lat": 35.6892586,
+    "lon": 51.4713426
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "صد دستگاه",
+    "name:en": "Sad Dastgah",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q3461061"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321581,
+  "center": {
+    "lat": 35.6859074,
+    "lon": 51.4667127
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دهم فروردین",
+    "name:en": "Dahom Farvardin",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321582,
+  "center": {
+    "lat": 35.6879067,
+    "lon": 51.4837005
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "پرستار",
+    "name:en": "Parastar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321583,
+  "center": {
+    "lat": 35.6839127,
+    "lon": 51.4873260
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ابوذر",
+    "name:en": "Abuzar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321584,
+  "center": {
+    "lat": 35.6969459,
+    "lon": 51.4763346
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دهقان - کوکاکولا",
+    "name:en": "Dehghan - Kukakula",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321585,
+  "center": {
+    "lat": 35.6948531,
+    "lon": 51.4608956
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "زاهد گیلانی",
+    "name:en": "Zahed Gilani",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321586,
+  "center": {
+    "lat": 35.7018341,
+    "lon": 51.4549155
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شهید اسدی",
+    "name:en": "Shahid Asadi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321587,
+  "center": {
+    "lat": 35.6948571,
+    "lon": 51.4522573
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "صفا",
+    "name:en": "Safa",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321588,
+  "center": {
+    "lat": 35.6788202,
+    "lon": 51.4417213
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "آبشار",
+    "name:en": "Abshar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321589,
+  "center": {
+    "lat": 35.6799476,
+    "lon": 51.4343439
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "امام زاده یحیی",
+    "name:ar": "إمام زاده يحيى",
+    "name:en": "Emamzadeh Yahya",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321590,
+  "center": {
+    "lat": 35.6872923,
+    "lon": 51.4395882
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ایران",
+    "name:en": "Iran",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321591,
+  "center": {
+    "lat": 35.6810833,
+    "lon": 51.4245580
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "name": "پامنار",
+    "name:ar": "بامنار",
+    "name:en": "Pamenar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321592,
+  "center": {
+    "lat": 35.6937069,
+    "lon": 51.4312130
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بهارستان",
+    "name:en": "Baharestan",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q112275537"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321593,
+  "center": {
+    "lat": 35.6958271,
+    "lon": 51.4407885
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دروازه شمیران",
+    "name:en": "Darvazeh Shemiran",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321594,
+  "center": {
+    "lat": 35.7068754,
+    "lon": 51.4518103
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نظام آباد",
+    "name:en": "Nezam Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321595,
+  "center": {
+    "lat": 35.7096025,
+    "lon": 51.4503533
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "گرگان",
+    "name:en": "Gorgan",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q3110959",
+    "wikipedia": "fr:Gorgan (quartier de Téhéran)"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321596,
+  "center": {
+    "lat": 35.7075080,
+    "lon": 51.4740980
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "اشراقی",
+    "name:en": "Eshraghi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321597,
+  "center": {
+    "lat": 35.6403127,
+    "lon": 51.4945068
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "اسلام آباد - والفجر",
+    "name:en": "Eslam Abad - Valfajr",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321598,
+  "center": {
+    "lat": 35.6481267,
+    "lon": 51.4748247
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بلوار ابوذر - آهنگ",
+    "name:en": "Bolvar Abuzar - Ahang",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321599,
+  "center": {
+    "lat": 35.6373525,
+    "lon": 51.4696115
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بروجردی - دهقان",
+    "name:en": "Borujerdi - Dehgan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321600,
+  "center": {
+    "lat": 35.6535394,
+    "lon": 51.4500111
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ولیعصر - بیسیم",
+    "name:en": "ValiAsr - BiSim",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321601,
+  "center": {
+    "lat": 35.6713590,
+    "lon": 51.3976763
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "قلمستان - براداران جوادیان",
+    "name:en": "Ghalamestan - Baradaran Javadian",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321602,
+  "center": {
+    "lat": 35.6607524,
+    "lon": 51.3996520
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "راه آهن",
+    "name:en": "Rah Ahan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321603,
+  "center": {
+    "lat": 35.6648172,
+    "lon": 51.4010899
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "آگاهی",
+    "name:en": "Agahi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321604,
+  "center": {
+    "lat": 35.6713052,
+    "lon": 51.4036950
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "فروزش - امیر بهادر",
+    "name:en": "Foruzesh - Amir Bahador",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321605,
+  "center": {
+    "lat": 35.6628702,
+    "lon": 51.4103250
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "تختی",
+    "name:en": "Takhti",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321606,
+  "center": {
+    "lat": 35.6487445,
+    "lon": 51.4436662
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مطهری",
+    "name:en": "Motahari",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321607,
+  "center": {
+    "lat": 35.6579323,
+    "lon": 51.4381066
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شوش",
+    "name:en": "Shush",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321608,
+  "center": {
+    "lat": 35.6551348,
+    "lon": 51.4378813
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مظاهری",
+    "name:en": "Mazaheri",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321609,
+  "center": {
+    "lat": 35.6698612,
+    "lon": 51.4408308
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "قیام",
+    "name:en": "Ghiam",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321610,
+  "center": {
+    "lat": 35.6636644,
+    "lon": 51.4382572
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "کوثر",
+    "name:en": "Kosar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321611,
+  "center": {
+    "lat": 35.6607380,
+    "lon": 51.4508740
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "طیب",
+    "name:en": "Tayeb",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321612,
+  "center": {
+    "lat": 35.6649293,
+    "lon": 51.4609409
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دولاب",
+    "name:en": "Dulab",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q3041103"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321613,
+  "center": {
+    "lat": 35.6505646,
+    "lon": 51.4620133
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "اتابک",
+    "name:en": "Atabak",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321629,
+  "center": {
+    "lat": 35.6377020,
+    "lon": 51.3511443
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شهرک صادقیه",
+    "name:en": "Sadeghieh Town",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321631,
+  "center": {
+    "lat": 35.6500991,
+    "lon": 51.3621094
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "جلیلی",
+    "name:en": "Jalili",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321633,
+  "center": {
+    "lat": 35.6416809,
+    "lon": 51.3613637
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "زهتابی",
+    "name:en": "Zahtabi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321634,
+  "center": {
+    "lat": 35.6544253,
+    "lon": 51.3581221
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "سجاد",
+    "name:en": "Sajad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321635,
+  "center": {
+    "lat": 35.6532185,
+    "lon": 51.3672821
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "گلچین",
+    "name:en": "Golchin",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321636,
+  "center": {
+    "lat": 35.6630526,
+    "lon": 51.3906084
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "انبار نفت",
+    "name:en": "Anbar Naft",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321637,
+  "center": {
+    "lat": 35.6636688,
+    "lon": 51.3855012
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "عباسی",
+    "name:en": "Abbasi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321638,
+  "center": {
+    "lat": 35.6567380,
+    "lon": 51.3743035
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مقدم",
+    "name:en": "Moghadam",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321639,
+  "center": {
+    "lat": 35.6595098,
+    "lon": 51.3676263
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ابوذر شرقی",
+    "name:en": "East Abuzar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321640,
+  "center": {
+    "lat": 35.6672128,
+    "lon": 51.3503270
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "آذری",
+    "name:en": "Azari",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321641,
+  "center": {
+    "lat": 35.6578202,
+    "lon": 51.3495765
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "یافت آباد شمالی",
+    "name:en": "Yaft Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321642,
+  "center": {
+    "lat": 35.6422195,
+    "lon": 51.3429407
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شهرک ولیعصر جنوبی",
+    "name:en": "South ValiAsr",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q5943329"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321644,
+  "center": {
+    "lat": 35.6704867,
+    "lon": 51.3440643
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شمشیری",
+    "name:en": "Shamshiri",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321645,
+  "center": {
+    "lat": 35.6656579,
+    "lon": 51.3606478
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "امام زاده حسن",
+    "name:en": "Emamzadeh Hasan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321646,
+  "center": {
+    "lat": 35.6640315,
+    "lon": 51.3706246
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "باغ خزانه",
+    "name:en": "Bagh Khazaneh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321647,
+  "center": {
+    "lat": 35.6711757,
+    "lon": 51.3885875
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "هلال احمر",
+    "name:en": "HelalAhmar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321648,
+  "center": {
+    "lat": 35.6625661,
+    "lon": 51.3779091
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بلورسازی",
+    "name:en": "BolurSazi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321649,
+  "center": {
+    "lat": 35.6764523,
+    "lon": 51.3840843
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "خرمشهر",
+    "name:en": "Khoram Shahr",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321650,
+  "center": {
+    "lat": 35.6737465,
+    "lon": 51.3647000
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "سلیمانی - تیموری",
+    "name:en": "Soleymani - Teymuri",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321651,
+  "center": {
+    "lat": 35.6747875,
+    "lon": 51.3566642
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "جی",
+    "name:en": "Jey",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321653,
+  "center": {
+    "lat": 35.6782354,
+    "lon": 51.3483278
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "امام زاده عبدالله",
+    "name:en": "Emamzadeh Abdollah",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321654,
+  "center": {
+    "lat": 35.6858652,
+    "lon": 51.3480053
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دستغیب",
+    "name:en": "Dastgheyb",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321655,
+  "center": {
+    "lat": 35.6847240,
+    "lon": 51.3594543
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "هاشمی",
+    "name:en": "Hashemi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321657,
+  "center": {
+    "lat": 35.6944320,
+    "lon": 51.3511100
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دکتر هوشیار",
+    "name:en": "Doctor Hushmand",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321658,
+  "center": {
+    "lat": 35.6946859,
+    "lon": 51.3595424
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "زنجان جنوبی",
+    "name:en": "South Zanjan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321659,
+  "center": {
+    "lat": 35.7072087,
+    "lon": 51.3517808
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "تیموری",
+    "name:en": "Teymuri",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321660,
+  "center": {
+    "lat": 35.7063417,
+    "lon": 51.3436265
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "طرشت",
+    "name:en": "Tarasht",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321661,
+  "center": {
+    "lat": 35.7153461,
+    "lon": 51.3441092
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "چوب تراش",
+    "name:en": "Chub Tarash",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321662,
+  "center": {
+    "lat": 35.6971213,
+    "lon": 51.3882306
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "جمالزاده",
+    "name:en": "Jamalzadeh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321663,
+  "center": {
+    "lat": 35.6972824,
+    "lon": 51.3821182
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "جمهوری",
+    "name:en": "Jomhuri",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321664,
+  "center": {
+    "lat": 35.7092085,
+    "lon": 51.3626695
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شادمان",
+    "name:en": "Shadman",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321665,
+  "center": {
+    "lat": 35.7072998,
+    "lon": 51.3705528
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "توحید",
+    "name:en": "Towhid",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321666,
+  "center": {
+    "lat": 35.7073636,
+    "lon": 51.3843697
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "جمال‌زاده",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321667,
+  "center": {
+    "lat": 35.6983854,
+    "lon": 51.3981553
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "فلسطین - انقلاب",
+    "name:en": "Felestin - Enghelab",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321669,
+  "center": {
+    "lat": 35.7042694,
+    "lon": 51.4383859
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "خواجه نصیر",
+    "name:en": "Khajeh Nasir",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321670,
+  "center": {
+    "lat": 35.7062607,
+    "lon": 51.3986081
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "دانشگاه تهران",
+    "name:en": "Tehran University",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321671,
+  "center": {
+    "lat": 35.7103846,
+    "lon": 51.4288032
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "امجدیه",
+    "name:en": "Amjadieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321672,
+  "center": {
+    "lat": 35.7084652,
+    "lon": 51.4217356
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "ایرانشهر",
+    "name:en": "IranShahr",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321673,
+  "center": {
+    "lat": 35.7222830,
+    "lon": 51.4214722
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "سنائی",
+    "name:en": "Sanaei",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321674,
+  "center": {
+    "lat": 35.7196903,
+    "lon": 51.4121371
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "بهجت‌آباد",
+    "name:en": "Behjat Abad",
+    "name:fa": "بهجت‌آباد",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321675,
+  "center": {
+    "lat": 35.7140924,
+    "lon": 51.3990681
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "کشاورز - پارک لاله",
+    "name:en": "Keshavarz - Park Laleh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321676,
+  "center": {
+    "lat": 35.7082378,
+    "lon": 51.4120944
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ولیعصر",
+    "name:en": "ValiAsr",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321677,
+  "center": {
+    "lat": 35.7447432,
+    "lon": 51.4084531
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "نظامی گنجوی",
+    "name:en": "Nezami Ganjavi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321679,
+  "center": {
+    "lat": 35.7396620,
+    "lon": 51.4158909
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "ساعی",
+    "name:en": "Saeei",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321681,
+  "center": {
+    "lat": 35.7363631,
+    "lon": 51.4040087
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "یوسف آباد",
+    "name:en": "Yousef Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321682,
+  "center": {
+    "lat": 35.7332771,
+    "lon": 51.3916749
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "امیرآباد",
+    "name:en": "Amir Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321683,
+  "center": {
+    "lat": 35.7184625,
+    "lon": 51.3914459
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "دکتر شهید سیدحسین فاطمی",
+    "name:en": "Fatemi",
+    "place": "neighbourhood",
+    "short_name": "شهید فاطمی",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321685,
+  "center": {
+    "lat": 35.7167082,
+    "lon": 51.3735726
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شهرآرا - پاتریس",
+    "name:en": "ShahrAra - Patris",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321686,
+  "center": {
+    "lat": 35.7229022,
+    "lon": 51.3654499
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "تهران ویلا",
+    "name:en": "Tehran Vila",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321687,
+  "center": {
+    "lat": 35.7138141,
+    "lon": 51.3584876
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "حبیب الله",
+    "name:en": "Habibollah",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321688,
+  "center": {
+    "lat": 35.7218377,
+    "lon": 51.3591018
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ستارخان",
+    "name:en": "SattarKhan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321689,
+  "center": {
+    "lat": 35.7219659,
+    "lon": 51.3425843
+  },
+  "tags": {
+    "admin_level": "11",
+    "alt_name": "آریاشهر",
+    "alt_name:en": "Ariyashahr",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "صادقیه",
+    "name:en": "Sadeqiye",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321693,
+  "center": {
+    "lat": 35.7305342,
+    "lon": 51.3595129
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شهرک آزمایش",
+    "name:en": "Shahrak Azmayesh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321709,
+  "center": {
+    "lat": 35.7376376,
+    "lon": 51.3774240
+  },
+  "tags": {
+    "admin_level": "11",
+    "alt_name": "گیشا",
+    "alt_name:en": "Gisha",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "کوی نصر",
+    "name:en": "Kuy Nasr",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q1527228"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321712,
+  "center": {
+    "lat": 35.6460833,
+    "lon": 51.3815661
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بوستان ولایت",
+    "name:en": "Boostan Velayat",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321727,
+  "center": {
+    "lat": 35.6526773,
+    "lon": 51.4554356
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مینایی",
+    "name:en": "Minayi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321728,
+  "center": {
+    "lat": 35.6445375,
+    "lon": 51.4734142
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "هاشم آباد",
+    "name:en": "Hashem Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321734,
+  "center": {
+    "lat": 35.6934971,
+    "lon": 51.4181545
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "فردوسی",
+    "name:en": "Ferdowsi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321735,
+  "center": {
+    "lat": 35.6937473,
+    "lon": 51.4077823
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شیخ هادی",
+    "name:en": "Sheikh Hadi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321736,
+  "center": {
+    "lat": 35.6916090,
+    "lon": 51.3980012
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "آذربایجان",
+    "name:en": "Azarbayjan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321737,
+  "center": {
+    "lat": 35.6885298,
+    "lon": 51.3814369
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "اسکندری",
+    "name:en": "Eskandari",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321738,
+  "center": {
+    "lat": 35.6779373,
+    "lon": 51.3889410
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مخصوص",
+    "name:en": "Makhsus",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321739,
+  "center": {
+    "lat": 35.6853200,
+    "lon": 51.3676289
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "کارون جنوبی",
+    "name:en": "South Karun",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321740,
+  "center": {
+    "lat": 35.6953347,
+    "lon": 51.3723643
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "سلسبیل شمالی",
+    "name:en": "North Salsabil",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321741,
+  "center": {
+    "lat": 35.6749790,
+    "lon": 51.3772905
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بریانک",
+    "name:en": "Beryanak",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q2899800"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321742,
+  "center": {
+    "lat": 35.6745157,
+    "lon": 51.3688775
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "هفت چنار",
+    "name:en": "Haft chenar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321743,
+  "center": {
+    "lat": 35.6873024,
+    "lon": 51.3880499
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "حر",
+    "name:en": "Hor",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321744,
+  "center": {
+    "lat": 35.6838664,
+    "lon": 51.4015180
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "منیریه",
+    "name:en": "Monirieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321745,
+  "center": {
+    "lat": 35.6784865,
+    "lon": 51.4012768
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "امیریه",
+    "name:en": "Amirieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321746,
+  "center": {
+    "lat": 35.6767490,
+    "lon": 51.4124397
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "سنگلج",
+    "name:en": "Sanglaj",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321747,
+  "center": {
+    "lat": 35.6642109,
+    "lon": 51.4254653
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "هرندی",
+    "name:en": "Herandi",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q125951071"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321748,
+  "center": {
+    "lat": 35.6729036,
+    "lon": 51.4269932
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بازار",
+    "name:en": "Bazaar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321749,
+  "center": {
+    "lat": 35.6644505,
+    "lon": 51.4526305
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "خاوران",
+    "name:en": "Khavaran",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321750,
+  "center": {
+    "lat": 35.6716306,
+    "lon": 51.4866355
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "تاکسیرانی",
+    "name:en": "Taxirani",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321751,
+  "center": {
+    "lat": 35.6388761,
+    "lon": 51.4206492
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "خزانه",
+    "name:en": "Khazaneh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321752,
+  "center": {
+    "lat": 35.6525858,
+    "lon": 51.4231842
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "باغ آذری",
+    "name:en": "Bagh Azari",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321755,
+  "center": {
+    "lat": 35.6522632,
+    "lon": 51.3977924
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "جوادیه (زمانی)",
+    "name:en": "Javadieh ( Zamani )",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321756,
+  "center": {
+    "lat": 35.6555148,
+    "lon": 51.4942080
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "افسریه شمالی",
+    "name:en": "North Afsarieh",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q2826287"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321757,
+  "center": {
+    "lat": 35.6634458,
+    "lon": 51.4764347
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "آهنگ",
+    "name:en": "Ahang",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321758,
+  "center": {
+    "lat": 35.6381705,
+    "lon": 51.4307164
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شهرک بعثت",
+    "name:en": "Shahrak Besat",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321761,
+  "center": {
+    "lat": 35.6412824,
+    "lon": 51.4052121
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نازی آباد",
+    "name:en": "Nazi Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321776,
+  "center": {
+    "lat": 35.7427598,
+    "lon": 51.3566529
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "پردیسان",
+    "name:en": "Pardisan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321777,
+  "center": {
+    "lat": 35.6344702,
+    "lon": 51.4500726
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "کیانشهر جنوبی",
+    "name:en": "South Kianshahr",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321783,
+  "center": {
+    "lat": 35.7098079,
+    "lon": 51.4337514
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بهار",
+    "name:en": "Bahar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321784,
+  "center": {
+    "lat": 35.7134264,
+    "lon": 51.4478333
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "خواجه نظام الملک",
+    "name:en": "Khajeh Nezam",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321785,
+  "center": {
+    "lat": 35.7143439,
+    "lon": 51.4425531
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "کاج",
+    "name:en": "Kaj",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321786,
+  "center": {
+    "lat": 35.6962608,
+    "lon": 51.4865244
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "پیروزی",
+    "name:en": "Piruzi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321787,
+  "center": {
+    "lat": 35.7006694,
+    "lon": 51.4746956
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نیروی هوایی",
+    "name:en": "Niruye Havayi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321788,
+  "center": {
+    "lat": 35.7200187,
+    "lon": 51.4341904
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "سهروردی - باغ صبا",
+    "name:en": "Sohrevardi - Bagh Saba",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321789,
+  "center": {
+    "lat": 35.7274565,
+    "lon": 51.4333012
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "عباس آباد - اندیشه",
+    "name:en": "Abbas Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321791,
+  "center": {
+    "lat": 35.7259831,
+    "lon": 51.4507481
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "حشمتیه",
+    "name:en": "Heshmatieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321792,
+  "center": {
+    "lat": 35.7217392,
+    "lon": 51.4567839
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ارامنه",
+    "name:en": "Aramaneh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321793,
+  "center": {
+    "lat": 35.7122937,
+    "lon": 51.4644136
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شاهد",
+    "name:en": "Shahed",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321794,
+  "center": {
+    "lat": 35.7152218,
+    "lon": 51.4709981
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "وحیدیه",
+    "name:en": "Vahidieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321798,
+  "center": {
+    "lat": 35.7002021,
+    "lon": 51.4956980
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "حافظیه",
+    "name:en": "Hafezieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321800,
+  "center": {
+    "lat": 35.7360059,
+    "lon": 51.4336179
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نیلوفر",
+    "name:en": "Nilufar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321801,
+  "center": {
+    "lat": 35.7163750,
+    "lon": 51.4797918
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "زرکش",
+    "name:en": "Zarkesh",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q109292524",
+    "wikipedia": "en:Zarkesh, Tehran province"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321802,
+  "center": {
+    "lat": 35.7194379,
+    "lon": 51.4725590
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "تسلیحات",
+    "name:en": "Taslihat",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321804,
+  "center": {
+    "lat": 35.7096570,
+    "lon": 51.4896486
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "میدان امامت",
+    "name:en": "Meydan Emamat",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321805,
+  "center": {
+    "lat": 35.7286672,
+    "lon": 51.4799984
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "فدک",
+    "name:en": "Fadak",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321806,
+  "center": {
+    "lat": 35.7320186,
+    "lon": 51.4737496
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "کرمان",
+    "name:en": "Kerman",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321807,
+  "center": {
+    "lat": 35.7356036,
+    "lon": 51.4529285
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دبستان",
+    "name:en": "Dabestan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321808,
+  "center": {
+    "lat": 35.7285051,
+    "lon": 51.4898558
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "هفت حوض",
+    "name:en": "Haft Hos",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321817,
+  "center": {
+    "lat": 35.7576394,
+    "lon": 51.3567321
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ایوانک",
+    "name:en": "Eyvanak",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321819,
+  "center": {
+    "lat": 35.7600659,
+    "lon": 51.3741826
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شهرک قدس",
+    "name:1961-1979": "شهرک غرب",
+    "name:1979-": "شهرک قدس",
+    "name:en": "Shahrak-e Ghods",
+    "name:en:1961-1979": "Shahrak-e Gharb",
+    "name:en:1979-": "Shahrak-e Ghods",
+    "name:fa": "شهرک قدس",
+    "name:fa:1961-1979": "شهرک غرب",
+    "name:fa:1979-": "شهرک قدس",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q2724998"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321832,
+  "center": {
+    "lat": 35.7469385,
+    "lon": 51.4426214
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "جلفا",
+    "name:en": "Jolfa",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321833,
+  "center": {
+    "lat": 35.7495846,
+    "lon": 51.4295757
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "اراضی عباس آباد",
+    "name:en": "Arazi Abas Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321834,
+  "center": {
+    "lat": 35.7649350,
+    "lon": 51.4052050
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ونک",
+    "name:en": "Vanak",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321835,
+  "center": {
+    "lat": 35.7588964,
+    "lon": 51.4345624
+  },
+  "tags": {
+    "admin_level": "11",
+    "alt_name": "داوودیه",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "میرداماد",
+    "name:en": "Mirdamad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321836,
+  "center": {
+    "lat": 35.7489281,
+    "lon": 51.4561575
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مهران",
+    "name:en": "Mehran",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321837,
+  "center": {
+    "lat": 35.7497552,
+    "lon": 51.4700967
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "بنی‌هاشم",
+    "name:en": "Banihashem",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321838,
+  "center": {
+    "lat": 35.7597055,
+    "lon": 51.4486599
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "name": "حسینیه ارشاد - قبا",
+    "name:en": "Hosseinieh Ershad - Ghoba",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321849,
+  "center": {
+    "lat": 35.7721667,
+    "lon": 51.4685306
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "پاسداران - ضرابخانه",
+    "name:en": "Pasdaran - Zarab Khaneh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321850,
+  "center": {
+    "lat": 35.7725547,
+    "lon": 51.4785860
+  },
+  "tags": {
+    "admin_level": "11",
+    "alt_name": "مبارک آباد",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "هروی - حسین آباد",
+    "name:en": "Heravi - Hossein Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321863,
+  "center": {
+    "lat": 35.7484406,
+    "lon": 51.4762546
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شمس آباد",
+    "name:en": "Shams Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321864,
+  "center": {
+    "lat": 35.7423946,
+    "lon": 51.4897349
+  },
+  "tags": {
+    "admin_level": "11",
+    "alt_name": "کالاد",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نیروی دریایی",
+    "name:en": "Niruye daryayi",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321872,
+  "center": {
+    "lat": 35.7363326,
+    "lon": 51.5042090
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نارمک",
+    "name:en": "Narmak",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 8321873,
+  "center": {
+    "lat": 35.7512683,
+    "lon": 51.4981838
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شمیران نو",
+    "name:en": "Shemiran no",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167414,
+  "center": {
+    "lat": 35.7038879,
+    "lon": 51.3574382
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "زنجان شمالی",
+    "name:en": "North Zanjan",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167415,
+  "center": {
+    "lat": 35.7653642,
+    "lon": 51.3771761
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "دریا",
+    "name:en": "Darya",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167416,
+  "center": {
+    "lat": 35.6859345,
+    "lon": 51.3751619
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "سلسبیل جنوبی",
+    "name:en": "South Salsabil",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167417,
+  "center": {
+    "lat": 35.6949264,
+    "lon": 51.3665893
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "کارون شمالی",
+    "name:en": "North Karun",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167420,
+  "center": {
+    "lat": 35.6606144,
+    "lon": 51.3585233
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "ابوذر غربی",
+    "name:en": "West Abuzar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167421,
+  "center": {
+    "lat": 35.6458786,
+    "lon": 51.3549772
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "وصفنارد",
+    "name:en": "Vasfnard",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167423,
+  "center": {
+    "lat": 35.6351310,
+    "lon": 51.3637037
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "عبدل آباد",
+    "name:en": "Abdol Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167424,
+  "center": {
+    "lat": 35.6325618,
+    "lon": 51.3897092
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "خانی آباد شمالی",
+    "name:en": "North Khani Abad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167425,
+  "center": {
+    "lat": 35.6393617,
+    "lon": 51.4491298
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "کیانشهر شمالی",
+    "name:en": "North Kianshahr",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167427,
+  "center": {
+    "lat": 35.6433793,
+    "lon": 51.4896943
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "افسریه جنوبی",
+    "name:en": "South Afsarieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167428,
+  "center": {
+    "lat": 35.6706180,
+    "lon": 51.4512211
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مینای جنوبی",
+    "name:en": "South Mina",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167431,
+  "center": {
+    "lat": 35.7462682,
+    "lon": 51.3941264
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "والفجر",
+    "name:en": "Valfajr",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167433,
+  "center": {
+    "lat": 35.7244135,
+    "lon": 51.4016517
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "is_in:district": "6",
+    "name": "جهاد",
+    "name:en": "Jahad",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167434,
+  "center": {
+    "lat": 35.7355130,
+    "lon": 51.4663928
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مجیدیه",
+    "name:en": "Majidieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167435,
+  "center": {
+    "lat": 35.7279928,
+    "lon": 51.4652655
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "لشکر غربی",
+    "name:en": "East Lashkar",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167436,
+  "center": {
+    "lat": 35.7253755,
+    "lon": 51.4637284
+  },
+  "tags": {
+    "admin_level": "11",
+    "alt_name": "Sabalan",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "لشکر غربی",
+    "name:en": "West Lashkar",
+    "place": "neighbourhood",
+    "type": "boundary",
+    "wikidata": "Q3460466",
+    "wikipedia": "fr:Sabalan (quartier de Téhéran)"
+  }
+},
+{
+  "type": "relation",
+  "id": 9167437,
+  "center": {
+    "lat": 35.7170099,
+    "lon": 51.4923178
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "نارمک جنوبی",
+    "name:en": "South Narmak",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14395964,
+  "center": {
+    "lat": 35.7277006,
+    "lon": 51.3914459
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۴",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14395965,
+  "center": {
+    "lat": 35.7204667,
+    "lon": 51.4172384
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14395966,
+  "center": {
+    "lat": 35.7107549,
+    "lon": 51.3931831
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14395967,
+  "center": {
+    "lat": 35.7083187,
+    "lon": 51.4156793
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14396862,
+  "center": {
+    "lat": 35.7286077,
+    "lon": 51.4547060
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۵",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14396863,
+  "center": {
+    "lat": 35.7330833,
+    "lon": 51.4336179
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۴",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14396864,
+  "center": {
+    "lat": 35.7131201,
+    "lon": 51.4341904
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14396865,
+  "center": {
+    "lat": 35.7119555,
+    "lon": 51.4427056
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14396866,
+  "center": {
+    "lat": 35.7109023,
+    "lon": 51.4577692
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14405236,
+  "center": {
+    "lat": 35.6918686,
+    "lon": 51.4399711
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۶",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14405237,
+  "center": {
+    "lat": 35.6716629,
+    "lon": 51.4388493
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۵",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14405238,
+  "center": {
+    "lat": 35.6639249,
+    "lon": 51.4206958
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۴",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14405239,
+  "center": {
+    "lat": 35.6935833,
+    "lon": 51.4243555
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14431891,
+  "center": {
+    "lat": 35.7725007,
+    "lon": 51.3771019
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "name:en": "Zone 1",
+    "place": "quarter",
+    "source": "https://region2.tehran.ir/portals/0/Image/maps/darya99-map.jpg",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14431892,
+  "center": {
+    "lat": 35.7610921,
+    "lon": 51.3643536
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۷",
+    "name:en": "Quarter 7 of District 2",
+    "place": "quarter",
+    "source": "https://region2.tehran.ir/portals/0/Image/maps/n07.jpg",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 15512935,
+  "center": {
+    "lat": 35.6923544,
+    "lon": 51.3454163
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 16352065,
+  "center": {
+    "lat": 35.7605584,
+    "lon": 51.5106831
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۷",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 17126477,
+  "center": {
+    "lat": 35.7666582,
+    "lon": 51.4522915
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۵",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 17407535,
+  "center": {
+    "lat": 35.6502223,
+    "lon": 51.3704881
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "زمزم",
+    "name:en": "Zamzam",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 18304163,
+  "center": {
+    "lat": 35.6948605,
+    "lon": 51.3671736
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19673419,
+  "center": {
+    "lat": 35.7355380,
+    "lon": 51.4624188
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "مجیدیه جنوبی",
+    "name:en": "South Majidieh",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19816281,
+  "center": {
+    "lat": 35.6475388,
+    "lon": 51.3613112
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 19817041,
+  "center": {
+    "lat": 35.6379681,
+    "lon": 51.3728827
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "name": "شهرک شریعتی شمالی",
+    "name:en": "North Shahrak Shariati",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21012614,
+  "center": {
+    "lat": 35.7497552,
+    "lon": 51.4631856
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21276599,
+  "center": {
+    "lat": 35.7279539,
+    "lon": 51.3727126
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "name:en": "Zone 3",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21276702,
+  "center": {
+    "lat": 35.7132834,
+    "lon": 51.3473153
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۵",
+    "name:en": "Zone 5",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21277138,
+  "center": {
+    "lat": 35.6744191,
+    "lon": 51.3668756
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21277139,
+  "center": {
+    "lat": 35.6853369,
+    "lon": 51.3673821
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21277334,
+  "center": {
+    "lat": 35.7328064,
+    "lon": 51.3566529
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۴",
+    "name:en": "Zone 4",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21279252,
+  "center": {
+    "lat": 35.7101075,
+    "lon": 51.3652967
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۶",
+    "name:en": "Zone 6",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21280075,
+  "center": {
+    "lat": 35.7367909,
+    "lon": 51.4139029
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۵",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21280076,
+  "center": {
+    "lat": 35.7354495,
+    "lon": 51.3963962
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۶",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21285780,
+  "center": {
+    "lat": 35.7720592,
+    "lon": 51.4011682
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21285791,
+  "center": {
+    "lat": 35.7631670,
+    "lon": 51.4133013
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۶",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21285842,
+  "center": {
+    "lat": 35.7538689,
+    "lon": 51.4348558
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۴",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21286087,
+  "center": {
+    "lat": 35.6836663,
+    "lon": 51.3168243
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288318,
+  "center": {
+    "lat": 35.6603926,
+    "lon": 51.3553607
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288319,
+  "center": {
+    "lat": 35.6612421,
+    "lon": 51.3723392
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288478,
+  "center": {
+    "lat": 35.6977563,
+    "lon": 51.4562237
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288479,
+  "center": {
+    "lat": 35.7017957,
+    "lon": 51.4762856
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288480,
+  "center": {
+    "lat": 35.7050886,
+    "lon": 51.4935335
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288641,
+  "center": {
+    "lat": 35.6734569,
+    "lon": 51.4224028
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288642,
+  "center": {
+    "lat": 35.6803719,
+    "lon": 51.4236898
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288720,
+  "center": {
+    "lat": 35.6668096,
+    "lon": 51.3940580
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۴",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288721,
+  "center": {
+    "lat": 35.6776499,
+    "lon": 51.4015180
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288722,
+  "center": {
+    "lat": 35.6937473,
+    "lon": 51.4019978
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21288723,
+  "center": {
+    "lat": 35.6858824,
+    "lon": 51.3863430
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21289850,
+  "center": {
+    "lat": 35.6811735,
+    "lon": 51.4545834
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21290233,
+  "center": {
+    "lat": 35.6728562,
+    "lon": 51.4768696
+  },
+  "tags": {
+    "admin_level": "11",
+    "boundary": "administrative",
+    "is_in:city": "تهران",
+    "name": "شاهد",
+    "name:en": "Shahed",
+    "place": "neighbourhood",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21290234,
+  "center": {
+    "lat": 35.6797051,
+    "lon": 51.4867869
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21290235,
+  "center": {
+    "lat": 35.6634458,
+    "lon": 51.4764347
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۵",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21290236,
+  "center": {
+    "lat": 35.6671022,
+    "lon": 51.4563789
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۴",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21290237,
+  "center": {
+    "lat": 35.6799001,
+    "lon": 51.4712959
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21290346,
+  "center": {
+    "lat": 35.7246857,
+    "lon": 51.4710496
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21290347,
+  "center": {
+    "lat": 35.7242509,
+    "lon": 51.4868477
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21291872,
+  "center": {
+    "lat": 35.7721667,
+    "lon": 51.4870178
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21291873,
+  "center": {
+    "lat": 35.7480292,
+    "lon": 51.4815459
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21291874,
+  "center": {
+    "lat": 35.7398470,
+    "lon": 51.5069817
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۴",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21292006,
+  "center": {
+    "lat": 35.6540762,
+    "lon": 51.4472791
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21292007,
+  "center": {
+    "lat": 35.6365117,
+    "lon": 51.4549107
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21292008,
+  "center": {
+    "lat": 35.6480740,
+    "lon": 51.4744241
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21292011,
+  "center": {
+    "lat": 35.6298403,
+    "lon": 51.5060460
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۶",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21292012,
+  "center": {
+    "lat": 35.6494599,
+    "lon": 51.4918580
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۵",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21292190,
+  "center": {
+    "lat": 35.6351120,
+    "lon": 51.3340289
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21292652,
+  "center": {
+    "lat": 35.6284988,
+    "lon": 51.3735166
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21293050,
+  "center": {
+    "lat": 35.6344874,
+    "lon": 51.3871415
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21293262,
+  "center": {
+    "lat": 35.6525858,
+    "lon": 51.4231842
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۶",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21293263,
+  "center": {
+    "lat": 35.6522632,
+    "lon": 51.3977924
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۱",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21293264,
+  "center": {
+    "lat": 35.6417524,
+    "lon": 51.4017889
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۲",
+    "place": "quarter",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 21293265,
+  "center": {
+    "lat": 35.6388995,
+    "lon": 51.4231585
+  },
+  "tags": {
+    "admin_level": "10",
+    "boundary": "administrative",
+    "name": "ناحیه ۳",
+    "place": "quarter",
+    "type": "boundary"
+  }
+}
+
+  ]
+}
