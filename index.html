@@ -730,8 +730,9 @@ $('#sub').textContent=`سقف ودیعه ${fa(D.budget[0])} تومان · سقف
 const metro=D.stations.filter(s=>s.kind==='metro_station');
 metro.forEach(s=>$('#stn').insertAdjacentHTML('beforeend',`<option value="${s.k}">${s.fa} (خط ${s.lines})</option>`));
 const map=L.map('map').setView([35.700,51.410],13);
-// Esri tiles: keyless and no Referer check. OSM and CARTO both reject file:// pages (no Referer). Note {y}/{x} order.
-L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors'}).addTo(map);
+// Hosted (https): OSM tiles, Persian labels. file:// sends no Referer and OSM/CARTO answer 403, so use keyless Esri there ({y}/{x} order).
+if(location.protocol==='file:')L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors'}).addTo(map);
+else L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
 D.stations.forEach(s=>{if(s.kind!=='metro_station')return;
  L.circleMarker([s.lat,s.lon],{radius:8,color:css('--stn'),weight:3,fillColor:'#fff',fillOpacity:1}).bindTooltip(`${s.fa} · ${s.en} · خط ${s.lines}`).addTo(map);
  s.ents.forEach(e=>L.circleMarker([e.lat,e.lon],{radius:3,color:css('--stn'),weight:1,fillOpacity:.8}).bindTooltip('ورودی '+s.fa+(e.name?' – '+e.name:'')).addTo(map));});
