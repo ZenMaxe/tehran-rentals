@@ -1,0 +1,42 @@
+{
+ "runner_ip": "20.169.65.212",
+ "requests": [
+  {
+   "url": "https://api.divar.ir/v8/postlist/w/search",
+   "status": 200,
+   "ms": 777,
+   "post_rows": 5
+  },
+  {
+   "url": "https://api.divar.ir/v8/posts-v2/web/gagvyEEX",
+   "status": 200,
+   "ms": 744,
+   "has_webengage_credit": true
+  },
+  {
+   "url": "https://api.divar.ir/v8/posts-v2/web/gaZHto_B",
+   "status": 200,
+   "ms": 734,
+   "has_webengage_credit": true
+  },
+  {
+   "url": "https://api.divar.ir/v8/posts-v2/web/gaDmEBDe",
+   "status": 200,
+   "ms": 1079,
+   "has_webengage_credit": true
+  },
+  {
+   "url": "https://api.divar.ir/v8/posts-v2/web/gaDTcmvt",
+   "status": 200,
+   "ms": 700,
+   "has_webengage_credit": true
+  },
+  {
+   "url": "https://api.divar.ir/v8/posts-v2/web/ga_mc8c9",
+   "status": 200,
+   "ms": 483,
+   "has_webengage_credit": true
+  }
+ ],
+ "summary": "6/6 requests returned 200"
+}
