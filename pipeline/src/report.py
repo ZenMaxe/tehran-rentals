@@ -54,115 +54,230 @@ def write_html(st, df, meta):
     data = json.dumps({"listings": listings, "stations": stations, "collected": collected,
                        "budget": [MAX_CREDIT_TOMAN, MAX_RENT_TOMAN, MIN_CREDIT_TOMAN], "inspected": int(len(df)),
                        "counts": df.status.value_counts().to_dict()}, ensure_ascii=False, default=lambda o: o.item() if hasattr(o, "item") else str(o))
-    # Leaflet CSS inlined: artifact viewers block third-party stylesheets
+    # Leaflet inlined: viewers and some networks block third-party CSS/JS, and without L the whole page stops
     css = (Path(__file__).parent / "assets" / "leaflet-1.9.4.css").read_text()
-    html = HTML.replace("__LEAFLET_CSS__", css).replace("__DATA__", data.replace("</", "<\\/"))
+    js = (Path(__file__).parent / "assets" / "leaflet-1.9.4.js").read_text()
+    html = HTML.replace("__LEAFLET_CSS__", css).replace("__LEAFLET_JS__", js).replace("__DARK__", DARK).replace("__DATA__", data.replace("</", "<\\/"))
     (OUTPUTS / "report.html").write_text(html, encoding="utf-8")
 
+
+DARK = ("--page:#09090a;--surface:#151515;--sunken:#1c1c1d;--inverse:#fff;--on-inverse:#151515;--t1:#f5f5f5;--t2:#c9c9c9;--b1:rgba(255,255,255,.08);--b2:#3d3d3d;--b3:#fff;--bh:#7a7a7a;--panel:rgba(24,24,26,.94);--overlay:rgba(0,0,0,.55);--hl-d:rgba(255,255,255,.14);--s8:rgba(0,0,0,.4);--s18:rgba(0,0,0,.55);"
+        "--g-fill:rgba(255,255,255,.07);--g-strong:rgba(255,255,255,.11);--g-elev:rgba(255,255,255,.18);--g-card:rgba(255,255,255,.05);--g-stroke:rgba(255,255,255,.12);--hl:rgba(255,255,255,.1);--hl2:rgba(255,255,255,.14);"
+        "--s4:rgba(0,0,0,.3);--s6:rgba(0,0,0,.35);--s12:rgba(0,0,0,.45);--s16:rgba(0,0,0,.5);"
+        "--ok:#4ade80;--ok-bg:#052e16;--ok-t:#4ade80;--wa:#fbbf24;--wa-bg:#451a03;--wa-t:#fbbf24;--in:#60a5fa;--in-bg:#172554;--in-t:#60a5fa;--er:#f87171;"
+        "--amb1:rgba(255,200,40,.10);--amb2:rgba(150,200,80,.07);--amb3:rgba(80,130,255,.11);--amb4:rgba(200,90,140,.07);color-scheme:dark")
 
 HTML = r"""<!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>آپارتمان‌های نزدیک مترو</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>__LEAFLET_CSS__</style>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>__LEAFLET_JS__</script>
 <style>
-:root{--bg:#f6f5f2;--card:#fff;--ink:#1c1c1a;--mute:#6b6a65;--line:#e4e2dc;--accent:#0f6e5a;
---ver:#0f6e5a;--prov:#c27c0e;--nlv:#7a4fb8;--stn:#b3261e;--chip:#eeece6}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151514;--card:#1f1f1d;--ink:#ecebe6;--mute:#a19f98;--line:#33322f;--accent:#4fc3a1;--ver:#4fc3a1;--prov:#e8a83a;--nlv:#b394e6;--stn:#ff7a6e;--chip:#2a2927}}
-:root[data-theme="dark"]{--bg:#151514;--card:#1f1f1d;--ink:#ecebe6;--mute:#a19f98;--line:#33322f;--accent:#4fc3a1;--ver:#4fc3a1;--prov:#e8a83a;--nlv:#b394e6;--stn:#ff7a6e;--chip:#2a2927}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 Vazirmatn,Tahoma,sans-serif}
-header{padding:20px 16px 8px;max-width:1400px;margin:auto}h1{margin:0;font-size:22px}.sub{color:var(--mute);font-size:13px}
-main{max-width:1400px;margin:auto;padding:8px 16px 40px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:12px 0}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}.stat b{display:block;font-size:22px;font-variant-numeric:tabular-nums}.stat span{color:var(--mute);font-size:12px}
-.grid{display:grid;grid-template-columns:320px 1fr;gap:12px}@media(max-width:900px){.grid{grid-template-columns:1fr}}
-.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
-label{display:block;font-size:12px;color:var(--mute);margin-top:10px}input,select{width:100%;padding:7px 8px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink);font:inherit}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:6px}.chk{display:flex;gap:6px;align-items:center;color:var(--ink);font-size:13px}.chk input{width:auto}
-#map{height:460px;border-radius:10px;border:1px solid var(--line)}
-.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--mute);margin-top:8px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-left:4px;vertical-align:middle}
-.stcounts{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.stcounts button{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;padding:3px 10px;font:inherit;font-size:12px;cursor:pointer}.stcounts button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
-.tablewrap{overflow-x:auto;margin-top:12px;background:var(--card);border:1px solid var(--line);border-radius:10px}
-table{border-collapse:collapse;width:100%;min-width:900px;font-size:13px}th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
-th{position:sticky;top:0;background:var(--card);cursor:pointer;font-weight:500;color:var(--mute)}td.num{font-variant-numeric:tabular-nums}
-td.ti{white-space:normal;min-width:200px}a{color:var(--accent)}.tag{font-size:11px;padding:1px 7px;border-radius:999px;color:#fff}
-.MATCH_VERIFIED{background:var(--ver)}.MATCH_PROVISIONAL_DISTANCE{background:var(--prov)}.NEEDS_LOCATION_VERIFICATION{background:var(--nlv)}
-.note{color:var(--mute);font-size:12px;margin-top:10px}
+/* Look follows the Lemon Design System (lemonui.ir, Figma kit with no code package): its tokens and component shapes, rebuilt here. */
+:root{--page:#f4f4f1;--surface:#fff;--sunken:#f2f2f2;--inverse:#151515;--on-inverse:#fff;--t1:#151515;--t2:#5c5c5c;--b1:rgba(0,0,0,.07);--b2:#e3e3e3;--b3:#151515;--bh:#a3a3a3;
+--g-fill:rgba(255,255,255,.55);--g-strong:rgba(255,255,255,.78);--g-elev:rgba(255,255,255,.92);--g-card:rgba(255,255,255,.5);--g-stroke:rgba(255,255,255,.75);--hl:rgba(255,255,255,.85);--hl2:rgba(255,255,255,.95);--hl-d:rgba(255,255,255,.22);
+--panel:rgba(255,255,255,.93);--s4:rgba(0,0,0,.04);--s6:rgba(0,0,0,.06);--s8:rgba(0,0,0,.08);--s12:rgba(0,0,0,.12);--s16:rgba(0,0,0,.16);--s18:rgba(0,0,0,.18);--overlay:rgba(20,15,46,.28);
+--ok:#16a34a;--ok-bg:#f0fdf4;--ok-t:#166534;--wa:#d97706;--wa-bg:#fffbeb;--wa-t:#92400e;--in:#2563eb;--in-bg:#eff6ff;--in-t:#1d4ed8;--er:#dc2626;--lemon:#ffd43b;
+--amb1:rgba(255,214,64,.42);--amb2:rgba(196,228,96,.30);--amb3:rgba(140,190,255,.30);--amb4:rgba(255,180,205,.22);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){__DARK__}}
+:root[data-theme="dark"]{__DARK__}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--t1);font:13px/1.7 Vazirmatn,Tahoma,"Segoe UI",system-ui,sans-serif}
+a{color:inherit}button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--b3);outline-offset:2px}
+#amb{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+#amb i{position:absolute;border-radius:50%;filter:blur(90px)}
+#amb i:nth-child(1){width:46vw;height:46vw;max-width:640px;max-height:640px;background:var(--amb1);top:-14vw;left:-10vw}
+#amb i:nth-child(2){width:38vw;height:38vw;max-width:520px;max-height:520px;background:var(--amb2);top:30vh;left:28vw}
+#amb i:nth-child(3){width:42vw;height:42vw;max-width:600px;max-height:600px;background:var(--amb3);top:-8vw;right:-14vw}
+#amb i:nth-child(4){width:34vw;height:34vw;max-width:480px;max-height:480px;background:var(--amb4);bottom:-10vw;right:18vw}
+.gc{background:var(--g-card);border:1px solid var(--g-stroke);-webkit-backdrop-filter:blur(28px) saturate(1.5);backdrop-filter:blur(28px) saturate(1.5);box-shadow:0 1px 2px var(--s4),0 16px 40px -18px var(--s12),inset 0 1px 0 var(--hl)}
+.hdr{position:sticky;top:calc(env(safe-area-inset-top,0px) + 14px);z-index:1100;display:flex;justify-content:center;padding-inline:16px;pointer-events:none;margin-top:14px}
+.cap{pointer-events:auto;display:flex;align-items:center;gap:2px;height:48px;padding:0 8px;border-radius:999px;background:var(--g-strong);border:1px solid var(--g-stroke);-webkit-backdrop-filter:blur(24px) saturate(1.6);backdrop-filter:blur(24px) saturate(1.6);box-shadow:0 1px 2px var(--s4),0 18px 40px -16px var(--s16),inset 0 1px 0 var(--hl2)}
+.brand{display:flex;align-items:center;gap:8px;padding:0 8px;font-weight:700;white-space:nowrap}.brand i{width:18px;height:18px;border-radius:50%;background:var(--lemon);box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
+.cap .sep{width:1px;height:20px;background:var(--b1);margin:0 4px}
+.cap a{display:inline-flex;align-items:center;height:36px;padding:0 14px;border-radius:999px;font-size:12.5px;color:var(--t2);text-decoration:none;transition:background .2s,color .2s}.cap a:hover{color:var(--t1);background:var(--g-elev);box-shadow:0 2px 8px var(--s6),inset 0 1px 0 var(--hl2)}
+main{max-width:1360px;margin:auto;padding:14px 24px calc(48px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:14px}
+.top{padding-top:14px}h1{margin:0;font-size:28px;font-weight:800;line-height:1.35}.sub{color:var(--t2);font-size:12.5px;margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.stat{border-radius:16px;padding:12px 14px}.stat b{display:block;font-size:20px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.5}.stat span{color:var(--t2);font-size:11px}
+.stcounts{display:flex;gap:6px;overflow-x:auto;padding:2px;scrollbar-width:thin}
+.chp{flex:none;display:inline-flex;align-items:center;gap:5px;height:28px;padding:0 10px;border-radius:99px;font-size:11.5px;background:var(--g-strong);border:1px solid var(--g-stroke);box-shadow:0 2px 6px var(--s6),inset 0 1px 0 var(--hl2);cursor:pointer;white-space:nowrap}
+.chp small{color:var(--t2);font-size:10.5px}.chp b{font-weight:600}
+.chp.on{background:var(--inverse);color:var(--on-inverse);border-color:var(--inverse)}.chp.on small{color:inherit;opacity:.75}
+#mapsec{position:relative;display:flex;align-items:flex-start;min-height:700px;padding:14px;border-radius:20px;overflow:hidden;background:var(--sunken);border:1px solid var(--g-stroke);box-shadow:0 1px 2px var(--s4),0 16px 40px -18px var(--s12);scroll-margin-top:76px}
+#map{position:absolute;inset:0;isolation:isolate;background:var(--sunken)}
+.leaflet-container{font:inherit}.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--surface);color:var(--t1);box-shadow:0 16px 40px -14px var(--s16)}.leaflet-popup-content-wrapper{border-radius:16px}.leaflet-popup-content{font-size:12.5px;line-height:1.7;margin:12px 14px}.leaflet-popup-content a{color:var(--t1)}
+.legend{position:absolute;bottom:32px;left:14px;z-index:900;display:flex;flex-direction:column;gap:2px;padding:8px 12px;border-radius:12px;font-size:11px;color:var(--t1);background:var(--panel);box-shadow:0 2px 6px var(--s6);pointer-events:none}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-left:6px;vertical-align:middle;flex:none}
+#filters{position:relative;z-index:1000;width:min(320px,100%);padding:14px;border-radius:18px;background:var(--panel);border:1px solid var(--g-stroke);-webkit-backdrop-filter:blur(20px) saturate(1.4);backdrop-filter:blur(20px) saturate(1.4);box-shadow:0 1px 2px var(--s4),0 8px 24px -10px var(--s8),inset 0 1px 0 var(--hl);display:flex;flex-direction:column;gap:12px}
+.fhead{display:flex;align-items:center;gap:8px;min-height:28px}.fhead strong{font-size:13px;font-weight:700}
+.fc{min-width:18px;height:18px;padding:0 5px;border-radius:99px;background:var(--lemon);color:#151515;font-size:10.5px;font-weight:700;display:inline-grid;place-items:center}.fc[hidden],.clr[hidden]{display:none}
+.clr{margin-inline-start:auto;height:28px;padding:0 10px;border:0;border-radius:8px;background:transparent;color:var(--t2);font-size:11.5px;font-weight:500;cursor:pointer}.clr:hover{background:var(--sunken);color:var(--t1)}
+.f{display:flex;flex-direction:column;gap:5px;min-width:0}.f>label,.f>span{color:var(--t2);font-size:11.5px}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+input[type=text],select{width:100%;height:36px;padding:0 12px;border:1px solid var(--b2);border-radius:12px;background:var(--g-strong);font-size:12.5px;outline:0;transition:border-color .15s,box-shadow .15s}
+input[type=text]::placeholder{color:var(--t2);opacity:.75}input[type=text]:focus,select:focus{border-color:var(--b3);box-shadow:0 0 0 3px var(--s6)}
+select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%23888' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 10px center;padding-left:28px}
+.seg{display:flex;gap:2px;height:34px;padding:3px;border-radius:12px;background:var(--g-fill);border:1px solid var(--g-stroke);box-shadow:0 1px 2px var(--s4),0 8px 24px -6px var(--s6),inset 0 1px 0 var(--hl)}
+.seg button{flex:1;border:0;background:transparent;border-radius:9px;font-size:12px;color:var(--t2);cursor:pointer;padding:0 6px;white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--inverse);color:var(--on-inverse);font-weight:500}
+.opts{display:flex;flex-direction:column;gap:9px}
+.opt{position:relative;display:flex;align-items:center;gap:10px;font-size:12.5px;line-height:1.6;cursor:pointer}
+.opt input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.sw{position:relative;width:40px;height:24px;border-radius:99px;background:var(--g-strong);border:1px solid var(--bh);flex:none;transition:background .2s}
+.sw::after{content:"";position:absolute;top:2px;right:2px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.16),0 0 1px rgba(0,0,0,.06);transition:right .22s cubic-bezier(.3,.7,.3,1)}
+input:checked~.sw{background:var(--inverse);border-color:var(--inverse)}input:checked~.sw::after{right:18px;background:var(--page)}input:focus-visible~.sw{outline:2px solid var(--b3);outline-offset:2px}
+.nm{flex:1;min-width:0}.nm small{display:block;color:var(--t2);font-size:11px;line-height:1.5}.opt b{color:var(--t2);font-size:11.5px;font-weight:400;font-variant-numeric:tabular-nums}
+.fgo,.msearch,#bd,.wk{display:none}
+.tbl{border-radius:16px;overflow:hidden;scroll-margin-top:76px}
+.tb{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;flex-wrap:wrap}.tb b{font-size:12.5px;font-weight:700}.tb label{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--t2)}.tb select{width:auto;height:28px;border-radius:8px;font-size:11.5px}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:980px;font-size:11.5px}
+th{font-weight:500;color:var(--t2);font-size:10.5px;background:var(--sunken);text-align:right;padding:7px 12px;cursor:pointer;white-space:nowrap}th[data-a]::after{content:attr(data-a);margin-right:3px}
+td{padding:8px 12px;border-top:1px solid var(--b1);text-align:right;white-space:nowrap;vertical-align:middle}
+tbody tr:hover td{background:var(--g-fill)}td.num{font-variant-numeric:tabular-nums}td.pr{font-weight:600}td.ti{white-space:normal;min-width:240px;font-size:12.5px;font-weight:500}
+.tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:99px;white-space:nowrap}
+.MATCH_VERIFIED{background:var(--ok-bg);color:var(--ok-t)}.MATCH_PROVISIONAL_DISTANCE{background:var(--wa-bg);color:var(--wa-t)}.NEEDS_LOCATION_VERIFICATION{background:var(--in-bg);color:var(--in-t)}
+.b{display:inline-flex;align-items:center;justify-content:center;height:28px;padding:0 10px;border-radius:8px;font-size:11.5px;font-weight:500;text-decoration:none;white-space:nowrap;background:var(--inverse);color:var(--on-inverse)}
+.note{color:var(--t2);font-size:11.5px;margin:0 2px;max-width:80ch}
+/* phone: map on top, listings below, filters in a bottom sheet. Cards stay unblurred: hundreds of backdrop-filters stutter on phones. */
+@media(max-width:720px){
+body{font-size:14px}.hdr{display:none}main{padding:0 0 calc(32px + env(safe-area-inset-bottom,0px));gap:12px}
+#mapsec{order:-3;min-height:0;height:340px;padding:0;border:0;border-radius:0;box-shadow:none}
+.msearch{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:14px;left:14px;z-index:1000;display:flex;align-items:center;gap:4px;height:54px;padding:0 5px;border-radius:999px;background:var(--panel);border:1px solid var(--g-stroke);-webkit-backdrop-filter:blur(24px) saturate(1.6);backdrop-filter:blur(24px) saturate(1.6);box-shadow:0 1px 2px var(--s4),0 18px 40px -16px var(--s16),inset 0 1px 0 var(--hl2)}
+.msearch i{flex:none;width:18px;height:18px;margin:0 8px;border-radius:50%;background:var(--lemon)}
+.msearch input[type=text],.msearch input[type=text]:focus{flex:1;min-width:0;height:44px;padding:0;border:0;background:none;box-shadow:none;font-size:16px}
+.fbtn{flex:none;display:flex;align-items:center;gap:6px;height:44px;padding:0 14px;border:0;border-radius:999px;background:var(--inverse);color:var(--on-inverse);font-size:12.5px;font-weight:500;cursor:pointer}
+.leaflet-top.leaflet-left{top:72px}.legend{display:none}
+.stcounts{order:-2;margin-top:-30px;position:relative;z-index:1000;padding:14px;border-radius:24px 24px 0 0;background:var(--page);scrollbar-width:none}
+.chp{height:44px;padding:0 12px;font-size:12.5px}
+.tbl{order:-1;margin-top:-12px;padding-inline:14px;background:none;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;overflow:visible}.tb{padding:0 2px 10px}.tb b{font-size:16px;font-weight:800}
+.tb select{height:44px;font-size:16px}
+.top,.stats,.note{padding-inline:14px;margin:0}.top{padding-top:6px}h1{font-size:20px}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.tablewrap{overflow:visible}table,tbody{display:block;min-width:0;width:100%}thead{display:none}
+tbody tr{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:14px;margin-bottom:10px;border-radius:18px;background:var(--surface);border:1px solid var(--b1);box-shadow:0 1px 2px var(--s4)}
+tbody tr:hover td{background:none}
+td{display:block;border:0;padding:0;white-space:normal;min-width:0;font-size:13px}td[data-l]::before{content:attr(data-l);display:block;color:var(--t2);font-size:11px;line-height:1.5}
+td.st{position:absolute;top:12px;left:14px}td.sta{grid-column:1/-1;order:-3;padding-left:70px;font-size:12.5px;font-weight:700}td.sta::before{display:none!important}td.sta .wk{display:inline;margin-right:6px;color:var(--t2);font-weight:400}
+td.ti{grid-column:1/-1;order:-2;min-width:0;font-size:14px}td.pr{font-size:14px;font-weight:700}td.dd,td.wm{display:none}td.go{grid-column:1/-1}td.no{grid-column:1/-1;text-align:center;color:var(--t2)}
+.b{width:100%;height:44px;font-size:13px;border-radius:12px}
+#filters{position:fixed;right:0;left:0;bottom:0;z-index:2000;width:auto;max-height:92dvh;overflow-y:auto;padding:14px 16px calc(16px + env(safe-area-inset-bottom,0px));border-radius:24px 24px 0 0;border-width:1px 0 0;background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none;transform:translateY(100%);visibility:hidden;transition:transform .25s cubic-bezier(.2,.8,.2,1),visibility .25s}
+#filters.open{transform:none;visibility:visible}#filters>*{flex:none}
+#bd{position:fixed;inset:0;z-index:1999;background:var(--overlay)}#bd.open{display:block}
+.fhead strong{font-size:16px;font-weight:800}.clr{height:44px;font-size:12.5px}
+.f>label,.f>span{font-size:12px}input[type=text],select{height:48px;font-size:16px}.seg{height:50px}.seg button{font-size:13px}.opts{gap:0}.opt{min-height:50px;font-size:13.5px}
+.fgo{position:sticky;bottom:0;display:flex;align-items:center;justify-content:center;height:48px;margin-top:4px;border:0;border-radius:12px;background:var(--inverse);color:var(--on-inverse);font-size:13px;font-weight:500;box-shadow:0 6px 14px -3px var(--s18),0 1px 2px var(--s12),inset 0 1px 0 var(--hl-d);cursor:pointer}
+}
 </style></head>
 <body>
-<header><h1 id="h1">آپارتمان‌های اجاره‌ای نزدیک ایستگاه‌های مترو تهران</h1>
-<div class="sub" id="sub"></div></header>
+<div id="amb" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="hdr"><nav class="cap" aria-label="بخش‌ها"><span class="brand"><i></i>نزدیک مترو</span><span class="sep"></span><a href="#mapsec">نقشه</a><a href="#list">فهرست آگهی‌ها</a></nav></div>
 <main>
+<header class="top"><h1 id="h1">آپارتمان‌های اجاره‌ای نزدیک ایستگاه‌های مترو تهران</h1>
+<div class="sub" id="sub"></div></header>
 <div class="stats" id="stats"></div>
-<div class="grid">
-<div class="panel">
-<label>جستجو (عنوان / محله)</label><input id="q" placeholder="مثلاً یوسف‌آباد">
-<label>ایستگاه</label><select id="stn"><option value="">همه</option></select>
-<div class="row2"><div><label>حداکثر ودیعه (میلیون تومان)</label><input id="mc" type="number"></div><div><label>حداکثر اجاره (میلیون تومان)</label><input id="mr" type="number"></div></div>
-<label>حداکثر فاصله تا مترو (متر)</label><select id="md"><option value="800">۸۰۰ – عالی</option><option value="1200">۱۲۰۰ – قابل قبول</option><option value="1500" selected>۱۵۰۰ – ثانویه</option><option value="99999">بدون محدودیت</option></select>
-<div class="row2"><div><label>حداقل متراژ</label><input id="amin" type="number"></div><div><label>حداکثر متراژ</label><input id="amax" type="number"></div></div>
-<label>وضعیت</label>
-<div class="chk"><input type="checkbox" id="sV" checked><span><span class="dot" style="background:var(--ver)"></span>تأیید شده (پین دقیق)</span></div>
-<div class="chk"><input type="checkbox" id="sP" checked><span><span class="dot" style="background:var(--prov)"></span>موقت (پین تقریبی ±۵۰۰ متر)</span></div>
-<div class="chk"><input type="checkbox" id="sN"><span><span class="dot" style="background:var(--nlv)"></span>نیاز به تأیید موقعیت</span></div>
-<div class="chk"><input type="checkbox" id="sS"><span>شامل مجیدیه (منطقه تکمیلی)</span></div>
-<div class="chk"><input type="checkbox" id="sHas" checked><span>فقط ایستگاه‌های دارای آگهی (مرتب بر اساس تعداد)</span></div>
 <div class="stcounts" id="stc"></div>
-<p class="note">فاصله‌های دارای «~ (تخمینی)» برابر فاصله مستقیم × ۱٫۳۲ است (میانه نسبت مسیر واقعی به خط مستقیم در تهران). پس از اجرای routing_check.py فاصله پیاده واقعی (OSRM، پروفایل پیاده) تا نزدیک‌ترین ورودی جایگزین می‌شود. موقعیت آگهی پینی است که آگهی‌دهنده در دیوار انتخاب کرده و به‌طور مستقل تأیید نشده است.</p>
+<section id="mapsec" aria-label="نقشه و فیلترها">
+<div id="map"></div>
+<div class="legend"><span><i class="dot" style="background:var(--er)"></i>ایستگاه مترو</span><span><i class="dot" style="background:var(--ok)"></i>پین دقیق</span><span><i class="dot" style="background:var(--wa);opacity:.6"></i>پین تقریبی (دایره = شعاع عدم قطعیت)</span><span><i class="dot" style="background:var(--in)"></i>نیاز به تأیید</span></div>
+<div class="msearch"><i aria-hidden="true"></i><input id="q2" type="text" aria-label="جستجو" placeholder="عنوان یا محله"><button type="button" class="fbtn" id="fb" aria-controls="filters" aria-expanded="false">فیلترها<span class="fc" id="fc2" hidden></span></button></div>
+<div id="bd"></div>
+<form id="filters" aria-label="فیلترها">
+<div class="fhead"><strong>فیلترها</strong><span class="fc" id="fc" hidden></span><button type="button" class="clr" id="clr" hidden>پاک کردن</button></div>
+<div class="f"><label for="q">جستجو</label><input id="q" type="text" placeholder="عنوان یا محله، مثلاً یوسف‌آباد"></div>
+<div class="f"><label for="stn">ایستگاه مترو</label><select id="stn"><option value="">همه</option></select></div>
+<div class="row2">
+<div class="f"><label for="mc">ودیعه تا (میلیون)</label><input id="mc" type="text" inputmode="decimal"></div>
+<div class="f"><label for="mr">اجاره تا (میلیون)</label><input id="mr" type="text" inputmode="decimal"></div>
+<div class="f"><label for="amin">متراژ از</label><input id="amin" type="text" inputmode="numeric" placeholder="متر"></div>
+<div class="f"><label for="amax">متراژ تا</label><input id="amax" type="text" inputmode="numeric" placeholder="متر"></div>
 </div>
-<div><div id="map"></div>
-<div class="legend"><span><span class="dot" style="background:var(--stn)"></span>ایستگاه مترو</span><span><span class="dot" style="background:var(--ver)"></span>پین دقیق</span><span><span class="dot" style="background:var(--prov);opacity:.6"></span>پین تقریبی (دایره = شعاع عدم قطعیت)</span><span><span class="dot" style="background:var(--nlv)"></span>نیاز به تأیید</span></div></div>
+<div class="f"><span id="mdl">فاصله پیاده تا مترو (متر)</span>
+<div class="seg" id="md" role="group" aria-labelledby="mdl"><button type="button" data-v="800" aria-pressed="false">۸۰۰</button><button type="button" data-v="1200" aria-pressed="false">۱۲۰۰</button><button type="button" data-v="1500" aria-pressed="true">۱۵۰۰</button><button type="button" data-v="99999" aria-pressed="false">همه</button></div></div>
+<div class="opts">
+<label class="opt"><input type="checkbox" id="sV" checked><span class="sw"></span><span class="nm"><i class="dot" style="background:var(--ok)"></i>تأیید شده<small>پین دقیق</small></span><b id="nV"></b></label>
+<label class="opt"><input type="checkbox" id="sP" checked><span class="sw"></span><span class="nm"><i class="dot" style="background:var(--wa)"></i>موقت<small>پین تقریبی ±۵۰۰ متر</small></span><b id="nP"></b></label>
+<label class="opt"><input type="checkbox" id="sN"><span class="sw"></span><span class="nm"><i class="dot" style="background:var(--in)"></i>نیاز به تأیید<small>موقعیت نامطمئن</small></span><b id="nN"></b></label>
+<label class="opt"><input type="checkbox" id="sS"><span class="sw"></span><span class="nm">مجیدیه<small>منطقه تکمیلی</small></span></label>
+<label class="opt"><input type="checkbox" id="sHas" checked><span class="sw"></span><span class="nm">فقط ایستگاه‌های دارای آگهی<small>مرتب بر اساس تعداد</small></span></label>
 </div>
+<button type="button" class="fgo" id="fgo"></button>
+</form>
+</section>
+<section class="tbl gc" id="list"><div class="tb"><b id="foot"></b><label>مرتب‌سازی <select id="so"><option value="d">فاصله تا مترو</option><option value="r">اجاره</option><option value="c">ودیعه</option><option value="a">متراژ</option></select></label></div>
 <div class="tablewrap"><table><thead><tr>
-<th data-k="s">وضعیت</th><th data-k="ti">عنوان</th><th data-k="nb">محله</th><th data-k="c">ودیعه</th><th data-k="r">اجاره</th><th data-k="a">متراژ</th><th data-k="rm">اتاق</th><th data-k="y">ساخت</th><th data-k="stfa">ایستگاه</th><th data-k="d">فاصله (متر)</th><th data-k="wm">دقیقه پیاده</th><th>لینک</th>
-</tr></thead><tbody id="tb"></tbody></table></div>
-<p class="note" id="foot"></p>
+<th data-k="s">وضعیت</th><th data-k="stfa">ایستگاه</th><th data-k="ti">عنوان</th><th data-k="nb">محله</th><th data-k="c">ودیعه</th><th data-k="r">اجاره</th><th data-k="a">متراژ</th><th data-k="rm">اتاق</th><th data-k="y">ساخت</th><th data-k="d">فاصله (متر)</th><th data-k="wm">دقیقه پیاده</th><th>لینک</th>
+</tr></thead><tbody id="tb"></tbody></table></div></section>
+<p class="note">فاصله‌های دارای «~ (تخمینی)» برابر فاصله مستقیم × ۱٫۳۲ است (میانه نسبت مسیر واقعی به خط مستقیم در تهران). پس از اجرای routing_check.py فاصله پیاده واقعی (OSRM، پروفایل پیاده) تا نزدیک‌ترین ورودی جایگزین می‌شود. موقعیت آگهی پینی است که آگهی‌دهنده در دیوار انتخاب کرده و به‌طور مستقل تأیید نشده است.</p>
 </main>
 <script>
 const D=__DATA__;
 const $=s=>document.querySelector(s), fa=n=>n==null?'—':Number(n).toLocaleString('fa-IR'), mil=n=>n==null?'—':(n/1e6).toLocaleString('fa-IR',{maximumFractionDigits:1})+' م';
+const faYear=y=>Number(y).toLocaleString('fa-IR',{useGrouping:false});
+// listing text comes from Divar advertisers, so it is escaped before going into innerHTML
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
-const col={MATCH_VERIFIED:'--ver',MATCH_PROVISIONAL_DISTANCE:'--prov',NEEDS_LOCATION_VERIFICATION:'--nlv'};
+const col={MATCH_VERIFIED:'--ok',MATCH_PROVISIONAL_DISTANCE:'--wa',NEEDS_LOCATION_VERIFICATION:'--in'};
 const lab={MATCH_VERIFIED:'تأیید شده',MATCH_PROVISIONAL_DISTANCE:'موقت',NEEDS_LOCATION_VERIFICATION:'تأیید موقعیت'};
+const lineLab=s=>s.lines?'خط '+s.lines.split(',').map(fa).join('،'):'';
 $('#h1').textContent=`آپارتمان‌های اجاره‌ای نزدیک ${fa(D.stations.filter(s=>s.kind==='metro_station').length)} ایستگاه مترو تهران`;
 $('#sub').textContent=`ودیعه از ${fa(D.budget[2])} · سقف ودیعه ${fa(D.budget[0])} تومان · سقف اجاره ${fa(D.budget[1])} تومان · زمان جمع‌آوری داده: ${D.collected} · ${fa(D.inspected)} آگهی بررسی شد`;
+$('#mc').placeholder=fa(D.budget[0]/1e6);$('#mr').placeholder=fa(D.budget[1]/1e6);
 const metro=D.stations.filter(s=>s.kind==='metro_station');
 // matches (verified + provisional, excluding Majidiyeh) per station; fixed for the dataset
 const cnt={};D.listings.filter(l=>l.s!=='NEEDS_LOCATION_VERIFICATION'&&!l.supp).forEach(l=>cnt[l.st]=(cnt[l.st]||0)+1);
 const shownStations=()=>$('#sHas').checked?metro.filter(s=>cnt[s.k]).sort((a,b)=>cnt[b.k]-cnt[a.k]):metro;
-const map=L.map('map').setView([35.700,51.410],13);
+const map=L.map('map',{attributionControl:false}).setView([35.700,51.410],13);
+// the filter card covers the map's right side, so credits go bottom-left
+L.control.attribution({position:'bottomleft'}).addTo(map);
 // Hosted (https): OSM tiles, Persian labels. file:// sends no Referer and OSM/CARTO answer 403, so use keyless Esri there ({y}/{x} order).
 if(location.protocol==='file:')L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles © Esri — Esri, HERE, Garmin, © OpenStreetMap contributors'}).addTo(map);
 else L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap contributors'}).addTo(map);
 const stLayer=L.layerGroup().addTo(map);let stKey=null;
 function drawStations(){const list=shownStations(),key=list.map(s=>s.k).join();if(key===stKey)return;stKey=key;
- const v=$('#stn').value;$('#stn').innerHTML='<option value="">همه</option>'+list.map(s=>`<option value="${s.k}">${s.fa} (خط ${s.lines})${cnt[s.k]?' – '+fa(cnt[s.k]):''}</option>`).join('');
+ const v=$('#stn').value;$('#stn').innerHTML='<option value="">همه</option>'+list.map(s=>`<option value="${s.k}">${s.fa}${s.lines?` (${lineLab(s)})`:''}${cnt[s.k]?' – '+fa(cnt[s.k]):''}</option>`).join('');
  if(list.some(s=>s.k===v))$('#stn').value=v;
  stLayer.clearLayers();list.forEach(s=>{
-  L.circleMarker([s.lat,s.lon],{radius:8,color:css('--stn'),weight:3,fillColor:'#fff',fillOpacity:1}).bindTooltip(`${s.fa} · ${s.en} · خط ${s.lines} · ${fa(cnt[s.k]||0)} آگهی`).addTo(stLayer);
-  s.ents.forEach(e=>L.circleMarker([e.lat,e.lon],{radius:3,color:css('--stn'),weight:1,fillOpacity:.8}).bindTooltip('ورودی '+s.fa+(e.name?' – '+e.name:'')).addTo(stLayer));});}
-const layer=L.layerGroup().addTo(map);let sortK='d',sortDir=1,stSel='';
+  L.circleMarker([s.lat,s.lon],{radius:8,color:css('--er'),weight:3,fillColor:'#fff',fillOpacity:1}).bindTooltip(`${s.fa} · ${s.en}${s.lines?' · '+lineLab(s):''} · ${fa(cnt[s.k]||0)} آگهی`).addTo(stLayer);
+  s.ents.forEach(e=>L.circleMarker([e.lat,e.lon],{radius:3,color:css('--er'),weight:1,fillOpacity:.8}).bindTooltip('ورودی '+s.fa+(e.name?' – '+esc(e.name):'')).addTo(stLayer));});}
+const layer=L.layerGroup().addTo(map);let sortK='d',sortDir=1,stSel='',maxDist=1500;
 const dist=l=>l.w??l.e;
-function filt(){const q=$('#q').value.trim(),st=$('#stn').value||stSel,mc=+$('#mc').value*1e6||Infinity,mr=+$('#mr').value*1e6||Infinity,md=+$('#md').value,amin=+$('#amin').value||0,amax=+$('#amax').value||Infinity;
+// type=number drops Persian digits, which is what a Persian keyboard types
+const num=id=>+$(id).value.replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace('٫','.');
+function filt(){const q=$('#q').value.trim(),st=$('#stn').value||stSel,mc=num('#mc')*1e6||Infinity,mr=num('#mr')*1e6||Infinity,md=maxDist,amin=num('#amin')||0,amax=num('#amax')||Infinity;
  const ok={MATCH_VERIFIED:$('#sV').checked,MATCH_PROVISIONAL_DISTANCE:$('#sP').checked,NEEDS_LOCATION_VERIFICATION:$('#sN').checked};
  return D.listings.filter(l=>ok[l.s]&&(!l.supp||$('#sS').checked)&&(!q||(l.ti+' '+l.nb).includes(q))&&(!st||l.st===st)&&(l.c??0)<=mc&&(l.r??0)<=mr&&(l.s==='NEEDS_LOCATION_VERIFICATION'||(dist(l)??1e9)<=md)&&(l.a==null||(l.a>=amin&&l.a<=amax)));}
 function render(){drawStations();const L2=filt();layer.clearLayers();
- L2.forEach(l=>{if(l.lat==null)return;const c=css(col[l.s]);const pop=`<b>${l.ti}</b><br>ودیعه ${mil(l.c)} · اجاره ${mil(l.r)}<br>${l.a?fa(l.a)+' متر · ':''}${l.stfa||''} ${l.w!=null?fa(l.w)+' متر پیاده':l.e!=null?'~'+fa(l.e)+' متر پیاده (تخمینی)':''}<br><a href="${l.u}" target="_blank" rel="noopener">مشاهده در دیوار</a>`;
+ L2.forEach(l=>{if(l.lat==null)return;const c=css(col[l.s]);const pop=`<b>${esc(l.ti)}</b><br>ودیعه ${mil(l.c)} · اجاره ${mil(l.r)}<br>${l.a?fa(l.a)+' متر · ':''}${esc(l.stfa)} ${l.w!=null?fa(l.w)+' متر پیاده':l.e!=null?'~'+fa(l.e)+' متر پیاده (تخمینی)':''}<br><a href="${esc(l.u)}" target="_blank" rel="noopener">مشاهده در دیوار</a>`;
   if(l.lt==='FUZZY'&&l.rad)L.circle([l.lat,l.lon],{radius:l.rad,color:c,weight:1,dashArray:'4 4',fillOpacity:.05}).addTo(layer);
   L.circleMarker([l.lat,l.lon],{radius:l.lt==='FUZZY'?5:7,color:c,fillColor:c,fillOpacity:l.lt==='FUZZY'?.45:.9,weight:l.lt==='FUZZY'?1:2}).bindPopup(pop).addTo(layer);});
  const rows=[...L2].sort((a,b)=>{const va=sortK==='d'?dist(a):a[sortK],vb=sortK==='d'?dist(b):b[sortK];return((va??1e12)>(vb??1e12)?1:(va??1e12)<(vb??1e12)?-1:0)*sortDir});
- $('#tb').innerHTML=rows.map(l=>`<tr><td><span class="tag ${l.s}">${lab[l.s]}</span></td><td class="ti">${l.ti}</td><td>${l.nb}</td><td class="num">${mil(l.c)}</td><td class="num">${mil(l.r)}</td><td class="num">${fa(l.a)}</td><td class="num">${fa(l.rm)}</td><td class="num">${l.y?fa(l.y):'—'}</td><td>${l.stfa}</td><td class="num">${l.w!=null?fa(l.w):l.e!=null?'~'+fa(l.e)+' (تخمینی)':'—'}</td><td class="num">${l.wm!=null?fa(l.wm):l.em!=null?'~'+fa(l.em):'—'}</td><td><a href="${l.u}" target="_blank" rel="noopener">دیوار ↗</a></td></tr>`).join('')||'<tr><td colspan="12">موردی با این فیلترها یافت نشد.</td></tr>';
- $('#stc').innerHTML=shownStations().map(s=>`<button data-k="${s.k}" class="${stSel===s.k?'on':''}">${s.fa}${s.lines?` <small style="opacity:.7">خط ${s.lines.split(',').map(fa).join('،')}</small>`:''} · ${fa(cnt[s.k]||0)}</button>`).join('');
- $('#foot').textContent=`${fa(rows.length)} آگهی نمایش داده شد.`;}
+ $('#tb').innerHTML=rows.map(l=>`<tr><td class="st"><span class="tag ${l.s}">${lab[l.s]}</span></td><td class="sta">${esc(l.stfa)||'—'}<span class="wk">${l.w!=null?fa(l.w)+' متر پیاده':l.e!=null?'~'+fa(l.e)+' متر پیاده':''}</span></td><td class="ti">${esc(l.ti)}</td><td class="nb" data-l="محله">${esc(l.nb)||'—'}</td><td class="num pr" data-l="ودیعه">${mil(l.c)}</td><td class="num pr" data-l="اجاره">${mil(l.r)}</td><td class="num" data-l="متراژ">${fa(l.a)}</td><td class="num" data-l="اتاق">${fa(l.rm)}</td><td class="num" data-l="ساخت">${l.y?faYear(l.y):'—'}</td><td class="num dd" data-l="فاصله (متر)">${l.w!=null?fa(l.w):l.e!=null?'~'+fa(l.e)+' (تخمینی)':'—'}</td><td class="num wm" data-l="دقیقه پیاده">${l.wm!=null?fa(l.wm):l.em!=null?'~'+fa(l.em):'—'}</td><td class="go"><a class="b" href="${esc(l.u)}" target="_blank" rel="noopener">مشاهده در دیوار ↗</a></td></tr>`).join('')||'<tr><td class="no" colspan="12">موردی با این فیلترها یافت نشد.</td></tr>';
+ $('#stc').innerHTML=shownStations().map(s=>`<button type="button" data-k="${s.k}" class="chp ${stSel===s.k?'on':''}" aria-pressed="${stSel===s.k}">${s.fa}${s.lines?`<small>${lineLab(s)}</small>`:''}<b>${fa(cnt[s.k]||0)}</b></button>`).join('');
+ document.querySelectorAll('th[data-k]').forEach(t=>{if(t.dataset.k===sortK)t.dataset.a=sortDir>0?'↑':'↓';else delete t.dataset.a;});
+ $('#foot').textContent=`${fa(rows.length)} آگهی`;$('#fgo').textContent=`نمایش ${fa(rows.length)} آگهی`;
+ const act=['#q','#stn','#mc','#mr','#amin','#amax'].filter(i=>$(i).value.trim()).length+(stSel?1:0)+(maxDist!==1500?1:0)+(!$('#sV').checked)+(!$('#sP').checked)+$('#sN').checked+$('#sS').checked;
+ $('#fc').hidden=$('#fc2').hidden=$('#clr').hidden=!act;$('#fc').textContent=$('#fc2').textContent=fa(act);}
 const c=D.counts,sv=k=>c[k]||0;
-$('#stats').innerHTML=[['آگهی بررسی‌شده',D.inspected],['تأیید شده',sv('MATCH_VERIFIED')],['موقت (پین تقریبی)',sv('MATCH_PROVISIONAL_DISTANCE')],['نیاز به تأیید موقعیت',sv('NEEDS_LOCATION_VERIFICATION')],['دور از مترو',sv('TOO_FAR_FROM_METRO')],['همخونه / غیر آپارتمان',sv('WRONG_CATEGORY')]].map(([a,b])=>`<div class="stat"><b>${fa(b)}</b><span>${a}</span></div>`).join('');
+$('#stats').innerHTML=[['آگهی بررسی‌شده',D.inspected],['تأیید شده',sv('MATCH_VERIFIED')],['موقت (پین تقریبی)',sv('MATCH_PROVISIONAL_DISTANCE')],['نیاز به تأیید موقعیت',sv('NEEDS_LOCATION_VERIFICATION')]].map(([a,b])=>`<div class="stat gc"><b>${fa(b)}</b><span>${a}</span></div>`).join('');
+$('#nV').textContent=fa(sv('MATCH_VERIFIED'));$('#nP').textContent=fa(sv('MATCH_PROVISIONAL_DISTANCE'));$('#nN').textContent=fa(sv('NEEDS_LOCATION_VERIFICATION'));
+$('#clr').addEventListener('click',e=>{e.preventDefault();['#q','#q2','#stn','#mc','#mr','#amin','#amax'].forEach(i=>$(i).value='');stSel='';$('#sV').checked=$('#sP').checked=true;$('#sN').checked=$('#sS').checked=false;$('#md button[data-v="1500"]').click();});
+// phone bottom sheet; on desktop the card is always visible and these do nothing visible
+function sheet(open){$('#filters').classList.toggle('open',open);$('#bd').classList.toggle('open',open);$('#fb').setAttribute('aria-expanded',open);document.body.style.overflow=open?'hidden':'';if(!open&&document.activeElement&&$('#filters').contains(document.activeElement))$('#fb').focus();}
+$('#fb').addEventListener('click',()=>{sheet(true);$('#fgo').focus();});$('#fgo').addEventListener('click',()=>sheet(false));$('#bd').addEventListener('click',()=>sheet(false));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')sheet(false);});
+$('#filters').addEventListener('submit',e=>e.preventDefault());
+$('#q2').addEventListener('input',e=>{$('#q').value=e.target.value;});$('#q').addEventListener('input',e=>{$('#q2').value=e.target.value;});
+$('#so').addEventListener('input',e=>{sortK=e.target.value;sortDir=1;});
 document.querySelectorAll('input,select').forEach(e=>e.addEventListener('input',render));
-$('#stc').addEventListener('click',e=>{const k=e.target.dataset.k;if(!k)return;stSel=stSel===k?'':k;render();});
-document.querySelectorAll('th[data-k]').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k;sortDir=sortK===k?-sortDir:1;sortK=k;render();}));
+$('#stc').addEventListener('click',e=>{const k=e.target.closest('button')?.dataset.k;if(!k)return;stSel=stSel===k?'':k;render();});
+$('#md').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;maxDist=+b.dataset.v;$('#md').querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));render();});
+document.querySelectorAll('th[data-k]').forEach(th=>th.addEventListener('click',()=>{const k=th.dataset.k;sortDir=sortK===k?-sortDir:1;sortK=k;$('#so').value=k;render();}));
 render();
 </script></body></html>"""
 
