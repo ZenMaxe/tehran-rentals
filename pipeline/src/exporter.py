@@ -8,7 +8,7 @@ from config import MAX_CREDIT_TOMAN, MAX_RENT_TOMAN, OUTPUTS
 MATCH = ("MATCH_VERIFIED", "MATCH_PROVISIONAL_DISTANCE")
 COLS = ["status", "reason", "token", "url", "title", "neighborhood_fa", "street_hint", "found_in_districts",
         "supplementary_area", "credit", "rent", "convertible", "area_m2", "rooms", "year_built", "floor", "elevator",
-        "parking", "storage", "photo_count", "business_type", "published", "last_bump",
+        "parking", "storage", "photo_count", "business_type", "published", "last_bump", "last_active",
         "latitude", "longitude", "location_type", "coord_status", "coord_confidence", "coord_radius_m", "location_source_path",
         "nearest_walk_station", "nearest_walk_m", "walk_minutes", "walk_class",
         "est_walk_m", "est_walk_minutes", "est_walk_class", "route_vs_estimate",

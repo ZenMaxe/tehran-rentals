@@ -22,7 +22,7 @@ log = logging.getLogger("routing_check")
 def needs_route(r: dict) -> bool:
     return (r.get("latitude") is not None and r.get("credit") is not None and r.get("rent") is not None
             and r["credit"] <= MAX_CREDIT_TOMAN and r["rent"] <= MAX_RENT_TOMAN
-            and r.get("status") != "WRONG_CATEGORY" and (r.get("nearest_sl_m") or 1e9) <= ROUTE_CANDIDATE_RADIUS_M)
+            and r.get("status") not in ("WRONG_CATEGORY", "TOO_OLD") and (r.get("nearest_sl_m") or 1e9) <= ROUTE_CANDIDATE_RADIUS_M)
 
 
 def main():

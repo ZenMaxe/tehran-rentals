@@ -5,12 +5,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from config import (ACCEPTABLE_M, CACHE, DETOUR_FACTOR, DISTRICT_SEARCH_RADIUS_M, EXCELLENT_M, MAX_CREDIT_TOMAN, MAX_RENT_TOMAN, MIN_CREDIT_TOMAN,
+from config import (ACCEPTABLE_M, CACHE, DETOUR_FACTOR, DISTRICT_SEARCH_RADIUS_M, EXCELLENT_M, MAX_CREDIT_TOMAN, MAX_POST_AGE_DAYS, MAX_RENT_TOMAN, MIN_CREDIT_TOMAN,
                     OUTPUTS, SECONDARY_M)
 
 MATCH = ("MATCH_VERIFIED", "MATCH_PROVISIONAL_DISTANCE")
 STATUSES = ["MATCH_VERIFIED", "MATCH_PROVISIONAL_DISTANCE", "NEEDS_LOCATION_VERIFICATION", "OVER_DEPOSIT_BUDGET",
-            "OVER_RENT_BUDGET", "UNDER_MIN_DEPOSIT", "TOO_FAR_FROM_METRO", "WRONG_CATEGORY", "UNAVAILABLE", "DUPLICATE", "PARSING_ERROR",
+            "OVER_RENT_BUDGET", "UNDER_MIN_DEPOSIT", "TOO_OLD", "TOO_FAR_FROM_METRO", "WRONG_CATEGORY", "UNAVAILABLE", "DUPLICATE", "PARSING_ERROR",
             "ACCESS_BLOCKED"]
 
 
@@ -347,6 +347,7 @@ def write_final(st, nb, log_rows, df, meta):
       f"{'routing has been run' if meta.get('routing_check') else '**routing has NOT been run yet, so all distances are estimates**'}.")
     A(f"- **{v('MATCH_PROVISIONAL_DISTANCE')}** provisional matches (within budget and ≤ {SECONDARY_M} m walk, but the walk is an estimate — straight line × {DETOUR_FACTOR} — or Divar only exposes a blurred ±500 m pin).")
     A(f"- **{v('NEEDS_LOCATION_VERIFICATION')}** affordable listings need location confirmation (no pin, or the pin is far but the ad text names a target metro station).")
+    A(f"- **{v('TOO_OLD')}** were dropped because they were not posted or bumped in the last {MAX_POST_AGE_DAYS} days.")
     A(f"- **{v('WRONG_CATEGORY')}** room-share / seeker ads that Divar files under apartment-rent were removed; **{v('TOO_FAR_FROM_METRO')}** were too far.")
     A(f"- Divar filters were verified to be **toman**, independent and inclusive; budget used: deposit ≤ {MAX_CREDIT_TOMAN:,}, rent ≤ {MAX_RENT_TOMAN:,} toman.\n")
 

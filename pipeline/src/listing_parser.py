@@ -1,5 +1,6 @@
 """Phase F: text normalisation, money parsing, and Divar post-detail parsing."""
 import re
+from datetime import date, datetime, timedelta, timezone
 
 from geolocation import extract_map_location
 
@@ -12,6 +13,28 @@ TOMAN_PER_RIAL = 0.1
 
 def normalize_digits(s: str) -> str:
     return _INVISIBLE.sub("", s or "").translate(_DIGITS)
+
+
+_JALALI_MONTHS = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند"]
+_JALALI_TEXT = re.compile(rf"(\d+)\s+({'|'.join(_JALALI_MONTHS)})\s+(\d{{4}})(?:\D+(\d+):(\d+))?")
+TEHRAN = timezone(timedelta(hours=3, minutes=30))  # Iran has had no DST since 2022
+
+
+def _jalali_days(y: int, m: int, d: int) -> int:
+    y += 1595
+    return 365 * y + y // 33 * 8 + (y % 33 + 3) // 4 + d + ((m - 1) * 31 if m < 7 else (m - 7) * 30 + 186)
+
+
+_JALALI_OFFSET = date(2026, 9, 23).toordinal() - _jalali_days(1405, 7, 1)  # 1 Mehr 1405 = 2026-09-23
+
+
+def parse_jalali(text: str | None) -> datetime | None:
+    """'۲۳ مهر ۱۴۰۵، ۱۵:۱۹' (Tehran time, as Divar shows it) -> aware datetime. None if unreadable."""
+    m = _JALALI_TEXT.search(normalize_digits(text or ""))
+    if not m:
+        return None
+    day = date.fromordinal(_jalali_days(int(m[3]), _JALALI_MONTHS.index(m[2]) + 1, int(m[1])) + _JALALI_OFFSET)
+    return datetime(day.year, day.month, day.day, int(m[4] or 0), int(m[5] or 0), tzinfo=TEHRAN)
 
 
 def rial_to_toman(rial: int) -> int:
@@ -155,6 +178,9 @@ def parse_post_detail(post: dict) -> dict:
         elif t == "IMAGE_CAROUSEL":
             rec["photos"] = [i["image"]["url"] for i in d.get("items") or [] if i.get("image")]
             rec["photo_count"] = len(rec["photos"])
+    # A bump (نردبان) is the poster acting on the ad, so it counts as recent activity like a new post
+    active = [d for d in (parse_jalali(rec["published"]), parse_jalali(rec["last_bump"])) if d]
+    rec["last_active"] = max(active).isoformat() if active else None
     # Neighbourhood text: "هفته پیش در تهران، ارامنه، خ سادگی"
     if rec["subtitle"] and " در " in rec["subtitle"]:
         parts = [p.strip() for p in rec["subtitle"].split(" در ", 1)[1].split("،")]

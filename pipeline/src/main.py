@@ -16,7 +16,7 @@ from config import CACHE, DETOUR_FACTOR, MAX_CREDIT_TOMAN, MAX_RENT_TOMAN, MIN_C
 from deduplication import find_reposts
 from distance_calculator import classify_distance, straight_line
 from divar_client import fetch_post, form_data, search_all
-from filters import classify, metro_mentions, register_station_aliases, roommate_or_seeker
+from filters import classify, metro_mentions, register_station_aliases, roommate_or_seeker, too_old
 from listing_parser import parse_post_detail
 from net import AccessBlocked
 
@@ -138,7 +138,7 @@ def main():
         recs.append(enrich(tok, card, centres, supp))
         if i % 50 == 0:
             log.info("details %d/%d", i, len(found))
-    find_reposts(recs)
+    find_reposts([r for r in recs if not too_old(r)])  # a fresh repost must not be hidden as a copy of an expired ad
     reclassify(recs)
     # per-district match counts back into the search log
     for row in log_rows:

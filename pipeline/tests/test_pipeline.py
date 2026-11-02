@@ -1,6 +1,7 @@
 import copy
 import json
 import sys
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -13,10 +14,11 @@ from distance_calculator import classify_distance  # noqa: E402
 from filters import classify, metro_mentions  # noqa: E402
 from geolocation import (bbox_to_latlon, extract_map_location, from_geojson, haversine_m,  # noqa: E402
                          to_geojson, to_google, validate_point)
-from listing_parser import (normalize_digits, parse_money_toman, parse_post_detail,  # noqa: E402
+from listing_parser import (normalize_digits, parse_jalali, parse_money_toman, parse_post_detail,  # noqa: E402
                             rial_to_toman, toman_to_rial)
 
 FIX = json.loads((Path(__file__).resolve().parent.parent / "fixtures" / "gaSfxzZ8.json").read_text())
+FRESH = datetime.now(timezone.utc).isoformat()  # last_active for records testing rules after the age check
 
 
 def test_digits_and_invisible_marks():
@@ -43,7 +45,7 @@ def test_toman_rial():
 
 
 def _ok(c, r):
-    rec = {"credit": c, "rent": r, "latitude": 35.68, "longitude": 51.40, "nearest_walk_m": 300,
+    rec = {"credit": c, "rent": r, "latitude": 35.68, "longitude": 51.40, "nearest_walk_m": 300, "last_active": FRESH,
            "nearest_walk_station": "moniriyeh", "walk_class": "Excellent", "coord_confidence": "api_exact_pin"}
     return classify(rec)[0]
 
@@ -76,7 +78,7 @@ def test_fixture_coordinates():
 
 def test_fixture_rejected_over_deposit():
     rec = parse_post_detail(FIX)
-    rec.update(nearest_walk_m=500, nearest_walk_station="x", walk_class="Excellent")
+    rec.update(nearest_walk_m=500, nearest_walk_station="x", walk_class="Excellent", last_active=FRESH)
     assert classify(rec)[0] == "OVER_DEPOSIT_BUDGET"
 
 
@@ -127,7 +129,7 @@ def test_walk_class(m, c):
 
 
 def test_estimated_walk_is_provisional():
-    base = {"credit": 300_000_000, "rent": 10_000_000, "latitude": 35.68, "longitude": 51.40,
+    base = {"credit": 300_000_000, "rent": 10_000_000, "latitude": 35.68, "longitude": 51.40, "last_active": FRESH,
             "coord_confidence": "api_exact_pin", "nearest_sl_station": "moniriyeh"}
     assert classify(dict(base, nearest_sl_m=1000, est_walk_m=1320))[0] == "MATCH_PROVISIONAL_DISTANCE"
     assert classify(dict(base, nearest_sl_m=1200, est_walk_m=1584))[0] == "TOO_FAR_FROM_METRO"
@@ -146,7 +148,7 @@ def test_rent_slider_convertible():
 
 
 def test_negotiable_and_non_apartment():
-    base = {"latitude": 35.68, "longitude": 51.40, "nearest_walk_m": 100, "nearest_walk_station": "jahad",
+    base = {"latitude": 35.68, "longitude": 51.40, "nearest_walk_m": 100, "nearest_walk_station": "jahad", "last_active": FRESH,
             "walk_class": "Excellent", "coord_confidence": "api_exact_pin"}
     st, why = classify(dict(base, credit=None, rent=5_000_000, text_credit_raw="توافقی"))
     assert st == "PARSING_ERROR" and "negotiable" in why
@@ -156,7 +158,7 @@ def test_negotiable_and_non_apartment():
 
 
 def test_fuzzy_pin_corroborated_by_text():
-    rec = {"credit": 300_000_000, "rent": 10_000_000, "latitude": 35.67, "longitude": 51.38, "coord_confidence": "api_approximate",
+    rec = {"credit": 300_000_000, "rent": 10_000_000, "latitude": 35.67, "longitude": 51.38, "coord_confidence": "api_approximate", "last_active": FRESH,
            "location_type": "FUZZY", "coord_radius_m": 500, "nearest_walk_m": 400, "nearest_walk_station": "beryanak",
            "walk_class": "Excellent", "walk_all_json": '{"beryanak": 400, "helal_ahmar": 1900}'}
     assert classify(dict(rec, metro_mentions=metro_mentions("۵۳ متر/مترو بریانک", "")))[0] == "MATCH_VERIFIED"
@@ -166,10 +168,40 @@ def test_fuzzy_pin_corroborated_by_text():
 
 
 def test_min_deposit():
-    rec = {"credit": 74_999_999, "rent": 5_000_000, "latitude": 35.68, "longitude": 51.40, "nearest_walk_m": 100,
+    rec = {"credit": 74_999_999, "rent": 5_000_000, "latitude": 35.68, "longitude": 51.40, "nearest_walk_m": 100, "last_active": FRESH,
            "nearest_walk_station": "jahad", "walk_class": "Excellent", "coord_confidence": "api_exact_pin"}
     assert classify(rec)[0] == "UNDER_MIN_DEPOSIT"
     assert classify(dict(rec, credit=75_000_000))[0] == "MATCH_VERIFIED"
+
+
+@pytest.mark.parametrize("text,iso", [
+    ("۲۳ مهر ۱۴۰۵، ۱۵:۱۹", "2026-10-15T15:19:00+03:30"),
+    ("۱ فروردین ۱۴۰۳، ۰۰:۰۰", "2024-03-20T00:00:00+03:30"),
+    ("۳۰ اسفند ۱۴۰۳، ۲۳:۵۹", "2025-03-20T23:59:00+03:30"),  # leap year
+    ("۱ فروردین ۱۴۰۴", "2025-03-21T00:00:00+03:30"),
+])
+def test_parse_jalali(text, iso):
+    assert parse_jalali(text).isoformat() == iso
+
+
+def test_unreadable_jalali():
+    assert parse_jalali("دیروز") is None and parse_jalali(None) is None
+
+
+def test_post_age_limit():
+    rec = {"credit": 300_000_000, "rent": 5_000_000, "latitude": 35.68, "longitude": 51.40, "nearest_walk_m": 100,
+           "nearest_walk_station": "jahad", "walk_class": "Excellent", "coord_confidence": "api_exact_pin"}
+    ago = lambda **kw: (datetime.now(timezone.utc) - timedelta(**kw)).isoformat()
+    assert classify(dict(rec, last_active=ago(days=2, hours=23)))[0] == "MATCH_VERIFIED"
+    assert classify(dict(rec, last_active=ago(days=3, hours=1)))[0] == "TOO_OLD"
+    assert classify(dict(rec, last_active=None))[0] == "PARSING_ERROR"
+
+
+def test_bump_counts_as_activity():
+    p = copy.deepcopy(FIX)
+    p["sections"].append({"section_name": "X", "widgets": [{"widget_type": "DESCRIPTION_ROW", "data": {
+        "text": "انتشار آگهی: ۱ مهر ۱۴۰۵، ۱۰:۰۰\nآخرین نردبان: ۱۰ آبان ۱۴۰۵، ۰۸:۳۰"}}]})
+    assert parse_post_detail(p)["last_active"] == "2026-11-01T08:30:00+03:30"
 
 
 def test_dedup():
@@ -191,7 +223,7 @@ def test_metro_mentions():
 
 
 def test_far_pin_rescued_by_text():
-    base = {"credit": 400_000_000, "rent": 10_000_000, "latitude": 35.80, "longitude": 51.40,
+    base = {"credit": 400_000_000, "rent": 10_000_000, "latitude": 35.80, "longitude": 51.40, "last_active": FRESH,
             "nearest_walk_m": 4000, "nearest_walk_station": "jahad", "nearest_sl_m": 3500}
     rec = dict(base, metro_mentions=metro_mentions("", "۲ دقیقه تا مترو میدان جهاد"))
     assert classify(rec)[0] == "NEEDS_LOCATION_VERIFICATION"
@@ -207,12 +239,12 @@ def test_fuzzy_pin_is_provisional():
                 w["data"]["location"] = {"type": "FUZZY", "fuzzy_data": {"point": {"latitude": 35.681, "longitude": 51.401}, "radius": 500}}
     loc = extract_map_location(p)
     assert loc["coord_status"] == "APPROXIMATE" and loc["coord_radius_m"] == 500 and loc["latitude"] == 35.681
-    rec = dict(loc, credit=100_000_000, rent=5_000_000, nearest_walk_m=300, nearest_walk_station="moniriyeh", walk_class="Excellent")
+    rec = dict(loc, last_active=FRESH, credit=100_000_000, rent=5_000_000, nearest_walk_m=300, nearest_walk_station="moniriyeh", walk_class="Excellent")
     assert classify(rec)[0] == "MATCH_PROVISIONAL_DISTANCE"
 
 
 def test_roommate_ads_rejected():
-    rec = {"credit": 100_000_000, "rent": 1_000_000, "title": "همخونه آقا هستم متقاضی اتاق", "latitude": 35.68, "longitude": 51.40,
+    rec = {"credit": 100_000_000, "rent": 1_000_000, "title": "همخونه آقا هستم متقاضی اتاق", "last_active": FRESH, "latitude": 35.68, "longitude": 51.40,
            "nearest_walk_m": 50, "nearest_walk_station": "moniriyeh", "walk_class": "Excellent", "coord_confidence": "api_exact_pin"}
     assert classify(rec)[0] == "WRONG_CATEGORY"
     assert classify(dict(rec, title="آپارتمان ۶۰ متری"))[0] == "MATCH_VERIFIED"
