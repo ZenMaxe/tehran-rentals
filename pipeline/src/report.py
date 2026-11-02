@@ -5,12 +5,12 @@ from pathlib import Path
 
 import pandas as pd
 
-from config import (ACCEPTABLE_M, CACHE, DETOUR_FACTOR, DISTRICT_SEARCH_RADIUS_M, EXCELLENT_M, MAX_CREDIT_TOMAN, MAX_POST_AGE_DAYS, MAX_RENT_TOMAN, MIN_CREDIT_TOMAN,
+from config import (ACCEPTABLE_M, CACHE, DETOUR_FACTOR, DISTRICT_SEARCH_RADIUS_M, EXCELLENT_M, MAX_CREDIT_TOMAN, MAX_RENT_TOMAN, MIN_CREDIT_TOMAN,
                     OUTPUTS, SECONDARY_M)
 
 MATCH = ("MATCH_VERIFIED", "MATCH_PROVISIONAL_DISTANCE")
 STATUSES = ["MATCH_VERIFIED", "MATCH_PROVISIONAL_DISTANCE", "NEEDS_LOCATION_VERIFICATION", "OVER_DEPOSIT_BUDGET",
-            "OVER_RENT_BUDGET", "UNDER_MIN_DEPOSIT", "TOO_OLD", "TOO_FAR_FROM_METRO", "WRONG_CATEGORY", "UNAVAILABLE", "DUPLICATE", "PARSING_ERROR",
+            "OVER_RENT_BUDGET", "UNDER_MIN_DEPOSIT", "TOO_FAR_FROM_METRO", "WRONG_CATEGORY", "UNAVAILABLE", "DUPLICATE", "PARSING_ERROR",
             "ACCESS_BLOCKED"]
 
 
@@ -47,7 +47,7 @@ def write_html(st, df, meta):
                          "c": _n(r.credit), "r": _n(r.rent), "a": _n(r.area_m2), "rm": _n(r.rooms), "y": _n(r.year_built),
                          "lat": _n(r.latitude), "lon": _n(r.longitude), "lt": _n(r.location_type), "rad": _n(r.coord_radius_m),
                          "st": stn, "stfa": names.get(stn, ""), "w": _n(r.nearest_walk_m), "wm": _n(r.walk_minutes),
-                         "sl": _n(r.nearest_sl_m), "e": _n(r.est_walk_m), "em": _n(r.est_walk_minutes), "why": r.reason, "pub": _n(r.published), "supp": bool(r.supplementary_area)})
+                         "sl": _n(r.nearest_sl_m), "e": _n(r.est_walk_m), "em": _n(r.est_walk_minutes), "why": r.reason, "pub": _n(r.published), "la": _n(r.last_active), "bu": _n(r.last_bump) is not None, "supp": bool(r.supplementary_area)})
     stations = [{"k": r.station_key, "fa": r.station_fa, "en": r.station_en, "lines": r.lines if isinstance(r.lines, str) else "",
                  "lat": r.lat, "lon": r.lon, "ents": json.loads(r.entrances_json), "kind": r.kind} for r in st.itertuples()]
     collected = datetime.fromisoformat(meta["finished_utc"]).strftime("%Y-%m-%d %H:%M UTC")
@@ -134,6 +134,7 @@ select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:u
 input:checked~.sw{background:var(--inverse);border-color:var(--inverse)}input:checked~.sw::after{right:18px;background:var(--page)}input:focus-visible~.sw{outline:2px solid var(--b3);outline-offset:2px}
 .nm{flex:1;min-width:0}.nm small{display:block;color:var(--t2);font-size:11px;line-height:1.5}.opt b{color:var(--t2);font-size:11.5px;font-weight:400;font-variant-numeric:tabular-nums}
 .fgo,.msearch,#bd,.wk{display:none}
+.when{display:block;color:var(--t2);font-size:11px;font-weight:400}.when b{color:var(--t1);font-weight:700}
 .tbl{border-radius:16px;overflow:hidden;scroll-margin-top:76px}
 .tb{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px;flex-wrap:wrap}.tb b{font-size:12.5px;font-weight:700}.tb label{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--t2)}.tb select{width:auto;height:28px;border-radius:8px;font-size:11.5px}
 .tablewrap{overflow-x:auto}
@@ -209,7 +210,7 @@ td.ti{grid-column:1/-1;order:-2;min-width:0;font-size:14px}td.pr{font-size:14px;
 <button type="button" class="fgo" id="fgo"></button>
 </form>
 </section>
-<section class="tbl gc" id="list"><div class="tb"><b id="foot"></b><label>مرتب‌سازی <select id="so"><option value="d">فاصله تا مترو</option><option value="r">اجاره</option><option value="c">ودیعه</option><option value="a">متراژ</option></select></label></div>
+<section class="tbl gc" id="list"><div class="tb"><b id="foot"></b><label>جدیدترین‌ها، سپس <select id="so"><option value="d">فاصله تا مترو</option><option value="r">اجاره</option><option value="c">ودیعه</option><option value="a">متراژ</option></select></label></div>
 <div class="tablewrap"><table><thead><tr>
 <th data-k="s">وضعیت</th><th data-k="stfa">ایستگاه</th><th data-k="ti">عنوان</th><th data-k="nb">محله</th><th data-k="c">ودیعه</th><th data-k="r">اجاره</th><th data-k="a">متراژ</th><th data-k="rm">اتاق</th><th data-k="y">ساخت</th><th data-k="d">فاصله (متر)</th><th data-k="wm">دقیقه پیاده</th><th>لینک</th>
 </tr></thead><tbody id="tb"></tbody></table></div></section>
@@ -247,6 +248,10 @@ function drawStations(){const list=shownStations(),key=list.map(s=>s.k).join();i
   s.ents.forEach(e=>L.circleMarker([e.lat,e.lon],{radius:3,color:css('--er'),weight:1,fillOpacity:.8}).bindTooltip('ورودی '+s.fa+(e.name?' – '+esc(e.name):'')).addTo(stLayer));});}
 const layer=L.layerGroup().addTo(map);let sortK='d',sortDir=1,stSel='',maxDist=1500;
 const dist=l=>l.w??l.e;
+// last_active is Tehran local time, so its first 10 chars are the Tehran calendar day
+const day=l=>(l.la||'').slice(0,10);
+const IR=12600000,dayNo=t=>Math.floor((t+IR)/864e5);
+function when(l){if(!l.la)return'';const n=dayNo(Date.now())-dayNo(Date.parse(l.la));return`<span class="when">${l.bu?'<b>نردبان</b> · ':''}${n<=0?'امروز':n===1?'دیروز':fa(n)+' روز پیش'}</span>`;}
 // type=number drops Persian digits, which is what a Persian keyboard types
 const num=id=>+$(id).value.replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace('٫','.');
 function filt(){const q=$('#q').value.trim(),st=$('#stn').value||stSel,mc=num('#mc')*1e6||Infinity,mr=num('#mr')*1e6||Infinity,md=maxDist,amin=num('#amin')||0,amax=num('#amax')||Infinity;
@@ -256,8 +261,9 @@ function render(){drawStations();const L2=filt();layer.clearLayers();
  L2.forEach(l=>{if(l.lat==null)return;const c=css(col[l.s]);const pop=`<b>${esc(l.ti)}</b><br>ودیعه ${mil(l.c)} · اجاره ${mil(l.r)}<br>${l.a?fa(l.a)+' متر · ':''}${esc(l.stfa)} ${l.w!=null?fa(l.w)+' متر پیاده':l.e!=null?'~'+fa(l.e)+' متر پیاده (تخمینی)':''}<br><a href="${esc(l.u)}" target="_blank" rel="noopener">مشاهده در دیوار</a>`;
   if(l.lt==='FUZZY'&&l.rad)L.circle([l.lat,l.lon],{radius:l.rad,color:c,weight:1,dashArray:'4 4',fillOpacity:.05}).addTo(layer);
   L.circleMarker([l.lat,l.lon],{radius:l.lt==='FUZZY'?5:7,color:c,fillColor:c,fillOpacity:l.lt==='FUZZY'?.45:.9,weight:l.lt==='FUZZY'?1:2}).bindPopup(pop).addTo(layer);});
- const rows=[...L2].sort((a,b)=>{const va=sortK==='d'?dist(a):a[sortK],vb=sortK==='d'?dist(b):b[sortK];return((va??1e12)>(vb??1e12)?1:(va??1e12)<(vb??1e12)?-1:0)*sortDir});
- $('#tb').innerHTML=rows.map(l=>`<tr><td class="st"><span class="tag ${l.s}">${lab[l.s]}</span></td><td class="sta">${esc(l.stfa)||'—'}<span class="wk">${l.w!=null?fa(l.w)+' متر پیاده':l.e!=null?'~'+fa(l.e)+' متر پیاده':''}</span></td><td class="ti">${esc(l.ti)}</td><td class="nb" data-l="محله">${esc(l.nb)||'—'}</td><td class="num pr" data-l="ودیعه">${mil(l.c)}</td><td class="num pr" data-l="اجاره">${mil(l.r)}</td><td class="num" data-l="متراژ">${fa(l.a)}</td><td class="num" data-l="اتاق">${fa(l.rm)}</td><td class="num" data-l="ساخت">${l.y?faYear(l.y):'—'}</td><td class="num dd" data-l="فاصله (متر)">${l.w!=null?fa(l.w):l.e!=null?'~'+fa(l.e)+' (تخمینی)':'—'}</td><td class="num wm" data-l="دقیقه پیاده">${l.wm!=null?fa(l.wm):l.em!=null?'~'+fa(l.em):'—'}</td><td class="go"><a class="b" href="${esc(l.u)}" target="_blank" rel="noopener">مشاهده در دیوار ↗</a></td></tr>`).join('')||'<tr><td class="no" colspan="12">موردی با این فیلترها یافت نشد.</td></tr>';
+ // newest day first, bumped ads on top of their day, then the sort the viewer chose
+ const rows=[...L2].sort((a,b)=>{if(day(a)!==day(b))return day(a)<day(b)?1:-1;if(!a.bu!==!b.bu)return a.bu?-1:1;const va=sortK==='d'?dist(a):a[sortK],vb=sortK==='d'?dist(b):b[sortK];return((va??1e12)>(vb??1e12)?1:(va??1e12)<(vb??1e12)?-1:0)*sortDir});
+ $('#tb').innerHTML=rows.map(l=>`<tr><td class="st"><span class="tag ${l.s}">${lab[l.s]}</span></td><td class="sta">${esc(l.stfa)||'—'}<span class="wk">${l.w!=null?fa(l.w)+' متر پیاده':l.e!=null?'~'+fa(l.e)+' متر پیاده':''}</span></td><td class="ti">${esc(l.ti)}${when(l)}</td><td class="nb" data-l="محله">${esc(l.nb)||'—'}</td><td class="num pr" data-l="ودیعه">${mil(l.c)}</td><td class="num pr" data-l="اجاره">${mil(l.r)}</td><td class="num" data-l="متراژ">${fa(l.a)}</td><td class="num" data-l="اتاق">${fa(l.rm)}</td><td class="num" data-l="ساخت">${l.y?faYear(l.y):'—'}</td><td class="num dd" data-l="فاصله (متر)">${l.w!=null?fa(l.w):l.e!=null?'~'+fa(l.e)+' (تخمینی)':'—'}</td><td class="num wm" data-l="دقیقه پیاده">${l.wm!=null?fa(l.wm):l.em!=null?'~'+fa(l.em):'—'}</td><td class="go"><a class="b" href="${esc(l.u)}" target="_blank" rel="noopener">مشاهده در دیوار ↗</a></td></tr>`).join('')||'<tr><td class="no" colspan="12">موردی با این فیلترها یافت نشد.</td></tr>';
  $('#stc').innerHTML=shownStations().map(s=>`<button type="button" data-k="${s.k}" class="chp ${stSel===s.k?'on':''}" aria-pressed="${stSel===s.k}">${s.fa}${s.lines?`<small>${lineLab(s)}</small>`:''}<b>${fa(cnt[s.k]||0)}</b></button>`).join('');
  document.querySelectorAll('th[data-k]').forEach(t=>{if(t.dataset.k===sortK)t.dataset.a=sortDir>0?'↑':'↓';else delete t.dataset.a;});
  $('#foot').textContent=`${fa(rows.length)} آگهی`;$('#fgo').textContent=`نمایش ${fa(rows.length)} آگهی`;
@@ -347,7 +353,6 @@ def write_final(st, nb, log_rows, df, meta):
       f"{'routing has been run' if meta.get('routing_check') else '**routing has NOT been run yet, so all distances are estimates**'}.")
     A(f"- **{v('MATCH_PROVISIONAL_DISTANCE')}** provisional matches (within budget and ≤ {SECONDARY_M} m walk, but the walk is an estimate — straight line × {DETOUR_FACTOR} — or Divar only exposes a blurred ±500 m pin).")
     A(f"- **{v('NEEDS_LOCATION_VERIFICATION')}** affordable listings need location confirmation (no pin, or the pin is far but the ad text names a target metro station).")
-    A(f"- **{v('TOO_OLD')}** were dropped because they were not posted or bumped in the last {MAX_POST_AGE_DAYS} days.")
     A(f"- **{v('WRONG_CATEGORY')}** room-share / seeker ads that Divar files under apartment-rent were removed; **{v('TOO_FAR_FROM_METRO')}** were too far.")
     A(f"- Divar filters were verified to be **toman**, independent and inclusive; budget used: deposit ≤ {MAX_CREDIT_TOMAN:,}, rent ≤ {MAX_RENT_TOMAN:,} toman.\n")
 

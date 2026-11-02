@@ -1,9 +1,8 @@
 """Phase H: strict eligibility + metro-mention text check for far/missing pins."""
 import json
 import re
-from datetime import datetime, timedelta, timezone
 
-from config import DETOUR_FACTOR, MAX_CREDIT_TOMAN, MAX_POST_AGE_DAYS, MAX_RENT_TOMAN, MIN_CREDIT_TOMAN, SECONDARY_M
+from config import DETOUR_FACTOR, MAX_CREDIT_TOMAN, MAX_RENT_TOMAN, MIN_CREDIT_TOMAN, SECONDARY_M
 from listing_parser import normalize_digits
 
 # Aliases as they appear in ad text. Matched only right after "مترو"/"ایستگاه" to avoid
@@ -65,11 +64,6 @@ def roommate_or_seeker(title, description) -> str | None:
     return m.group(0).strip() if m else None
 
 
-def too_old(rec: dict) -> bool:
-    active = rec.get("last_active")
-    return bool(active) and datetime.now(timezone.utc) - datetime.fromisoformat(active) > timedelta(days=MAX_POST_AGE_DAYS)
-
-
 def classify(rec: dict) -> tuple[str, str]:
     """Return (status, reason). rec carries prices, coords, distances and mentions."""
     if rec.get("fetch_status") == "UNAVAILABLE":
@@ -80,10 +74,6 @@ def classify(rec: dict) -> tuple[str, str]:
         return "WRONG_CATEGORY", f"room-share / seeker / dorm / room / parking ad (from search-card title, detail not fetched): {rec.get('fetch_error')}"
     if rec.get("fetch_status") == "ERROR":
         return "PARSING_ERROR", rec.get("fetch_error") or "fetch/parse error"
-    if not rec.get("last_active"):
-        return "PARSING_ERROR", f"post date not readable: published={rec.get('published')} last_bump={rec.get('last_bump')}"
-    if too_old(rec):
-        return "TOO_OLD", f"last posted or bumped {rec['last_active']}, more than {MAX_POST_AGE_DAYS} days ago"
     if rec.get("category") and rec["category"] != "apartment-rent" or rec.get("city") and rec["city"] != "tehran":
         return "WRONG_CATEGORY", f"category={rec.get('category')} city={rec.get('city')}"
     rs = roommate_or_seeker(rec.get("title"), rec.get("description"))

@@ -14,7 +14,6 @@ FAR_SOUTH_LAT = 35.63  # stations south of this are flagged (original brief: avo
 MAX_CREDIT_TOMAN = 500_000_000
 MIN_CREDIT_TOMAN = 75_000_000  # user: deposits under 75M are scams
 MAX_RENT_TOMAN = 17_000_000  # user lowered from 20M on 2026-10-28
-MAX_POST_AGE_DAYS = 3  # user 2026-11-02: older ads are usually gone and posters don't update them
 
 # Walking-distance classes (metres, inclusive upper bounds)
 EXCELLENT_M = 800
